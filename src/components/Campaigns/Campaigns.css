@@ -3,9 +3,21 @@
   margin: auto;
 }
 
+@media (max-width: 767px) {
+  .Campaigns {
+    width: 95%;
+  }
+}
+
 .Campaigns .camp-title {
   font-size: 2.4rem;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .Campaigns .camp-title {
+    font-size: 2rem;
+  }
 }
 
 .Campaigns .left-scroll, .Campaigns .right-scroll {
@@ -58,12 +70,25 @@
   overflow-x: scroll;
 }
 
+@media (max-width: 767px) {
+  .campaign-container {
+    gap: 15px;
+    padding: 40px 5px;
+  }
+}
+
 .campaign-container .camp-container {
   min-width: 320px;
   border-radius: 20px;
   box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
+}
+
+@media (max-width: 767px) {
+  .campaign-container .camp-container {
+    min-width: 300px;
+  }
 }
 
 .campaign-container .camp-container .camp-img {
@@ -79,6 +104,12 @@
 
 .campaign-container .camp-container .camp-details-container {
   padding: 10px 30px;
+}
+
+@media (max-width: 767px) {
+  .campaign-container .camp-container .camp-details-container {
+    padding: 15px 15px;
+  }
 }
 
 .campaign-container .camp-container .camp-details-container .camp-heading .title {
