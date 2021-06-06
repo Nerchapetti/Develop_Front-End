@@ -1,6 +1,7 @@
 import './footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+
 const Footer = () => {
     return ( 
         <div className="footer-container">
@@ -32,7 +33,7 @@ const Footer = () => {
                             <ul className="icons">
                                 <h3 className="letschat">Let's chat! </h3>
                                  <li className=""><FontAwesomeIcon icon="fa-facebook-f" /></li>
-                                {/* <li className=""><FontAwesomeIcon icon={}/></li>
+                                 <li className=""><FontAwesomeIcon icon={}/></li> 
                                 <li className=""><FontAwesomeIcon icon={}/></li>
                                 <li className=""><FontAwesomeIcon icon={}/></li> */} 
                             </ul>
