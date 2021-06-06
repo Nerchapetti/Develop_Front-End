@@ -1,7 +1,7 @@
-
 .Campaigns{
     width: 80%;
     margin: auto;
+    position: relative;
 
     .camp-title{
         font-size: 2.4rem;
@@ -18,7 +18,7 @@
     .left-scroll{
    
         position: absolute;
-        left: 50px;
+        left: -50px;
         top: 50%;
         @media(max-width: 767px){
             display: none;
@@ -28,7 +28,7 @@
     
     .right-scroll{
         position: absolute;
-        right: 50px;
+        right: -50px;
         top: 50%;
         @media(max-width: 767px){
             display: none;
@@ -52,6 +52,7 @@
     
     .camp-container{
         min-width: 320px;
+        max-width: 300px;
         border-radius: 20px;
         box-shadow: -2px -1px 8px 1px rgba(0,0,0,0.55);
         -webkit-box-shadow: -2px -1px 8px 1px rgba(0,0,0,0.55);

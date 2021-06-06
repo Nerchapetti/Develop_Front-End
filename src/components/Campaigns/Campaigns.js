@@ -8,12 +8,6 @@ const Campaigns = () => {
     const [Parishesdata, newdata] = useState([
         {id : 1, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
         {id : 2, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
-        {id : 3, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
-        {id : 4, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
-        {id : 1, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
-        {id : 2, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
-        {id : 3, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
-        {id : 4, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
 
     ]);
 
