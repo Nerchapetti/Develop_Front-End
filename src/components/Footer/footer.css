@@ -1,0 +1,52 @@
+.footer-containor {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  background-color: #18191a;
+  color: #AAB2BD;
+}
+
+.footer-containor .containor {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-containor .title {
+  font-size: 15px;
+  position: relative;
+  top: 20px;
+  left: 30px;
+  color: #1a73e8;
+}
+
+.footer-containor .list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-containor .details {
+  position: relative;
+  top: 40px;
+  left: 250px;
+}
+
+.footer-containor .list li {
+  padding: 10px;
+}
+
+.footer-containor .socialmedia {
+  position: relative;
+  top: 40px;
+  padding: 10px;
+  left: 700px;
+}
+
+.footer-containor .teamsandpolicy {
+  position: relative;
+}
+/*# sourceMappingURL=footer.css.map */

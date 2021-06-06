@@ -36,8 +36,8 @@ const Parishes = () => {
         <div class="parishes">
                 <h1 className="pari-title">Parish</h1>
                 <div class="left-scroll">
-                <FontAwesomeIcon style={arrowStyle} icon={faArrowAltCircleLeft} size="3x"  onClick={handleLeftScroll} />
-            </div>
+                    <FontAwesomeIcon style={arrowStyle} icon={faArrowAltCircleLeft} size="3x"  onClick={handleLeftScroll} />
+                </div>
                 <div className="Parishes-containor">
                 { Parishesdata.map((data) => (
                     <div className ="cards" key={data.id}>
