@@ -2,31 +2,55 @@
     background-color: #18191a;
     color: #AAB2BD;
     .container
-    {   margin: 0;
-        padding: 0;
-    }
-    .title
-    {
-        font-size: 15px;
-        color: #1a73e8;
+    {   
+
     }
     .list-container
-    {
+    {           
+        padding: 40px;
+       .title        {
+        font-size: 15px;
+        color: #1a73e8;
+        }
+        p{
+            color: #AAB2BD;
+
+        }
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-
+        @media(max-width: 767px){
+            display: flex;
+            flex-direction: column;
         .details{
             .list li {
                 padding: 10px;
+            }.list li:hover{
+                text-decoration: underline;
             }
         }
         .socialmedia {
+            .icons li 
+            {
             padding: 10px;
         }
-
+    }
         .teamsandpolicy {
-            position: relative;   
+            .policy {
+               
+            }li{
+            padding: 10px;}
+            li:hover{
+                text-decoration: underline;
+            }
         }
     }
+    }
+.licence {
+    p{
+        text-align: center;
+        padding: 0px 0px 20px 0px;
+    //     @media(max-width: 767px){
+            
+    // }
 }
