@@ -2,6 +2,7 @@
   width: 80%;
   margin: auto;
   position: relative;
+  margin-top: 20px;
 }
 
 @media (max-width: 767px) {
@@ -80,7 +81,7 @@
 
 .campaign-container .camp-container {
   min-width: 320px;
-  max-width: 300px;
+  max-width: 320px;
   border-radius: 20px;
   box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);

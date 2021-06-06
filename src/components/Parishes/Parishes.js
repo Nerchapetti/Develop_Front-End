@@ -1,16 +1,17 @@
 import { useState } from "react";
 import './Parishes.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowAltCircleLeft, faArrowAltCircleRight, faShareAlt, faShareAltSquare, faShareSquare } from "@fortawesome/free-solid-svg-icons";
+import { faArrowAltCircleLeft, faArrowAltCircleRight, faShareAlt } from "@fortawesome/free-solid-svg-icons";
 const Parishes = () => {
 
     const [Parishesdata, setParishesdata] = useState([
         {id : 1, image : "image" , churchcategory : "churchcatagory" , church_name : "name of church" , location : "vatakara" , about : "hi i am rahul"},
         {id : 1, image : "image" , churchcategory : "churchcatogary" , church_name : "name of churchs" , location : "nadapuram" , about : "hai i am vyshnav"},
+        {id : 1, image : "image" , churchcategory : "churchcatagory" , church_name : "name of church" , location : "vatakara" , about : "hi i am rahul"},
         {id : 1, image : "image" , churchcategory : "churchcatogary" , church_name : "name of churchs" , location : "nadapuram" , about : "hai i am vyshnav"},
         {id : 1, image : "image" , churchcategory : "churchcatagory" , church_name : "name of church" , location : "vatakara" , about : "hi i am rahul"},
         {id : 1, image : "image" , churchcategory : "churchcatogary" , church_name : "name of churchs" , location : "nadapuram" , about : "hai i am vyshnav"},
-        {id : 1, image : "image" , churchcategory : "churchcatogary" , church_name : "name of churchs" , location : "nadapuram" , about : "hai i am vyshnav"},
+        
 
     ]);
 
@@ -34,11 +35,11 @@ const Parishes = () => {
     }
     return ( 
         <div class="parishes">
-                <h1 className="pari-title">Parish</h1>
-                <div class="left-scroll">
+            <h1 className="pari-title">Parish</h1>
+            <div class="left-scroll">
                 <FontAwesomeIcon style={arrowStyle} icon={faArrowAltCircleLeft} size="3x"  onClick={handleLeftScroll} />
             </div>
-                <div className="Parishes-containor">
+            <div className="Parishes-containor">
                 { Parishesdata.map((data) => (
                     <div className ="cards" key={data.id}>
                         <div className="images">
@@ -54,7 +55,7 @@ const Parishes = () => {
                             {data.about}
                         </div>
                         <div className="location">
-                            <p>location : </p>{data.location}
+                            <p>location : {data.location}</p>
                         </div>
                         <div classname="share">
                         <FontAwesomeIcon className = "shareicon" icon={faShareAlt} /> 
@@ -63,10 +64,11 @@ const Parishes = () => {
                     
                 ))
                 }
+        
             </div>
             <div class="right-scroll">
-                     <FontAwesomeIcon style={arrowStyle} icon={faArrowAltCircleRight} size="3x" onClick={handleRightScroll}/>
-                </div>
+                <FontAwesomeIcon style={arrowStyle} icon={faArrowAltCircleRight} size="3x" onClick={handleRightScroll}/>
+            </div>
         </div>
      );
 }
