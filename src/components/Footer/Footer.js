@@ -22,7 +22,6 @@ const Footer = () => {
                         </div>
                         <div className="teamsandpolicy">
                             <ul classname="policy">
-                                <h3></h3>
                                 <l1 classname="">&ensp; Privacy Policy</l1>
                                 <li className="">Teams of Use</li>
                                 <li className="">Refund Policy</li>
@@ -32,10 +31,10 @@ const Footer = () => {
                         <div className="socialmedia">
                             <ul className="icons">
                                 <h3 className="letschat">Let's chat! </h3>
-                                 <li className=""><FontAwesomeIcon icon="fa-facebook-f" /></li>
-                                 <li className=""><FontAwesomeIcon icon={}/></li> 
-                                <li className=""><FontAwesomeIcon icon={}/></li>
-                                <li className=""><FontAwesomeIcon icon={}/></li> */} 
+                                 <li className=""><FontAwesomeIcon icon={faFacebookF} /></li>
+                                 <li className=""><FontAwesomeIcon icon={faFacebookF}/></li> 
+                                <li className=""><FontAwesomeIcon icon={faFacebookF}/></li>
+                                <li className=""><FontAwesomeIcon icon={faFacebookF}/></li> 
                             </ul>
                         </div>
                  </div>
