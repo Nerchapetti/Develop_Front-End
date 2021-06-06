@@ -2,8 +2,8 @@ import './footer.css'
 
 const Footer = () => {
     return ( 
-        <div className="footer-containor">
-            <div classname="containor">
+        <div className="footer-container">
+            <div classname="container">
                 <div className="title">
                     <h1 classname="companyname">nerchapetti</h1>
                 </div>

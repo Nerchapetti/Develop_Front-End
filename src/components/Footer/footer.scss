@@ -1,43 +1,32 @@
-.footer-containor{
-    width: 100%;
-    margin: auto;
-    position: relative;
+.footer-container{
     background-color: #18191a;
     color: #AAB2BD;
-    .containor
+    .container
     {   margin: 0;
         padding: 0;
     }
     .title
     {
         font-size: 15px;
-        position: relative;
-        top: 20px;
-        left: 30px;
         color: #1a73e8;
     }
     .list-container
     {
         display: flex;
         flex-direction: row;
-    }
-    .details{
-        position: relative;
-        top: 40px;
-        left: 250px;
-    }.list li
-    {
-        padding: 10px;
-    }
-    .socialmedia
-    {
-        position: relative;
-        top: 40px;
-        padding: 10px;
-        left: 700px;
-    }
-    .teamsandpolicy
-    {
-        position: relative;   
+        justify-content: space-around;
+
+        .details{
+            .list li {
+                padding: 10px;
+            }
+        }
+        .socialmedia {
+            padding: 10px;
+        }
+
+        .teamsandpolicy {
+            position: relative;   
+        }
     }
 }

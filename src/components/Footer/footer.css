@@ -1,25 +1,19 @@
-.footer-containor {
-  width: 100%;
-  margin: auto;
-  position: relative;
+.footer-container {
   background-color: #18191a;
   color: #AAB2BD;
 }
 
-.footer-containor .containor {
+.footer-container .container {
   margin: 0;
   padding: 0;
 }
 
-.footer-containor .title {
+.footer-container .title {
   font-size: 15px;
-  position: relative;
-  top: 20px;
-  left: 30px;
   color: #1a73e8;
 }
 
-.footer-containor .list-container {
+.footer-container .list-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,26 +21,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.footer-containor .details {
-  position: relative;
-  top: 40px;
-  left: 250px;
-}
-
-.footer-containor .list li {
+.footer-container .list-container .details .list li {
   padding: 10px;
 }
 
-.footer-containor .socialmedia {
-  position: relative;
-  top: 40px;
+.footer-container .list-container .socialmedia {
   padding: 10px;
-  left: 700px;
 }
 
-.footer-containor .teamsandpolicy {
+.footer-container .list-container .teamsandpolicy {
   position: relative;
 }
 /*# sourceMappingURL=footer.css.map */
