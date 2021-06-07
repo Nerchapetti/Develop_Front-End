@@ -34,9 +34,9 @@ const Parishes = () => {
         })
     }
     return ( 
-        <div class="parishes">
+        <div className="parishes">
             <h1 className="pari-title">Parish</h1>
-            <div class="left-scroll">
+            <div className="left-scroll">
                 <FontAwesomeIcon style={arrowStyle} icon={faArrowAltCircleLeft} size="3x"  onClick={handleLeftScroll} />
             </div>
             <div className="Parishes-containor">
@@ -57,7 +57,7 @@ const Parishes = () => {
                         <div className="location">
                             <p>location : {data.location}</p>
                         </div>
-                        <div classname="share">
+                        <div className="share">
                         <FontAwesomeIcon className = "shareicon" icon={faShareAlt} /> 
                         </div>
                     </div>
@@ -66,7 +66,7 @@ const Parishes = () => {
                 }
         
             </div>
-            <div class="right-scroll">
+            <div className="right-scroll">
                 <FontAwesomeIcon style={arrowStyle} icon={faArrowAltCircleRight} size="3x" onClick={handleRightScroll}/>
             </div>
         </div>

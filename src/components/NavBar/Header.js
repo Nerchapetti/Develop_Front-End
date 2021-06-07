@@ -9,8 +9,8 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="navbar">
-        <a href="#" class="nav-logo">Nerchapetti</a>
-            <input autofocus class="search" type="search" placeholder="search.." />
+        <a href="#" className="nav-logo">Nerchapetti</a>
+            <input autoFocus className="search" type="search" placeholder="search.." />
         <ul className={click ? 'nav-menu active': "nav-menu"}>
           <li className="nav-item" onClick={closeMobileMenu}>
             <a href="#">ABOUT</a>
@@ -20,9 +20,9 @@ const Header = () => {
           </li>
         </ul>
           <div className={click ? 'hamburger active' : 'hamburger'} onClick={handleClick}>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
             </div>
       </nav>
     </header>

@@ -5,11 +5,11 @@ import { faFacebookF, faInstagram, faTwitter, faYoutube } from '@fortawesome/fre
 const Footer = () => {
     return ( 
         <div className="footer-container">
-            <div classname="container">
-                <div class="list-container">
+            <div className="container">
+                <div className="list-container">
                     <div className="title">
-                        <h1 classname="companyname">Nerchapetti</h1>
-                        <p>About nerchapetti i ii ii i i iii i ii ii i i </p>
+                        <h1 className="companyname">Nerchapetti</h1>
+                        <p>About nerchapetti </p>
                     </div>
                         <div className="details">
                             <ul className="list">
@@ -21,16 +21,16 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="teamsandpolicy">
-                            <ul classname="policy">
-                                <l1 classname="">&ensp; Privacy Policy</l1>
+                            <ul className="policy">
+                                <l1 className="">&ensp; Privacy Policy</l1>
                                 <li className="">Teams of Use</li>
                                 <li className="">Refund Policy</li>
                                 <li className="">AML Policy</li>
                             </ul>
                         </div>
                         <div className="socialmedia">
+                            <h3 className="letschat">Let's chat! </h3>
                             <ul className="icons">
-                                <h3 className="letschat">Let's chat! </h3>
                                  <li className=""><FontAwesomeIcon icon={faFacebookF} /></li>
                                  <li className=""><FontAwesomeIcon icon={faInstagram}/></li> 
                                 <li className=""><FontAwesomeIcon icon={faYoutube}/></li>
