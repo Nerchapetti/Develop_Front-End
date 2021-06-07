@@ -2,18 +2,15 @@ import { useState } from "react";
 import './Parishes.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleLeft, faArrowAltCircleRight, faShareAlt } from "@fortawesome/free-solid-svg-icons";
+import getRequest from "../../API/getRequest";
+
+
 const Parishes = () => {
+    const [Parishesdata, setParishesdata] = useState([]);
 
-    const [Parishesdata, setParishesdata] = useState([
-        {id : 1, image : "image" , churchcategory : "churchcatagory" , church_name : "name of church" , location : "vatakara" , about : "hi i am rahul"},
-        {id : 1, image : "image" , churchcategory : "churchcatogary" , church_name : "name of churchs" , location : "nadapuram" , about : "hai i am vyshnav"},
-        {id : 1, image : "image" , churchcategory : "churchcatagory" , church_name : "name of church" , location : "vatakara" , about : "hi i am rahul"},
-        {id : 1, image : "image" , churchcategory : "churchcatogary" , church_name : "name of churchs" , location : "nadapuram" , about : "hai i am vyshnav"},
-        {id : 1, image : "image" , churchcategory : "churchcatagory" , church_name : "name of church" , location : "vatakara" , about : "hi i am rahul"},
-        {id : 1, image : "image" , churchcategory : "churchcatogary" , church_name : "name of churchs" , location : "nadapuram" , about : "hai i am vyshnav"},
-        
-
-    ]);
+    getRequest('http://localhost:5000/get-all-parishes')
+    .then(data => setParishesdata(data.data))
+     
 
     const arrowStyle = {
         color: '#1a73e8'
@@ -24,6 +21,16 @@ const Parishes = () => {
             left: -700,
             behavior: 'smooth'
         })
+    }
+
+    const toBase64 = (arr) => {
+        return btoa(
+            arr.reduce((data, byte) => data + String.fromCharCode(byte), '')
+        )
+    }
+
+    const createImgURL = (data) => {
+        return `data:image/${data.image.contentType};base64,${toBase64(data.image.data.data)}`
     }
 
     const handleRightScroll = (e) => {
@@ -41,18 +48,18 @@ const Parishes = () => {
             </div>
             <div className="Parishes-containor">
                 { Parishesdata.map((data) => (
-                    <div className ="cards" key={data.id}>
+                    <div className ="cards" key={data._id}>
                         <div className="images">
-                            <img className="img" src="http://nerchapetti.com/l.jpg" alt="" />
+                            <img src={createImgURL(data)} alt="" />
                         </div>
                         <div className="catagory">
                                 {data.churchcategory}
                         </div>
                         <div className="churchname">
-                            {data.church_name}
+                            {data.churchName}
                         </div>
                         <div className="about">
-                            {data.about}
+                            {data.content}
                         </div>
                         <div className="location">
                             <p>location : {data.location}</p>
