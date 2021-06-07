@@ -2,61 +2,72 @@
     background-color: #18191a;
     color: #AAB2BD;
 
-    .container{   
-        .list-container{           
-            padding: 40px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            @media(max-width: 767px){
-                flex-direction: column;        
-            }  
-            .title{
-                font-size: 15px;
-                color: #1a73e8;
-                }
-                p{
-                    color: #AAB2BD;
-                }
-            .details{
-                .list li {
-                    padding: 10px;
+    }
+    .list-container
+    {           
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        @media(max-width: 767px){
+            flex-direction: column;
 
-                }.list li:hover{
-                    text-decoration: underline;
-                }
-            }
-            .socialmedia {
-                .icons li
-                {
+        }
+        .title  {
+            font-size: 15px;
+            color: #1a73e8;
+            text-align: center;
+        }
+        p{
+            color: #AAB2BD;
+        }
+        .details{
+            .list li {
                 padding: 10px;
-                @media(max-width: 767px){
-                    display: flex;
-                    flex-direction: ;  
-                    background-color: blueviolet;
-                    } 
-
-                }
             }
-            .teamsandpolicy {
-                .policy li{
-                        padding: 10px;
-                        }
-                        li:hover{
-                            text-decoration: underline;
-                        }
-                    }
-              }
-            .licence {
-                p{
-                    margin-left: 0 10px 0 10px;
-                    text-align: center;
-                    padding: 0px 0px 20px 0px;
-                    @media(max-width: 767px){
-                        margin: 6px;        
-                    }  
-                } 
+            .list li:hover{
+                text-decoration: underline;
             }
         }
+        .socialmedia {
+            h3{
+                text-align:left;
+                margin-top: 20px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+
+                @media(max-width: 767px){
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
+                li{
+                    padding: 10px;
+                    @media(max-width: 767px){
+                        padding:20px 35px;
+                    }
+                }
+            }
+            
     }
-        
+    .teamsandpolicy {
+        .policy {
+            
+        }li{
+            padding: 10px;}
+        li:hover{
+            text-decoration: underline;
+        }
+        }
+    }
+.licence {
+    p{
+        text-align: center;
+        padding: 0px 0px 20px 0px;
+    //     @media(max-width: 767px){
+            
+    // }
+    }
+}

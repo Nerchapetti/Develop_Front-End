@@ -38,7 +38,7 @@ const Campaigns = () => {
         <div className="Campaigns">
             <h1 className="camp-title">Campaign</h1>
 
-            <div class="left-scroll">
+            <div className="left-scroll">
                 <FontAwesomeIcon style={arrowStyle} icon={faArrowAltCircleLeft} size="3x"  onClick={handleLeftScroll} />
             </div>
 
@@ -78,7 +78,7 @@ const Campaigns = () => {
                     ))}
                 </div>
 
-            <div class="right-scroll">
+            <div className="right-scroll">
                 <FontAwesomeIcon style={arrowStyle} icon={faArrowAltCircleRight} size="3x" onClick={handleRightScroll}/>
             </div>
         </div>

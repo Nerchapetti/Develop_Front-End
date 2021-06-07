@@ -3,7 +3,7 @@
   color: #AAB2BD;
 }
 
-.footer-container .container .list-container {
+.list-container {
   padding: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,7 +17,7 @@
 }
 
 @media (max-width: 767px) {
-  .footer-container .container .list-container {
+  .list-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -25,57 +25,74 @@
   }
 }
 
-.footer-container .container .list-container .title {
+.list-container .title {
   font-size: 15px;
   color: #1a73e8;
+  text-align: center;
 }
 
-.footer-container .container .list-container p {
+.list-container p {
   color: #AAB2BD;
 }
 
-.footer-container .container .list-container .details .list li {
+.list-container .details .list li {
   padding: 10px;
 }
 
-.footer-container .container .list-container .details .list li:hover {
+.list-container .details .list li:hover {
   text-decoration: underline;
 }
 
-.footer-container .container .list-container .socialmedia .icons li {
-  padding: 10px;
+.list-container .socialmedia h3 {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.list-container .socialmedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 767px) {
-  .footer-container .container .list-container .socialmedia .icons li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .list-container .socialmedia ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: crow;
-            flex-direction: crow;
-    background-color: blueviolet;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-.footer-container .container .list-container .teamsandpolicy .policy li {
+.list-container .socialmedia ul li {
   padding: 10px;
 }
 
-.footer-container .container .list-container .teamsandpolicy li:hover {
+@media (max-width: 767px) {
+  .list-container .socialmedia ul li {
+    padding: 20px 35px;
+  }
+}
+
+.list-container .teamsandpolicy li {
+  padding: 10px;
+}
+
+.list-container .teamsandpolicy li:hover {
   text-decoration: underline;
 }
 
-.footer-container .container .licence p {
-  margin-left: 0 10px 0 10px;
+.licence p {
   text-align: center;
   padding: 0px 0px 20px 0px;
-}
-
-@media (max-width: 767px) {
-  .footer-container .container .licence p {
-    margin: 6px;
-  }
 }
 /*# sourceMappingURL=footer.css.map */
