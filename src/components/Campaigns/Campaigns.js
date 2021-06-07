@@ -2,18 +2,18 @@ import { useState } from "react";
 import './Campaigns.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleLeft, faArrowAltCircleRight, faClock, faHeart } from '@fortawesome/free-solid-svg-icons'
-
+import getRequest from "../../API/getRequest";
+import { createImgURL, toBase64 } from "../../API/utilities";
 
 const Campaigns = () => {
-    const [Parishesdata, newdata] = useState([
-        {id : 1, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
-        {id : 2, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
-        {id : 1, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
-        {id : 2, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
-        {id : 1, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
-        {id : 2, image : "image" , category : "churchcatagory" , heading : "help her fight" , paraghaph : "ddddd" ,organiser : "hi i am rahul", amount : "10k", like : "20" , time : 20, other : 20,  persontage: "80%"},
+    const [campaignData, setCampaignData] = useState([]);
 
-    ]);
+    getRequest('http://localhost:5000/api/get-all-campaigns')
+    .then(data => {
+        setCampaignData(data.data)
+    })
+    .catch(err => console.log(err))
+
 
     const arrowStyle = {
         color: '#1a73e8'
@@ -44,23 +44,23 @@ const Campaigns = () => {
 
             
                 <div className="campaign-container">
-                    { Parishesdata.map((data) => (
-                        <div className="camp-container">
+                    { campaignData.map((data) => (
+                        <div className="camp-container" key={data._id}>
                             <div className="camp-img">
-                                <img className="img" src="http://nerchapetti.com/l.jpg" alt="" />
+                                <img className="img" src={createImgURL(data)} alt="" />
                             </div>
                             <div className="camp-details-container">
                                 <div className="camp-heading">
-                                    <h1 className="title">{data.heading}</h1>
-                                    <p>{data.paraghaph}</p>
+                                    <h1 className="title">{data.title}</h1>
+                                    <p>{data.content}</p>
                                 </div>
                                 <div className="organiser-details">
                                     <img src="https://kettocdn.gumlet.io/media/individual/1358000/1358229/image/5e58e4fc7b807.jpg?w=50&dpr=1.0" alt="" />
-                                    <p>By some name</p>
+                                    <p>{data.fundRaiser}</p>
                                 </div>
 
                                 <div className="fund-details">
-                                    <h2><span>Rs 70000 </span> raised out of Rs 80000</h2>
+                                    <h2><span>Rs {data.moneyCollected} </span> raised out of Rs {data.totalAmount}</h2>
                                     <progress value="70" max="80"></progress>
                                 </div>
 
@@ -70,7 +70,7 @@ const Campaigns = () => {
                                     </div>
 
                                     <div className="supporters">
-                                        <p><FontAwesomeIcon style={{color: 'red'}} icon={faHeart} /> 3790 Supporters</p>
+                                        <p><FontAwesomeIcon style={{color: 'red'}} icon={faHeart} /> {data.supporters} Supporters</p>
                                     </div>
                                 </div>
                             </div>

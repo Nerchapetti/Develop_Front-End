@@ -3,6 +3,7 @@ import './Parishes.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleLeft, faArrowAltCircleRight, faShareAlt } from "@fortawesome/free-solid-svg-icons";
 import getRequest from "../../API/getRequest";
+import { createImgURL, toBase64 } from "../../API/utilities";
 
 
 const Parishes = () => {
@@ -23,15 +24,7 @@ const Parishes = () => {
         })
     }
 
-    const toBase64 = (arr) => {
-        return btoa(
-            arr.reduce((data, byte) => data + String.fromCharCode(byte), '')
-        )
-    }
-
-    const createImgURL = (data) => {
-        return `data:image/${data.image.contentType};base64,${toBase64(data.image.data.data)}`
-    }
+   
 
     const handleRightScroll = (e) => {
         document.querySelector('.Parishes-containor').scrollBy({
