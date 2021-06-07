@@ -1,56 +1,62 @@
 .footer-container{
     background-color: #18191a;
     color: #AAB2BD;
-    .container
-    {   
 
-    }
-    .list-container
-    {           
-        padding: 40px;
-       .title        {
-        font-size: 15px;
-        color: #1a73e8;
-        }
-        p{
-            color: #AAB2BD;
-
-        }
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        @media(max-width: 767px){
+    .container{   
+        .list-container{           
+            padding: 40px;
             display: flex;
-            flex-direction: column;
-        .details{
-            .list li {
+            flex-direction: row;
+            justify-content: space-around;
+            @media(max-width: 767px){
+                flex-direction: column;        
+            }  
+            .title{
+                font-size: 15px;
+                color: #1a73e8;
+                }
+                p{
+                    color: #AAB2BD;
+                }
+            .details{
+                .list li {
+                    padding: 10px;
+
+                }.list li:hover{
+                    text-decoration: underline;
+                }
+            }
+            .socialmedia {
+                .icons li
+                {
                 padding: 10px;
-            }.list li:hover{
-                text-decoration: underline;
+                @media(max-width: 767px){
+                    display: flex;
+                    flex-direction: ;  
+                    background-color: blueviolet;
+                    } 
+
+                }
+            }
+            .teamsandpolicy {
+                .policy li{
+                        padding: 10px;
+                        }
+                        li:hover{
+                            text-decoration: underline;
+                        }
+                    }
+              }
+            .licence {
+                p{
+                    margin-left: 0 10px 0 10px;
+                    text-align: center;
+                    padding: 0px 0px 20px 0px;
+                    @media(max-width: 767px){
+                        margin: 6px;        
+                    }  
+                } 
             }
         }
-        .socialmedia {
-            .icons li 
-            {
-            padding: 10px;
-        }
     }
-        .teamsandpolicy {
-            .policy {
-               
-            }li{
-            padding: 10px;}
-            li:hover{
-                text-decoration: underline;
-            }
-        }
-    }
-    }
-.licence {
-    p{
-        text-align: center;
-        padding: 0px 0px 20px 0px;
-    //     @media(max-width: 767px){
-            
-    // }
-}
+        

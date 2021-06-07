@@ -5,7 +5,7 @@ import { faFacebookF, faInstagram, faTwitter, faYoutube } from '@fortawesome/fre
 const Footer = () => {
     return ( 
         <div className="footer-container">
-            <div classname="container">
+            <div className="container">
                 <div class="list-container">
                     <div className="title">
                         <h1 classname="companyname">Nerchapetti</h1>
@@ -21,7 +21,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="teamsandpolicy">
-                            <ul classname="policy">
+                            <ul className="policy">
                                 <l1 classname="">&ensp; Privacy Policy</l1>
                                 <li className="">Teams of Use</li>
                                 <li className="">Refund Policy</li>

@@ -3,7 +3,7 @@
   color: #AAB2BD;
 }
 
-.footer-container .list-container {
+.footer-container .container .list-container {
   padding: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,37 +16,66 @@
       justify-content: space-around;
 }
 
-.footer-container .list-container .title {
+@media (max-width: 767px) {
+  .footer-container .container .list-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer-container .container .list-container .title {
   font-size: 15px;
   color: #1a73e8;
 }
 
-.footer-container .list-container p {
+.footer-container .container .list-container p {
   color: #AAB2BD;
 }
 
-.footer-container .list-container .details .list li {
+.footer-container .container .list-container .details .list li {
   padding: 10px;
 }
 
-.footer-container .list-container .details .list li:hover {
+.footer-container .container .list-container .details .list li:hover {
   text-decoration: underline;
 }
 
-.footer-container .list-container .socialmedia .icons li {
+.footer-container .container .list-container .socialmedia .icons li {
   padding: 10px;
 }
 
-.footer-container .list-container .teamsandpolicy li {
+@media (max-width: 767px) {
+  .footer-container .container .list-container .socialmedia .icons li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: crow;
+            flex-direction: crow;
+    background-color: blueviolet;
+  }
+}
+
+.footer-container .container .list-container .teamsandpolicy .policy li {
   padding: 10px;
 }
 
-.footer-container .list-container .teamsandpolicy li:hover {
+.footer-container .container .list-container .teamsandpolicy li:hover {
   text-decoration: underline;
 }
 
-.licence p {
+.footer-container .container .licence p {
+  margin-left: 0 10px 0 10px;
   text-align: center;
   padding: 0px 0px 20px 0px;
+}
+
+@media (max-width: 767px) {
+  .footer-container .container .licence p {
+    margin: 6px;
+  }
 }
 /*# sourceMappingURL=footer.css.map */
