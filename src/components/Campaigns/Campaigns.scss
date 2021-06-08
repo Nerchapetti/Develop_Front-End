@@ -137,6 +137,18 @@
                 justify-content: space-between;
                 font-size: 0.8rem;
             }
+
+        }
+        .share{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 20px;
+            
+            .shareicon{
+                font-size: 1.3rem;
+                outline: none;
+            }
         }
     }
 }

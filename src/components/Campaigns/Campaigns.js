@@ -5,6 +5,12 @@ import { faArrowAltCircleLeft, faArrowAltCircleRight, faClock, faHeart } from '@
 import getRequest from "../../API/getRequest";
 import { createImgURL, toBase64 } from "../../API/utilities";
 import { Link } from "react-router-dom";
+import {
+    FacebookShareButton,
+    TwitterShareButton,
+    WhatsappShareButton,
+} from "react-share";
+import { faFacebook, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Campaigns = () => {
     const [campaignData, setCampaignData] = useState();
@@ -62,9 +68,9 @@ const Campaigns = () => {
                 <div className="campaign-container">
                     { campaignData.map((data) => (
                     
-                        
-                        <Link to={createLink(data._id)}>
+                        <>
                         <div className="camp-container" key={data._id}>
+                        <Link to={createLink(data._id)}>
                             <div className="camp-img">
                                 <img className="img" src={createImgURL(data)} alt="" />
                             </div>
@@ -93,8 +99,14 @@ const Campaigns = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         </Link>
+                        <div className="share">
+                            <WhatsappShareButton url="http://nerchapetti.com"><FontAwesomeIcon className = "shareicon" icon={faWhatsapp} /> </WhatsappShareButton>
+                            <FacebookShareButton url="http://nerchapetti.com"><FontAwesomeIcon className = "shareicon" icon={faFacebook} /> </FacebookShareButton>
+                            <TwitterShareButton url="http://nerchapetti.com"><FontAwesomeIcon className = "shareicon" icon={faTwitter} /> </TwitterShareButton>
+                        </div>
+                        </div>
+                        </>
                     ))}
                 </div>
 

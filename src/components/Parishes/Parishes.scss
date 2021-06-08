@@ -1,118 +1,112 @@
-.parishes
-{
-    width: 80%;
-    margin: auto;
-    position: relative;
-    margin-top: 20px;
+.parishes {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  margin-top: 20px;
 
-    @media(max-width: 767px){
-        width: 95%;
+  @media (max-width: 767px) {
+    width: 95%;
+  }
+
+  .pari-title {
+    text-align: center;
+    font: 2.4rem;
+    @media (max-width: 767px) {
+      font-size: 2rem;
+    }
+  }
+  .left-scroll,
+  .right-scroll {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .left-scroll {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .right-scroll {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+.Parishes-containor::-webkit-scrollbar {
+  display: none;
+}
+.Parishes-containor {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: auto;
+  padding: 30px;
+  overflow-x: scroll;
+  @media (max-width: 767px) {
+    gap: 15px;
+    padding: 40px 5px;
+  }
+
+  .cards {
+    min-width: 320px;
+    max-width: 320px;
+    border-radius: 20px;
+    box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
+    @media (max-width: 767px) {
+      min-width: 300px;
+    }
+    .images {
+      border-radius: 20px 20px 0 0;
+
+      img {
+        border-radius: 20px 20px 0 0;
+        min-height: 180px;
+        max-height: 180px;
+        object-fit: cover;
+      }
+    }
+    .catagory {
+      position: relative;
+      left: 20px;
+      padding: 10px 0 10px 0;
+    }
+    .churchname {
+      position: relative;
+      left: 20px;
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+    .about {
+      position: relative;
+      padding: 10px 10px 10px 20px;
+    }
+    .location {
+      position: relative;
+      padding: 6px 10px 10px 20px;
+      p {
+        font-weight: 600;
+      }
     }
 
-    .pari-title
-    {   
-        text-align: center;
-        font: 2.4rem;
-        @media(max-width: 767px){
-            font-size: 2rem;
-        }
-    }  
-    .left-scroll, .right-scroll{
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
+    .share {
+        position: relative;
+      .shareicon {
         cursor: pointer;
-    
-    }
-    .left-scroll{
-   
+        font-size: 20px;
         position: absolute;
-        left: -50px;
-        top: 50%;
-        @media(max-width: 767px){
-            display: none;
-        }
-    
+        right: 10px;
+        bottom: 10px;
+      }
     }
-    
-    .right-scroll{
-        position: absolute;
-        right: -50px;
-        top: 50%;
-        @media(max-width: 767px){
-            display: none;
-        }
-    }
+  }
 }
-.Parishes-containor::-webkit-scrollbar{
-    display: none;
-}
-.Parishes-containor{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    margin: auto;
-    padding: 30px;
-    overflow-x: scroll;
-    @media(max-width: 767px){
-        gap: 15px;
-        padding: 40px 5px; 
-    }
-    
-    .cards{
-        min-width: 320px;
-        max-width: 320px;
-        border-radius:20px;
-        box-shadow: -2px -1px 8px 1px rgba(0,0,0,0.55);
-        -webkit-box-shadow: -2px -1px 8px 1px rgba(0,0,0,0.55);
-        -moz-box-shadow: -2px -1px 8px 1px rgba(0,0,0,0.55);
-        @media(max-width: 767px){
-            min-width: 300px;
-        }
-        .images
-        {
-            border-radius: 20px 20px 0 0;
-            
-            img{
-                border-radius: 20px 20px 0 0;
-                min-height: 180px;
-                max-height: 180px;
-                object-fit: cover;
-            }
-        }
-        .catagory
-        {
-            position: relative;
-            left: 20px;
-            padding: 10px 0 10px 0;
-        }
-        .churchname
-        {
-            position: relative;
-            left: 20px;
-            font-size: 1.4rem;
-            font-weight: 800;
-        }
-        .about
-        {
-            position: relative;
-            padding: 10px 10px 10px 20px;
-        }
-        .location{
-            position: relative;
-            padding: 6px 10px 10px 20px;
-        p{  
-            font-weight: 600;
-        }
-        }
-        .shareicon
-        {
-            cursor: pointer;
-            font-size: 20px;
-            position: relative;
-            left: 90%;   
-            bottom: 10px; 
-
-        }
-    }
-}   
