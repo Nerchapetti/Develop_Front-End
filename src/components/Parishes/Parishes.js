@@ -43,7 +43,11 @@ const Parishes = () => {
     }
 
     if(!Parishesdata){
-        return null
+        return (
+            <div className="isLoading">
+                <h1>Loading...</h1>
+            </div>
+        )
     }
 
     return ( 

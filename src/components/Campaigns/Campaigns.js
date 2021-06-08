@@ -44,7 +44,11 @@ const Campaigns = () => {
 
 
     if(!campaignData){
-        return null
+        return (
+            <div className="isLoading">
+                <h1>Loading...</h1>
+            </div>
+        )
     }
     return ( 
         <div className="Campaigns">
