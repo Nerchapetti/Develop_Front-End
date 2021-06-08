@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './Parishes.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleLeft, faArrowAltCircleRight, faShareAlt } from "@fortawesome/free-solid-svg-icons";
 import getRequest from "../../API/getRequest";
 import { createImgURL, toBase64 } from "../../API/utilities";
+import { Link } from "react-router-dom";
 
 
 const Parishes = () => {
-    const [Parishesdata, setParishesdata] = useState([]);
+    const [Parishesdata, setParishesdata] = useState();
 
-    getRequest('http://localhost:5000/get-all-parishes')
-    .then(data => setParishesdata(data.data))
+    useEffect(() => {
+        getRequest('http://localhost:5000/get-all-parishes')
+        .then(data => {
+            setParishesdata(data.data)
+            console.log(data)
+        })
+       
+        
+    }, [])
      
 
     const arrowStyle = {
@@ -33,6 +41,11 @@ const Parishes = () => {
             behavior: 'smooth'
         })
     }
+
+    if(!Parishesdata){
+        return null
+    }
+
     return ( 
         <div className="parishes">
             <h1 className="pari-title">Parish</h1>
@@ -41,26 +54,28 @@ const Parishes = () => {
             </div>
             <div className="Parishes-containor">
                 { Parishesdata.map((data) => (
-                    <div className ="cards" key={data._id}>
-                        <div className="images">
-                            <img src={createImgURL(data)} alt="" />
+                    <Link to={`/parish-details/${data._id}`}>
+                        <div className ="cards" key={data._id}>
+                            <div className="images">
+                                <img src={createImgURL(data)} alt="" />
+                            </div>
+                            <div className="catagory">
+                                    {data.churchcategory}
+                            </div>
+                            <div className="churchname">
+                                {data.churchName}
+                            </div>
+                            <div className="about">
+                                {data.content}
+                            </div>
+                            <div className="location">
+                                <p>location : {data.location}</p>
+                            </div>
+                            <div className="share">
+                            <FontAwesomeIcon className = "shareicon" icon={faShareAlt} /> 
+                            </div>
                         </div>
-                        <div className="catagory">
-                                {data.churchcategory}
-                        </div>
-                        <div className="churchname">
-                            {data.churchName}
-                        </div>
-                        <div className="about">
-                            {data.content}
-                        </div>
-                        <div className="location">
-                            <p>location : {data.location}</p>
-                        </div>
-                        <div className="share">
-                        <FontAwesomeIcon className = "shareicon" icon={faShareAlt} /> 
-                        </div>
-                    </div>
+                    </Link>
                     
                 ))
                 }

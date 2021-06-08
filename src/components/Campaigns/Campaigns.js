@@ -1,19 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import './Campaigns.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleLeft, faArrowAltCircleRight, faClock, faHeart } from '@fortawesome/free-solid-svg-icons'
 import getRequest from "../../API/getRequest";
 import { createImgURL, toBase64 } from "../../API/utilities";
+import { Link } from "react-router-dom";
 
 const Campaigns = () => {
-    const [campaignData, setCampaignData] = useState([]);
+    const [campaignData, setCampaignData] = useState();
 
-    getRequest('http://localhost:5000/api/get-all-campaigns')
-    .then(data => {
-        setCampaignData(data.data)
-    })
-    .catch(err => console.log(err))
+    useEffect(() => {
+        getRequest('http://localhost:5000/api/get-all-campaigns')
+        .then(data => {
+            console.log(data)
+            setCampaignData(data.data)
+        })
+        .catch(err => console.log(err))
+    }, [])
 
+
+    const createLink = (id) => {
+        return `/campaign-details/${id}`
+    }
 
     const arrowStyle = {
         color: '#1a73e8'
@@ -34,6 +42,10 @@ const Campaigns = () => {
         })
     }
 
+
+    if(!campaignData){
+        return null
+    }
     return ( 
         <div className="Campaigns">
             <h1 className="camp-title">Campaign</h1>
@@ -45,6 +57,9 @@ const Campaigns = () => {
             
                 <div className="campaign-container">
                     { campaignData.map((data) => (
+                    
+                        
+                        <Link to={createLink(data._id)}>
                         <div className="camp-container" key={data._id}>
                             <div className="camp-img">
                                 <img className="img" src={createImgURL(data)} alt="" />
@@ -75,6 +90,7 @@ const Campaigns = () => {
                                 </div>
                             </div>
                         </div>
+                        </Link>
                     ))}
                 </div>
 
