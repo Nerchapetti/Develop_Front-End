@@ -1,26 +1,23 @@
 .main-container {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 767px) {
   .main-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
 .main-container .church_detail {
-  width: 75%;
   padding: 30px;
 }
 
@@ -40,7 +37,11 @@
 
 .main-container .details {
   padding: 20px;
-  width: 25%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 @media (max-width: 767px) {
@@ -88,6 +89,8 @@
 }
 
 .main-container .details .bank_details .list .button button {
+  cursor: pointer;
+  outline: none;
   height: 40px;
   width: 250px;
   background-color: #5493e6;
