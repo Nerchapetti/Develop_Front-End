@@ -76,7 +76,7 @@ const Campaigns = () => {
 
                                 <div className="fund-details">
                                     <h2><span>Rs {data.moneyCollected} </span> raised out of Rs {data.totalAmount}</h2>
-                                    <progress value="70" max="80"></progress>
+                                    <progress value={data.moneyCollected} max={data.totalAmount}></progress>
                                 </div>
 
                                 <div className="extra-details">
