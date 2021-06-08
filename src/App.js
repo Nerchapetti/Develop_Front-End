@@ -1,19 +1,20 @@
-import Campaigns from "./components/Campaigns/Campaigns";
-import Footer from "./components/Footer/Footer";
-import Navbar from "./components/NavBar/Header";
-import Parishes from "./components/Parishes/Parishes";
-import Parishes_detail from "./components/parishes_page/parishes_page";
-
-
+import { BrowserRouter as Router, Switch, Route ,Link, Redirect} from "react-router-dom";
+import About from "./components/AboutPage/About";
+import CampaignDetails from "./components/Campaigns/CampaignDetails";
+import HomePage from "./components/HomePage/HomePage";
+import ParisheDetails from "./components/Parishes/ParishDetails";
 
 function App() {
   return (
     <div className="App">
-        <Navbar />
-        <Parishes_detail />
-        {/* <Parishes />
-        <Campaigns /> */}
-        <Footer />
+    <Router>
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/about" component={About} />
+      <Route path="/campaign-details/:id" component={CampaignDetails} />
+      <Route path="/parish-details/:id" component={ParisheDetails} />
+    </Router>
+      
+      
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -9,14 +10,14 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="navbar">
-        <a href="#" className="nav-logo">Nerchapetti</a>
+      <Link className="nav-logo" to="/">Nerchapetti</Link>
             <input autoFocus className="search" type="search" placeholder="search.." />
         <ul className={click ? 'nav-menu active': "nav-menu"}>
           <li className="nav-item" onClick={closeMobileMenu}>
-            <a href="#">ABOUT</a>
+            <Link to="/about">ABOUT</Link>
           </li>
           <li className="nav-item" onClick={closeMobileMenu}>
-            <a href="#">CONTACT</a>
+            <Link to="/contact">CONTACT</Link>
           </li>
         </ul>
           <div className={click ? 'hamburger active' : 'hamburger'} onClick={handleClick}>
