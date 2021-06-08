@@ -22,7 +22,8 @@
   }
 }
 
-.parishes .left-scroll, .parishes .right-scroll {
+.parishes .left-scroll,
+.parishes .right-scroll {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -132,11 +133,15 @@
   font-weight: 600;
 }
 
-.Parishes-containor .cards .shareicon {
+.Parishes-containor .cards .share {
+  position: relative;
+}
+
+.Parishes-containor .cards .share .shareicon {
   cursor: pointer;
   font-size: 20px;
-  position: relative;
-  left: 90%;
+  position: absolute;
+  right: 10px;
   bottom: 10px;
 }
 /*# sourceMappingURL=Parishes.css.map */

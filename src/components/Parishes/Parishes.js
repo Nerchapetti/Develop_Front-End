@@ -5,10 +5,26 @@ import { faArrowAltCircleLeft, faArrowAltCircleRight, faShareAlt } from "@fortaw
 import getRequest from "../../API/getRequest";
 import { createImgURL, toBase64 } from "../../API/utilities";
 import { Link } from "react-router-dom";
+import {
+    FacebookShareButton,
+    LinkedinShareButton,
+    TelegramShareButton,
+    TwitterShareButton,
+    WhatsappShareButton,
+} from "react-share";
+
 
 
 const Parishes = () => {
     const [Parishesdata, setParishesdata] = useState();
+
+    const shareButtonProps = {
+        url: "https://github.com/greglobinski/react-custom-share",
+        network: "Facebook",
+        text: "Give it a try - react-custom-share component",
+        longtext:
+          "Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch."
+    };
 
     useEffect(() => {
         getRequest('http://localhost:5000/get-all-parishes')
@@ -76,7 +92,11 @@ const Parishes = () => {
                                 <p>location : {data.location}</p>
                             </div>
                             <div className="share">
-                            <FontAwesomeIcon className = "shareicon" icon={faShareAlt} /> 
+                            
+                                
+                                
+                                <WhatsappShareButton url="http://nerchapetti.com"><FontAwesomeIcon className = "shareicon" icon={faShareAlt} /> </WhatsappShareButton>
+                            
                             </div>
                         </div>
                     </Link>
