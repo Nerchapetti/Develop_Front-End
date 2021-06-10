@@ -1,6 +1,7 @@
 import './footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return ( 
@@ -16,7 +17,7 @@ const Footer = () => {
                                 <li className="">About</li>
                                 <li className="">Contact</li>
                                 <li className="">Enroll</li>
-                                <li className="">Patron</li>
+                                <li className=""><Link to="/patron">Patron</Link></li>
                                 <li className="">Pricing</li>
                             </ul>
                         </div>

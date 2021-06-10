@@ -83,6 +83,10 @@
   }
 }
 
+.list-container .teamsandpolicy .policy {
+  margin-top: 10px;
+}
+
 .list-container .teamsandpolicy li {
   padding: 10px;
 }
