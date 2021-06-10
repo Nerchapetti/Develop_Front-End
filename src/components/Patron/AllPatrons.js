@@ -31,25 +31,64 @@ const AllPatrons = () => {
       <Header />
       {patrons.map((patron) => (
         <>
-        <Link to={`/patron/${patron._id}/about`}>
           <div className="allpatrons">
-            <h2>Patron Details</h2>
-            <div className="detail-card">
-              <div className="name-cards">
-                <img src="http://www.nerchapetti.com/patron/images/priest.png" />
-                <p>{patron.Name}</p>
+            <Link to={`/patron/${patron._id}/about`}>
+              <div className="patron">
+                <div className="image">
+                  <img src="http://www.nerchapetti.com/patron/images/priest.png" />
+                </div>
+                <div className="details">
+                  <h1>Name</h1>
+                </div>
               </div>
-              <div className="name-cards">
-                <img src="http://www.nerchapetti.com/patron/images/priest.png" />
-                <p>{patron.Name}</p>
+            </Link>
+
+            <Link to={`/patron/${patron._id}/about`}>
+              <div className="patron">
+                <div className="image">
+                  <img src="http://www.nerchapetti.com/patron/images/priest.png" />
+                </div>
+                <div className="details">
+                  <h1>Name</h1>
+                </div>
               </div>
-              <div className="name-cards">
-                <img src="http://www.nerchapetti.com/patron/images/priest.png" />
-                <p>{patron.Name}</p>
+            </Link>
+
+            <Link to={`/patron/${patron._id}/about`}>
+              <div className="patron">
+                <div className="image">
+                  <img src="http://www.nerchapetti.com/patron/images/priest.png" />
+                </div>
+                <div className="details">
+                  <h1>Name</h1>
+                </div>
               </div>
-            </div>
+            </Link>
+
+            <Link to={`/patron/${patron._id}/about`}>
+              <div className="patron">
+                <div className="image">
+                  <img src="http://www.nerchapetti.com/patron/images/priest.png" />
+                </div>
+                <div className="details">
+                  <h1>Name</h1>
+                </div>
+              </div>
+            </Link>
+
+            <Link to={`/patron/${patron._id}/about`}>
+              <div className="patron">
+                <div className="image">
+                  <img src="http://www.nerchapetti.com/patron/images/priest.png" />
+                </div>
+                <div className="details">
+                  <h1>Name</h1>
+                </div>
+              </div>
+            </Link>
           </div>
-          </Link>
+
+         
         </>
       ))}
       <Footer />

@@ -16,7 +16,7 @@
 
 .main .main-container .section h1 {
   padding: 40px;
-  color: #1A73E8;
+  color: #1a73e8;
   font-weight: 800px;
   font-size: 50px;
 }
@@ -153,54 +153,44 @@
   margin: 2px 0px 2px 20px;
 }
 
-.allpatrons h2 {
-  margin: 20px 40px;
-}
-
-.allpatrons .detail-card {
-  margin: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.allpatrons {
+  width: 80%;
+  margin: 50px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 30px;
+  gap: 20px;
 }
 
-@media (max-width: 767px) {
-  .allpatrons .detail-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: auto;
-    margin-bottom: 20px;
-  }
+.allpatrons .patron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  padding: 20px 0;
 }
 
-.allpatrons .detail-card .name-cards {
+.allpatrons .patron .image {
+  width: 90%;
   margin: auto;
-  min-width: 250px;
-  max-width: 250px;
-  border-radius: 20px;
-  box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
-  -webkit-box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
-  -moz-box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
 }
 
-.allpatrons .detail-card .name-cards img {
-  height: 250px;
-  width: 250px;
-}
-
-.allpatrons .detail-card .name-cards p {
-  font-weight: 500;
-  font-size: 25px;
-  text-align: center;
+.allpatrons .patron .details h1 {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=Patron.css.map */
