@@ -123,7 +123,7 @@ const CampaignDetails = () => {
                 <div className="supporters">
                   <p>
                     <FontAwesomeIcon style={{ color: "red" }} icon={faHeart} />{" "}
-                    5 Supporters
+                    {campaignData.supporters} Supporters
                   </p>
                 </div>
               </div>
