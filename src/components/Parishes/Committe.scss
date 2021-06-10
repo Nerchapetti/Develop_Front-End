@@ -1,0 +1,47 @@
+.parish-committe{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    .member-container{
+        width: 48%;
+        border-radius: 10px;
+        box-shadow: 0 4px 11px 3px hsla(0,0%,75.3%,.288)!important;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        @media(max-width: 1024px){
+            width: 100%;
+
+        }
+        .image{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            @media(max-width: 767px){
+                width: 80px;
+                height: 80px;
+    
+            }
+        }
+
+        .member-details{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .name{
+
+            }
+            .member-position{
+
+            }
+            .member-contact{
+
+            }
+        }
+
+    }
+}

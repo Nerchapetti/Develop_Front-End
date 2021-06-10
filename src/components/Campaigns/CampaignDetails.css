@@ -44,6 +44,31 @@
   }
 }
 
+.campaign-details-container .camp-details-inner-container .left-camp-container .share {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .campaign-details-container .camp-details-inner-container .left-camp-container .share {
+    width: 80%;
+  }
+}
+
+.campaign-details-container .camp-details-inner-container .left-camp-container .share .shareicon {
+  font-size: 2rem;
+}
+
 .campaign-details-container .camp-details-inner-container .left-camp-container .about {
   width: 90%;
 }
@@ -94,10 +119,25 @@
   height: 20px;
 }
 
+.campaign-details-container .camp-details-inner-container .right-camp-container .amount-details .extra-details {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2rem;
+}
+
 .campaign-details-container .camp-details-inner-container .right-camp-container .amount-details .payment {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 /*# sourceMappingURL=CampaignDetails.css.map */
