@@ -1,6 +1,7 @@
 .main {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .main .main-container {
@@ -8,6 +9,18 @@
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
+}
+
+@media (max-width: 767px) {
+  .main .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .main .main-container .section {
@@ -23,6 +36,7 @@
 
 .main .main-container .section button {
   cursor: pointer;
+  display: none;
   outline: none;
   height: 40px;
   width: 250px;
@@ -46,6 +60,23 @@
   width: 300px;
 }
 
+@media (max-width: 767px) {
+  .main .main-container img {
+    width: 250px;
+    height: 250PX;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .details .detail {
+    margin-left: -10px;
+    font-size: 10px;
+  }
+}
+
 .details .detail ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,9 +88,22 @@
   padding: 20px;
 }
 
+@media (max-width: 767px) {
+  .details .detail ul {
+    margin: auto;
+    padding: 4px;
+  }
+}
+
 .details .detail ul li {
   padding: 15px;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .details .detail ul li {
+    padding: 6px;
+  }
 }
 
 .details .detail ul li:hover {
