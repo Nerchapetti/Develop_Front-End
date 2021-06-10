@@ -59,9 +59,7 @@
     min-width: 320px;
     max-width: 320px;
     border-radius: 20px;
-    box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
-    -webkit-box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
-    -moz-box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
+    box-shadow: 0 4px 11px 3px hsla(0, 0%, 75.3%, 0.288) !important;
     @media (max-width: 767px) {
       min-width: 300px;
     }

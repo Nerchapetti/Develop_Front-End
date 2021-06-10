@@ -39,6 +39,7 @@ const AllPatrons = () => {
                 </div>
                 <div className="details">
                   <h1>Name</h1>
+                  <p>some beatuiful bio of this patron</p>
                 </div>
               </div>
             </Link>
@@ -50,6 +51,18 @@ const AllPatrons = () => {
                 </div>
                 <div className="details">
                   <h1>Name</h1>
+                  <p>some beatuiful bio of this patron</p>
+                </div>
+              </div>
+            </Link>
+            <Link to={`/patron/${patron._id}/about`}>
+              <div className="patron">
+                <div className="image">
+                  <img src="http://www.nerchapetti.com/patron/images/priest.png" />
+                </div>
+                <div className="details">
+                  <h1>Name</h1>
+                  <p>some beatuiful bio of this patron</p>
                 </div>
               </div>
             </Link>
@@ -61,6 +74,7 @@ const AllPatrons = () => {
                 </div>
                 <div className="details">
                   <h1>Name</h1>
+                  <p>some beatuiful bio of this patron</p>
                 </div>
               </div>
             </Link>
@@ -72,17 +86,7 @@ const AllPatrons = () => {
                 </div>
                 <div className="details">
                   <h1>Name</h1>
-                </div>
-              </div>
-            </Link>
-
-            <Link to={`/patron/${patron._id}/about`}>
-              <div className="patron">
-                <div className="image">
-                  <img src="http://www.nerchapetti.com/patron/images/priest.png" />
-                </div>
-                <div className="details">
-                  <h1>Name</h1>
+                  <p>some beatuiful bio of this patron</p>
                 </div>
               </div>
             </Link>

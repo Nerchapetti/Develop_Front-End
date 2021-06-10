@@ -124,34 +124,47 @@
 }
 
 .allpatrons {
-    width: 80%;
-    margin: 50px auto;
+  width: 80%;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   flex-direction: row;
   gap: 20px;
-@media(max-width: 767px){
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 767px) {
     grid-template-columns: 1fr;
-}
-
+    width: 95%;
+    gap: 30px;
+  }
   .patron {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 80%;
-    margin: auto;
+    justify-content: space-between;
     border-radius: 10px;
     box-shadow: 0 4px 11px 3px hsla(0, 0%, 75.3%, 0.288) !important;
-    padding: 20px 0;
+    padding: 20px 10px;
 
     .image {
       width: 90%;
       margin: auto;
+      img{
+          border-radius: 50%;
+          height: 150px;
+          width: 150px;
+        
+      }
     }
 
     .details {
+
       h1 {
-        font-size: 2rem;        
+        font-size: 1.5rem;
+      }
+      p{
+
       }
     }
   }

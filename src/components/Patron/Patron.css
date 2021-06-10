@@ -167,10 +167,19 @@
   gap: 20px;
 }
 
+@media (max-width: 1024px) {
+  .allpatrons {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 767px) {
   .allpatrons {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    width: 95%;
+    gap: 30px;
   }
 }
 
@@ -178,19 +187,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
-  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
           box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
-  padding: 20px 0;
+  padding: 20px 10px;
 }
 
 .allpatrons .patron .image {
@@ -198,7 +208,13 @@
   margin: auto;
 }
 
+.allpatrons .patron .image img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
 .allpatrons .patron .details h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=Patron.css.map */
