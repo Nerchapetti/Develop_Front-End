@@ -32,8 +32,23 @@ const AllPatrons = () => {
       {patrons.map((patron) => (
         <>
         <Link to={`/patron/${patron._id}/about`}>
-          <p>Patron Details</p>
-          <p>{patron.Name}</p>
+          <div className="allpatrons">
+            <h2>Patron Details</h2>
+            <div className="detail-card">
+              <div className="name-cards">
+                <img src="http://www.nerchapetti.com/patron/images/priest.png" />
+                <p>{patron.Name}</p>
+              </div>
+              <div className="name-cards">
+                <img src="http://www.nerchapetti.com/patron/images/priest.png" />
+                <p>{patron.Name}</p>
+              </div>
+              <div className="name-cards">
+                <img src="http://www.nerchapetti.com/patron/images/priest.png" />
+                <p>{patron.Name}</p>
+              </div>
+            </div>
+          </div>
           </Link>
         </>
       ))}

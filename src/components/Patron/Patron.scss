@@ -129,3 +129,37 @@
         margin: 2px 0px 2px 20px;
     }
 }
+.allpatrons
+{
+    
+    h2{
+        margin: 20px 40px;
+    }
+    .detail-card
+    {   
+            margin: 30px;
+            // background-color: blue;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        .name-cards{
+            margin: auto;
+            min-width: 250px;
+            max-width: 250px;
+            border-radius: 20px;
+            box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
+            -webkit-box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
+            -moz-box-shadow: -2px -1px 8px 1px rgba(0, 0, 0, 0.55);
+            img{
+                height: 250px;
+                width: 250px;
+            }
+            p{
+                
+                font-weight: 500;
+                font-size: 25px;
+                text-align: center;
+            }
+       }
+    }
+}
