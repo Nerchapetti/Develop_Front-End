@@ -167,6 +167,13 @@
   gap: 20px;
 }
 
+@media (max-width: 767px) {
+  .allpatrons {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .allpatrons .patron {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,6 +186,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
+  margin: auto;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
           box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
