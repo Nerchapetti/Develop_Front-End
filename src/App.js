@@ -3,7 +3,9 @@ import About from "./components/AboutPage/About";
 import CampaignDetails from "./components/Campaigns/CampaignDetails";
 import HomePage from "./components/HomePage/HomePage";
 import ParisheDetails from "./components/Parishes/ParishDetails";
+import AllPatrons from "./components/Patron/AllPatrons";
 import patron from "./components/Patron/Patron";
+
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
       <Route exact path="/about" component={About} />
       <Route path="/campaign-details/:id" component={CampaignDetails} />
       <Route path="/parish-details/:id" component={ParisheDetails} />
-      <Route exact path="/patron" component={patron} />
+      <Route path="/patrons" component={AllPatrons} />
+      <Route path="/patron/:id" component={patron} />
     </Router>
     </div>
   );

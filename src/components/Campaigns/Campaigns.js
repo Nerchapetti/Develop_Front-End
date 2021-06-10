@@ -12,9 +12,9 @@ import {
 } from "react-share";
 import { faFacebook, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
-const Campaigns = () => {
+const Campaigns = ({ids}) => {
     const [campaignData, setCampaignData] = useState();
-
+    const [campaign, setcampaign] = useState([])
     useEffect(() => {
         getRequest('http://localhost:5000/api/get-all-campaigns')
         .then(data => {
@@ -23,7 +23,25 @@ const Campaigns = () => {
         })
         .catch(err => console.log(err))
     }, [])
+    useEffect(() => {
+        if(ids && campaignData){
+            console.log(ids);
+            console.log("============================");
+            setcampaign([])
+            ids.forEach(i => {
+                let newP = campaignData.find(p => p._id === i)
+                console.log(newP);
+                setcampaign(state => [...state, newP])
 
+            })
+        } else{
+            console.log('||||||||||||||||||||||');
+            console.log(campaignData);
+            let p = campaignData
+            setcampaign(p)
+            console.log(campaign);
+        }
+    }, [campaignData])
 
     const createLink = (id) => {
         return `/campaign-details/${id}`
@@ -48,8 +66,12 @@ const Campaigns = () => {
         })
     }
 
+    const handleClick = (id) => {
+        window.location = `/campaign-details/${id}`
+    }
 
-    if(!campaignData){
+
+    if(!campaign){
         return (
             <div className="isLoading">
                 <h1>Loading...</h1>
@@ -66,11 +88,11 @@ const Campaigns = () => {
 
             
                 <div className="campaign-container">
-                    { campaignData.map((data) => (
+                    { campaign.map((data) => (
                     
                         <>
                         <div className="camp-container" key={data._id}>
-                        <Link to={createLink(data._id)}>
+                        <Link to={createLink(data._id)} onClick={() => handleClick(data._id)}>
                             <div className="camp-img">
                                 <img className="img" src={createImgURL(data)} alt="" />
                             </div>

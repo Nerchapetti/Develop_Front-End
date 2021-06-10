@@ -17,7 +17,7 @@ const Footer = () => {
                                 <li className="">About</li>
                                 <li className="">Contact</li>
                                 <li className="">Enroll</li>
-                                <li className=""><Link to="/patron">Patron</Link></li>
+                                <li className=""><Link to="/patrons">Patron</Link></li>
                                 <li className="">Pricing</li>
                             </ul>
                         </div>

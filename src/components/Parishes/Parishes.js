@@ -15,26 +15,41 @@ import {
 
 
 
-const Parishes = () => {
+const Parishes = ({ids}) => {
     const [Parishesdata, setParishesdata] = useState();
-
-    const shareButtonProps = {
-        url: "https://github.com/greglobinski/react-custom-share",
-        network: "Facebook",
-        text: "Give it a try - react-custom-share component",
-        longtext:
-          "Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch."
-    };
-
+    const [Parishes, setParishes] = useState([])
     useEffect(() => {
         getRequest('http://localhost:5000/get-all-parishes')
         .then(data => {
             setParishesdata(data.data)
             console.log(data)
+            
         })
+
        
         
     }, [])
+
+
+    useEffect(() => {
+        if(ids && Parishesdata){
+            console.log(ids);
+            console.log("============================");
+            setParishes([])
+            ids.forEach(i => {
+                let newP = Parishesdata.find(p => p._id === i)
+                console.log(newP);
+                setParishes(state => [...state, newP])
+
+            })
+        } else{
+            console.log('||||||||||||||||||||||');
+            console.log(Parishesdata);
+            let p = Parishesdata
+            setParishes(p)
+            console.log(Parishes);
+        }
+    }, [Parishesdata])
      
 
     const arrowStyle = {
@@ -58,12 +73,16 @@ const Parishes = () => {
         })
     }
 
-    if(!Parishesdata){
+    if(!Parishes){
         return (
             <div className="isLoading">
                 <h1>Loading...</h1>
             </div>
         )
+    }
+
+    const handleClick = (id) => {
+        window.location = `/parish-details/${id}`
     }
 
     return ( 
@@ -73,8 +92,8 @@ const Parishes = () => {
                 <FontAwesomeIcon style={arrowStyle} icon={faArrowAltCircleLeft} size="3x"  onClick={handleLeftScroll} />
             </div>
             <div className="Parishes-containor">
-                { Parishesdata.map((data) => (
-                    <Link to={`/parish-details/${data._id}`}>
+                { Parishes.map((data) => (
+                    <Link to={`/parish-details/${data._id}`} onClick={() => handleClick(data._id)}>
                         <div className ="cards" key={data._id}>
                             <div className="images">
                                 <img src={createImgURL(data)} alt="" />
@@ -111,4 +130,5 @@ const Parishes = () => {
         </div>
      );
 }
+
 export default Parishes;
