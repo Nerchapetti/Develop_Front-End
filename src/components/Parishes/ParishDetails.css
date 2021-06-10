@@ -5,20 +5,15 @@
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 150px;
 }
 
 @media (max-width: 767px) {
   .main-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    gap: 50px;
   }
-}
-
-.main-container .church_detail {
-  padding: 30px;
 }
 
 @media (max-width: 767px) {
@@ -40,13 +35,59 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  -ms-grid-column-align: center;
-      justify-self: center;
 }
 
 @media (max-width: 767px) {
   .main-container .details {
     width: 90%;
+    padding: 0;
+    margin: auto;
   }
+}
+
+.main-container .parish-contents {
+  width: 90%;
+  margin: auto;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.inner-nav {
+  margin-top: 40px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.inner-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .inner-nav ul {
+    padding: 0px;
+  }
+}
+
+.inner-nav ul li {
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .inner-nav ul li {
+    padding: 5px;
+  }
+}
+
+.inner-nav ul li:hover {
+  font-weight: 600;
 }
 /*# sourceMappingURL=ParishDetails.css.map */

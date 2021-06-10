@@ -1,0 +1,64 @@
+.parish-committe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.parish-committe .member-container {
+  width: 48%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 1024px) {
+  .parish-committe .member-container {
+    width: 100%;
+  }
+}
+
+.parish-committe .member-container .image {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .parish-committe .member-container .image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.parish-committe .member-container .member-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+/*# sourceMappingURL=Committe.css.map */

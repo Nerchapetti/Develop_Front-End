@@ -88,7 +88,7 @@ const Parishes = ({ ids }) => {
   }
 
   const handleClick = (id) => {
-    window.location = `/parish-details/${id}`;
+    window.location = `/parish-details/${id}/about`;
   };
 
   return (
@@ -105,7 +105,7 @@ const Parishes = ({ ids }) => {
       <div className="Parishes-containor">
         {Parishes.map((data) => (
           <Link
-            to={`/parish-details/${data._id}`}
+            to={`/parish-details/${data._id}/about`}
             onClick={() => handleClick(data._id)}
           >
             <div className="cards" key={data._id}>
