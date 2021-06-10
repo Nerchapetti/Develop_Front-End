@@ -169,6 +169,20 @@
   gap: 30px;
 }
 
+@media (max-width: 767px) {
+  .allpatrons .detail-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
 .allpatrons .detail-card .name-cards {
   margin: auto;
   min-width: 250px;
