@@ -13,17 +13,17 @@ const Footer = () => {
                         <p>About nerchapetti </p>
                     </div>
                         <div className="details">
-                            <ul className="list">
+                            <ul className="list-footer">
                                 <li className="">About</li>
                                 <li className="">Contact</li>
                                 <li className="">Enroll</li>
-                                <li className=""><Link to="/patrons">Patron</Link></li>
+                                <li className=""><Link to="/patrons" class="link">Patron</Link></li>
                                 <li className="">Pricing</li>
                             </ul>
                         </div>
                         <div className="teamsandpolicy">
                             <ul className="policy">
-                                <l1 className="">&ensp; Privacy Policy</l1>
+                                <li className="">Privacy Policy</li>
                                 <li className="">Teams of Use</li>
                                 <li className="">Refund Policy</li>
                                 <li className="">AML Policy</li>
@@ -31,7 +31,7 @@ const Footer = () => {
                         </div>
                         <div className="socialmedia">
                             <h3 className="letschat">Let's chat! </h3>
-                            <ul className="icons">
+                            <ul className="icons-footer">
                                  <li className=""><FontAwesomeIcon icon={faFacebookF} /></li>
                                  <li className=""><FontAwesomeIcon icon={faInstagram}/></li> 
                                 <li className=""><FontAwesomeIcon icon={faYoutube}/></li>

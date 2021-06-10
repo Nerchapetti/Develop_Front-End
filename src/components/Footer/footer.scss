@@ -22,17 +22,20 @@
             color: #AAB2BD;
         }
         .details{
-            .list li {
+            .list-footer li {
                 padding: 10px;
             }
-            .list li:hover{
+            .link{
+                color: #AAB2BD; 
+            }
+            .list-footer li:hover{
                 text-decoration: underline;
             }
         }
         .socialmedia {
             h3{
                 text-align:left;
-                margin-top: 20px;
+                margin-top: 10px;
             }
             ul{
                 display: flex;
@@ -54,7 +57,7 @@
     }
     .teamsandpolicy {
         .policy {
-            margin-top: 10px;
+            margin-top: 5px;
         }li{
             padding: 10px;
                 
