@@ -33,6 +33,17 @@ const Patron = () => {
           console.log(err);
         });
     }, []);
+
+    const handleClick = (e) => {
+    
+      document.querySelectorAll(".detail li").forEach(i => {
+        i.classList.remove('active')
+      })
+  
+      e.target.parentElement.classList.add("active")
+  
+    }
+  
   
     console.log(id);
     const routes = [
@@ -83,22 +94,22 @@ const Patron = () => {
           <div>
             <div className="detail">
               <ul>
-                <li>
+                <li className="active" onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/about`}>About</Link>
                 </li>
-                <li>
+                <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/contact`}>Contact</Link>
                 </li>
-                <li>
+                <li  onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/orientation`}>Orientation</Link>
                 </li>
-                <li>
+                <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/family`}>Family</Link>
                 </li>
-                <li>
+                <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/campaigns`}>Campaigns</Link>
                 </li>
-                <li>
+                <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/parish`}>Parish</Link>
                 </li>
               </ul>

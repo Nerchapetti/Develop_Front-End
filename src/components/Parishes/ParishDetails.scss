@@ -41,18 +41,20 @@
     }
 }
 .inner-nav{
-    margin-top: 40px;   
+    margin: 30px;
     justify-self: center; 
 
     ul{
         display: flex;
         flex-direction: row;
-        padding: 20px;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0 4px 11px 3px hsla(0, 0%, 75.3%, 0.288) !important;
         @media(max-width: 767px){
             padding: 0px;
         }
         li{
-            padding: 15px;
+            padding: 10px 15px;
             text-transform: uppercase;
             @media(max-width: 767px){
                 padding: 5px;
@@ -60,6 +62,9 @@
         }
         li:hover{
             font-weight: 600;
+        }
+        .active{
+            background-color: rgb(225, 229, 248);
         }
     }
 }

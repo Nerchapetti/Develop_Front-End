@@ -7,26 +7,31 @@ import {
   faShareAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import getRequest from "../../API/getRequest";
-import { createImgURL, toBase64 } from "../../API/utilities";
+import { createImgURL } from "../../API/utilities";
 import { Link } from "react-router-dom";
 import {
-  FacebookShareButton,
-  LinkedinShareButton,
-  TelegramShareButton,
-  TwitterShareButton,
   WhatsappShareButton,
 } from "react-share";
 
 const Parishes = ({ ids }) => {
   const [Parishesdata, setParishesdata] = useState();
   const [Parishes, setParishes] = useState([]);
+  const [error, seterror] = useState("")
   useEffect(() => {
     if (!ids) {
       getRequest("http://localhost:5000/get-all-parishes").then((data) => {
-        setParishesdata(data.data);
-        console.log(data);
-        localStorage.setItem("parishes", JSON.stringify(data.data));
-      });
+        if(data.status === 'ok'){
+          setParishesdata(data.data);
+          console.log(data);
+          localStorage.setItem("parishes", JSON.stringify(data.data));
+        }
+        else{
+          seterror("some internal server error")
+          console.log(data)
+        }
+      }).catch(err => {
+        seterror(err)
+      })
     }
   }, []);
 
@@ -46,10 +51,19 @@ const Parishes = ({ ids }) => {
         });
       } else {
         getRequest("http://localhost:5000/get-all-parishes").then((data) => {
-          setParishesdata(data.data);
-          console.log(data);
-          localStorage.setItem("parishes", JSON.stringify(data.data));
-        });
+
+          if(data.status === "ok"){
+            setParishesdata(data.data);
+            console.log(data);
+            localStorage.setItem("parishes", JSON.stringify(data.data));
+          }
+          else{
+            seterror("some internal server error")
+            console.log(data);
+          }
+        }).catch(err => {
+          seterror(err)
+        })
       }
     } else {
       console.log("||||||||||||||||||||||");
@@ -78,6 +92,14 @@ const Parishes = ({ ids }) => {
       behavior: "smooth",
     });
   };
+
+  if(error){
+    return(
+      <div className="error">
+        oops! something went wrong
+      </div>
+    )
+  }
 
   if (!Parishes) {
     return (

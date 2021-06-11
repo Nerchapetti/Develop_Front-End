@@ -24,15 +24,24 @@ import {
 const Campaigns = ({ ids }) => {
   const [campaignData, setCampaignData] = useState();
   const [campaign, setcampaign] = useState([]);
+  const [error, seterror] = useState("");
   useEffect(() => {
     if (!ids) {
       getRequest("http://localhost:5000/api/get-all-campaigns")
         .then((data) => {
-          console.log(data);
-          setCampaignData(data.data);
-          localStorage.setItem("campaigns", JSON.stringify(data.data));
+          if (data.status === "ok") {
+            console.log(data);
+            setCampaignData(data.data);
+            localStorage.setItem("campaigns", JSON.stringify(data.data));
+          } else {
+            seterror("some internal server error");
+            console.log(data);
+          }
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          seterror(err);
+          console.log(err);
+        });
     }
   }, []);
   useEffect(() => {
@@ -51,11 +60,20 @@ const Campaigns = ({ ids }) => {
       } else {
         getRequest("http://localhost:5000/api/get-all-campaigns")
           .then((data) => {
-            console.log(data);
-            setCampaignData(data.data);
-            localStorage.setItem("campaigns", JSON.stringify(data.data));
+            if (data.status === "ok") {
+              console.log(data);
+              setCampaignData(data.data);
+              localStorage.setItem("campaigns", JSON.stringify(data.data));
+            } else {
+              seterror("some internal server error");
+              console.log(data);
+            }
           })
-          .catch((err) => console.log(err));
+          .catch((err) => {
+            seterror(err)
+            console.log(err);
+
+          });
       }
     } else {
       console.log("||||||||||||||||||||||");
@@ -92,6 +110,14 @@ const Campaigns = ({ ids }) => {
   const handleClick = (id) => {
     window.location = `/campaign-details/${id}`;
   };
+
+  if(error){
+    return(
+      <div className="error">
+        Oops! Something went wrong
+      </div>
+    )
+  }
 
   if (!campaign) {
     return (

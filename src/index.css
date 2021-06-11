@@ -28,6 +28,19 @@ button{
     outline: none;
 }
 
+.error{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  box-shadow: 0 4px 11px 3px hsla(0, 0%, 75.3%, 0.288) !important;
+  background-color: rgb(228, 152, 152);
+  color: red;
+  padding: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 
 .isLoading,

@@ -25,14 +25,28 @@ import {
 const CampaignDetails = () => {
   const [campaignData, setcampaignData] = useState();
   const { id } = useParams();
+  const [error, seterror] = useState("");
   useEffect(() => {
     getRequest(`http://localhost:5000/api/get-campaign/${id}`)
       .then((res) => {
-        console.log(res);
-        setcampaignData(res.data);
+        if(res.status === "ok"){
+          console.log(res);
+          setcampaignData(res.data);
+        }
+        else{
+          seterror("some internal error")
+          console.log(res);
+        }
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        seterror(err)
+        console.log(err);
+      });
   }, []);
+
+  if (error) {
+    return <div className="error">Oops!! something went wrong</div>;
+  }
 
   if (!campaignData) {
     return (
@@ -54,17 +68,17 @@ const CampaignDetails = () => {
           <div className="left-camp-container">
             <img className="img" src={createImgURL(campaignData)} alt="" />
             <div className="share">
-                <WhatsappShareButton url="http://nerchapetti.com">
-                  <FontAwesomeIcon className="shareicon" icon={faWhatsapp} />{" "}
-                </WhatsappShareButton>
-                <FacebookShareButton url="http://nerchapetti.com">
-                  <FontAwesomeIcon className="shareicon" icon={faFacebook} />{" "}
-                </FacebookShareButton>
-                <TwitterShareButton url="http://nerchapetti.com">
-                  <FontAwesomeIcon className="shareicon" icon={faTwitter} />{" "}
-                </TwitterShareButton>
-              </div>
-            
+              <WhatsappShareButton url="http://nerchapetti.com">
+                <FontAwesomeIcon className="shareicon" icon={faWhatsapp} />{" "}
+              </WhatsappShareButton>
+              <FacebookShareButton url="http://nerchapetti.com">
+                <FontAwesomeIcon className="shareicon" icon={faFacebook} />{" "}
+              </FacebookShareButton>
+              <TwitterShareButton url="http://nerchapetti.com">
+                <FontAwesomeIcon className="shareicon" icon={faTwitter} />{" "}
+              </TwitterShareButton>
+            </div>
+
             <div className="about">
               <p>
                 My friend Rohit Sharma is suffering from brain haemorrhage and
