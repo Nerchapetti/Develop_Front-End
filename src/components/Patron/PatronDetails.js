@@ -5,22 +5,22 @@ import { useParams } from "react-router";
 import getPatron from "../../API/getPatron";
 import "./patronDetails.css"
 
-const PatronDetails = () => {
-  const { id } = useParams();
-  const [patronDetails, setpatronDetails] = useState();
+const PatronDetails = ({patron}) => {
+  // const { id } = useParams();
+  // const [patronDetails, setpatronDetails] = useState();
 
-  useEffect(() => {
-    getPatron(id)
-      .then((res) => {
-        setpatronDetails(res.data);
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  // useEffect(() => {
+  //   getPatron(id)
+  //     .then((res) => {
+  //       setpatronDetails(res.data);
+  //       console.log(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
 
-  if (!patronDetails) {
+  if (!patron) {
     return (
       <>
         <div className="isLoading"></div>
@@ -35,10 +35,10 @@ const PatronDetails = () => {
         alt="patron"
       />
       <div class="section">
-        <h1>{patronDetails.Name}</h1>
-        <p>Some beautiful bio of our great patron fdsf fdsf fdsf </p>
-        <p><FontAwesomeIcon icon={faPhoneAlt} /> 9747406685 </p>
-        <p><FontAwesomeIcon icon={faMailBulk}/> rahul@gmail.com </p>
+        <h1>{patron.about.name}</h1>
+        <p>{patron.about.about} </p>
+        <p><FontAwesomeIcon icon={faPhoneAlt} /> {patron.contact.phoneNumber[0]} </p>
+        <p><FontAwesomeIcon icon={faMailBulk}/> {patron.contact.email} </p>
         
       </div>
     </div>

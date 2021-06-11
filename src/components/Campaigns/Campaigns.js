@@ -27,12 +27,10 @@ const Campaigns = ({ ids }) => {
   const [campaignData, setCampaignData] = useState();
   const [campaign, setcampaign] = useState([]);
   const [error, seterror] = useState("");
+  const [isLoading, setisLoading] = useState(false)
 
-  const [isLiked, setisLiked] = useState(false);
 
-  useEffect(() => {
-    console.log("hgggggggggggggggggggggggg");
-  }, [isLiked]);
+
   useEffect(() => {
     if (!ids) {
       getRequest("http://localhost:5000/api/get-all-campaigns")
@@ -40,7 +38,7 @@ const Campaigns = ({ ids }) => {
           if (data.status === "ok") {
             console.log(data);
             setCampaignData(data.data);
-            localStorage.setItem("campaigns", JSON.stringify(data.data));
+            
           } else {
             seterror("some internal server error");
             console.log(data);
@@ -54,24 +52,26 @@ const Campaigns = ({ ids }) => {
   }, []);
   useEffect(() => {
     if (ids) {
-      if (localStorage.getItem("campaigns")) {
+      setisLoading(true)
+      if (campaignData) {
         console.log(ids);
         console.log("============================");
         setcampaign([]);
         ids.forEach((i) => {
-          let newP = JSON.parse(localStorage.getItem("campaigns")).find(
+          let newP = campaignData.find(
             (p) => p._id === i
           );
           console.log(newP);
           setcampaign((state) => [...state, newP]);
         });
+        setisLoading(false)
       } else {
         getRequest("http://localhost:5000/api/get-all-campaigns")
           .then((data) => {
             if (data.status === "ok") {
               console.log(data);
               setCampaignData(data.data);
-              localStorage.setItem("campaigns", JSON.stringify(data.data));
+              
             } else {
               seterror("some internal server error");
               console.log(data);
@@ -118,6 +118,10 @@ const Campaigns = ({ ids }) => {
   const handleClick = (id) => {
     window.location = `/campaign-details/${id}`;
   };
+
+  if(isLoading){
+    return <div className="isLoading"></div>
+  }
 
   if(error){
     return(

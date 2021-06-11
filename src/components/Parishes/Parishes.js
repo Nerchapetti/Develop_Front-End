@@ -17,13 +17,15 @@ const Parishes = ({ ids }) => {
   const [Parishesdata, setParishesdata] = useState();
   const [Parishes, setParishes] = useState([]);
   const [error, seterror] = useState("")
+  const [isLoading, setisLoading] = useState(false)
+
   useEffect(() => {
     if (!ids) {
       getRequest("http://localhost:5000/api/get-all-parishes").then((data) => {
         if(data.status === 'ok'){
           setParishesdata(data.data);
           console.log(data);
-          localStorage.setItem("parishes", JSON.stringify(data.data));
+          
         }
         else{
           seterror("some internal server error")
@@ -37,25 +39,28 @@ const Parishes = ({ ids }) => {
 
   useEffect(() => {
     if (ids) {
-      if (localStorage.getItem("parishes")) {
+      setisLoading(true)
+      if (Parishesdata) {
         console.log(ids);
         console.log("============================");
         setParishes([]);
 
         ids.forEach((i) => {
-          let newP = JSON.parse(localStorage.getItem("parishes")).find(
+          let newP = Parishesdata.find(
             (p) => p._id === i
           );
           console.log(newP);
           setParishes((state) => [...state, newP]);
+
         });
+        setisLoading(false)
       } else {
-        getRequest("http://localhost:5000/get-all-parishes").then((data) => {
+        getRequest("http://localhost:5000/api/get-all-parishes").then((data) => {
 
           if(data.status === "ok"){
             setParishesdata(data.data);
             console.log(data);
-            localStorage.setItem("parishes", JSON.stringify(data.data));
+           
           }
           else{
             seterror("some internal server error")
@@ -92,6 +97,10 @@ const Parishes = ({ ids }) => {
       behavior: "smooth",
     });
   };
+
+  if(isLoading){
+    return <div className="isLoading"></div>
+  }
 
   if(error){
     return(

@@ -87,7 +87,7 @@ const Patron = () => {
     <div className="main">
       <Header />
       <div className="main-container-patron">
-        <PatronDetails />
+        <PatronDetails patron={patronDetails} />
       </div>
       <div className="details">
         <Router>
