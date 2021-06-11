@@ -116,6 +116,7 @@
   left: 20px;
   font-size: 1.4rem;
   font-weight: 800;
+  color: #1a73e8;
 }
 
 .Parishes-containor .cards .about {
@@ -132,11 +133,31 @@
   font-weight: 600;
 }
 
-.Parishes-containor .cards .share {
-  position: relative;
+.Parishes-containor .cards .likes-share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.Parishes-containor .cards .share .shareicon {
+.Parishes-containor .cards .likes-share .likes {
+  position: relative;
+  left: 20px;
+}
+
+.Parishes-containor .cards .likes-share .share {
+  position: relative;
+  right: 20px;
+}
+
+.Parishes-containor .cards .likes-share .share .shareicon {
   cursor: pointer;
   font-size: 20px;
   position: absolute;

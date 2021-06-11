@@ -83,6 +83,7 @@
       left: 20px;
       font-size: 1.4rem;
       font-weight: 800;
+      color: #1a73e8;
     }
     .about {
       position: relative;
@@ -95,15 +96,26 @@
         font-weight: 600;
       }
     }
-
-    .share {
+    .likes-share{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .likes{
         position: relative;
-      .shareicon {
-        cursor: pointer;
-        font-size: 20px;
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
+        left: 20px;
+      }
+  
+      .share {
+          position: relative;
+          right: 20px;
+        .shareicon {
+          cursor: pointer;
+          font-size: 20px;
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+        }
       }
     }
   }

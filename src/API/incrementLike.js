@@ -1,14 +1,13 @@
-const postRequest = async (url, data) => {
-    const res = await fetch(url, {
+const incrementLike = async(id) => {
+    const res = await fetch(`http://localhost:5000/api/like/${id}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data)
     })
     const d = await res.json()
 
     return d;
 }
 
-export default  postRequest;
+export default incrementLike

@@ -44,6 +44,10 @@
   }
 }
 
+.campaign-details-container .camp-details-inner-container .left-camp-container .likes {
+  left: 0;
+}
+
 .campaign-details-container .camp-details-inner-container .left-camp-container .share {
   width: 20%;
   display: -webkit-box;

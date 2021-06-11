@@ -6,6 +6,7 @@ import {
   faArrowAltCircleRight,
   faClock,
   faHeart,
+  faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
 import getRequest from "../../API/getRequest";
 import { createImgURL, toBase64 } from "../../API/utilities";
@@ -20,11 +21,18 @@ import {
   faTwitter,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import Likes from "../Likes/Likes";
 
 const Campaigns = ({ ids }) => {
   const [campaignData, setCampaignData] = useState();
   const [campaign, setcampaign] = useState([]);
   const [error, seterror] = useState("");
+
+  const [isLiked, setisLiked] = useState(false);
+
+  useEffect(() => {
+    console.log("hgggggggggggggggggggggggg");
+  }, [isLiked]);
   useEffect(() => {
     if (!ids) {
       getRequest("http://localhost:5000/api/get-all-campaigns")
@@ -143,24 +151,26 @@ const Campaigns = ({ ids }) => {
         {campaign.map((data) => (
           <>
             <div className="camp-container" key={data._id}>
+                <div className="camp-img">
+                  <img className="img" src={data.imageUrl} alt="" />
+                </div>
+                <div className="camp-details-container">
               <Link
                 to={createLink(data._id)}
                 onClick={() => handleClick(data._id)}
               >
-                <div className="camp-img">
-                  <img className="img" src={createImgURL(data)} alt="" />
-                </div>
-                <div className="camp-details-container">
                   <div className="camp-heading">
                     <h1 className="title">{data.title}</h1>
                     <p>{data.content}</p>
                   </div>
+              </Link>
                   <div className="organiser-details">
                     <img
                       src="https://kettocdn.gumlet.io/media/individual/1358000/1358229/image/5e58e4fc7b807.jpg?w=50&dpr=1.0"
                       alt=""
                     />
                     <p>{data.fundRaiser}</p>
+                    <Likes id={data._id} likes={data.likes} />
                   </div>
 
                   <div className="fund-details">
@@ -172,8 +182,8 @@ const Campaigns = ({ ids }) => {
                       value={data.moneyCollected}
                       max={data.totalAmount}
                     ></progress>
-                  </div>
 
+                  </div>
                   <div className="extra-details">
                     <div className="time-left">
                       <p>
@@ -197,7 +207,6 @@ const Campaigns = ({ ids }) => {
                     </div>
                   </div>
                 </div>
-              </Link>
               <div className="share">
                 <WhatsappShareButton url="http://nerchapetti.com">
                   <FontAwesomeIcon className="shareicon" icon={faWhatsapp} />{" "}

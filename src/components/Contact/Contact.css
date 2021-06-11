@@ -1,0 +1,111 @@
+form {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  form {
+    width: 90%;
+  }
+}
+
+form .form-data {
+  padding: 30px;
+  width: 80%;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  form .form-data {
+    width: 100%;
+    padding: 30px 10px;
+  }
+}
+
+form .form-data label {
+  position: absolute;
+  top: 0;
+}
+
+form .form-data label span {
+  color: red;
+}
+
+form .form-data input, form .form-data textarea, form .form-data select {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 9px 20px;
+  border: 1px solid #4285f4;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+form .form-data input:focus, form .form-data textarea:focus, form .form-data select:focus {
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  border: none;
+  outline: none;
+}
+
+form .form-data select {
+  background-color: #fff;
+}
+
+form .form-data select:focus {
+  border: 1px solid #4285f4;
+}
+
+form .form-data input[type=submit] {
+  background-color: #ffffff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+form .form-data input[type=submit]:hover {
+  background-color: #4285f4;
+  color: #ffffff;
+}
+
+.success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  width: 60%;
+  margin: 100px auto;
+  height: 150px;
+}
+
+.error {
+  margin: 100px 0;
+}
+/*# sourceMappingURL=Contact.css.map */

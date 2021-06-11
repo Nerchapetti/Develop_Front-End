@@ -4,6 +4,7 @@ import CampaignDetails from "./components/Campaigns/CampaignDetails";
 import HomePage from "./components/HomePage/HomePage";
 import ParisheDetails from "./components/Parishes/ParishDetails";
 import AllPatrons from "./components/Patron/AllPatrons";
+import Contact from "./components/Contact/ContactUs";
 import patron from "./components/Patron/Patron";
 
 
@@ -13,6 +14,7 @@ function App() {
     <Router>
       <Route exact path="/" component={HomePage} />
       <Route exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} />
       <Route path="/campaign-details/:id" component={CampaignDetails} />
       <Route path="/parish-details/:id" component={ParisheDetails} />
       <Route path="/patrons" component={AllPatrons} />

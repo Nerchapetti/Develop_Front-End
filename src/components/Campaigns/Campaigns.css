@@ -95,6 +95,7 @@
 
 .campaign-container .camp-container .camp-img {
   width: 100%;
+  position: relative;
 }
 
 .campaign-container .camp-container .camp-img img {
@@ -118,9 +119,11 @@
 .campaign-container .camp-container .camp-details-container .camp-heading .title {
   font-size: 1.4rem;
   padding: 10px 0;
+  color: #1a73e8;
 }
 
 .campaign-container .camp-container .camp-details-container .organiser-details {
+  position: relative;
   margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;

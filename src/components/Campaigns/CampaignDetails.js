@@ -22,6 +22,9 @@ import {
   faTwitter,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import Likes from "../Likes/Likes"
+
+
 const CampaignDetails = () => {
   const [campaignData, setcampaignData] = useState();
   const { id } = useParams();
@@ -65,8 +68,9 @@ const CampaignDetails = () => {
       <div className="campaign-details-container">
         <h1 className="title">{campaignData.title}</h1>
         <div className="camp-details-inner-container">
-          <div className="left-camp-container">
-            <img className="img" src={createImgURL(campaignData)} alt="" />
+          <div style={{position: "relative"}} className="left-camp-container">
+            <img className="img" src={campaignData.imageUrl} alt="" />
+            <Likes id={campaignData._id} likes={campaignData.likes}/>
             <div className="share">
               <WhatsappShareButton url="http://nerchapetti.com">
                 <FontAwesomeIcon className="shareicon" icon={faWhatsapp} />{" "}

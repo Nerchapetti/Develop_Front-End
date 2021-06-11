@@ -7,11 +7,11 @@ import {
   faShareAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import getRequest from "../../API/getRequest";
-import { createImgURL } from "../../API/utilities";
 import { Link } from "react-router-dom";
 import {
   WhatsappShareButton,
 } from "react-share";
+import Likes from "../Likes/Likes";
 
 const Parishes = ({ ids }) => {
   const [Parishesdata, setParishesdata] = useState();
@@ -19,7 +19,7 @@ const Parishes = ({ ids }) => {
   const [error, seterror] = useState("")
   useEffect(() => {
     if (!ids) {
-      getRequest("http://localhost:5000/get-all-parishes").then((data) => {
+      getRequest("http://localhost:5000/api/get-all-parishes").then((data) => {
         if(data.status === 'ok'){
           setParishesdata(data.data);
           console.log(data);
@@ -126,27 +126,30 @@ const Parishes = ({ ids }) => {
       </div>
       <div className="Parishes-containor">
         {Parishes.map((data) => (
+            <div style={{position: 'relative'}} className="cards" key={data._id}>
+              <div className="images">
+                <img src={data.imageUrl} alt="" />
+              </div>
           <Link
             to={`/parish-details/${data._id}/about`}
             onClick={() => handleClick(data._id)}
           >
-            <div className="cards" key={data._id}>
-              <div className="images">
-                <img src={createImgURL(data)} alt="" />
-              </div>
-              <div className="catagory">{data.churchcategory}</div>
-              <div className="churchname">{data.churchName}</div>
-              <div className="about">{data.content}</div>
+              <div className="catagory">{data.about.churchcategory}</div>
+              <div className="churchname">{data.about.churchName}</div>
+              <div className="about">{data.about.content}</div>
               <div className="location">
-                <p>location : {data.location}</p>
+                <p>location : {data.about.location}</p>
               </div>
+          </Link>
+          <div className="likes-share">
+          <Likes likes={25} id={data._id}/>
               <div className="share">
                 <WhatsappShareButton url="http://nerchapetti.com">
                   <FontAwesomeIcon className="shareicon" icon={faShareAlt} />{" "}
                 </WhatsappShareButton>
               </div>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
       <div className="right-scroll">

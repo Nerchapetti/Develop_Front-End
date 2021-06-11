@@ -2,9 +2,19 @@ import React from 'react'
 
 const Offerings = ({parish}) => {
     return (
-        <div>
-            <h1>This is offerings page</h1>
+        <div className="parish-committe">
+        {parish.offerings.map(offer => (
+        <div className="member-container">
+            <div className="member-details">
+                <h2 className="name">{offer.Name}</h2>
+                <p className="member-position">{offer.details}</p>
+                <p>RS. {offer.price}</p>
+            </div>
         </div>
+        ))}
+
+        
+    </div>
     )
 }
 
