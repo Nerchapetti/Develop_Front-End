@@ -24,7 +24,12 @@
                 width: 150px;
                 height: 150px;
                 object-fit: cover;
-                border-radius: 50%w;
+                border-radius: 50%;
+                @media(max-width: 767px){
+                    width: 80px;
+                    height: 80px;
+        
+                }
             }
             @media(max-width: 767px){
                 width: 80px;

@@ -49,7 +49,14 @@
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50%w;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .parish-committe .member-container .image img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @media (max-width: 767px) {
