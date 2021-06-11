@@ -1,6 +1,11 @@
 .orientation {
-  margin: 50px;
+  margin: 50px 0;
   padding: 0;
+  width: 100%;
+
+  @media(max-width: 767px){
+      margin: 50px 0;
+  }
   .dates {
     // background-color: red;
     margin: 10px 60px 20px 60px;
@@ -13,7 +18,6 @@
 .tabledata {
   @media (max-width: 767px) {
     margin: 0;
-    width: 40%;
   }
   margin: 20px;
   .tablehead {
@@ -21,8 +25,6 @@
     margin: 20px;
     @media (max-width: 767px) {
       font-size: 20px;
-      height: 50px;
-      width: 350px;
       // background-color: brown;
     }
   }
