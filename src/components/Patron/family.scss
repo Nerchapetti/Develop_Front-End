@@ -6,6 +6,9 @@
     gap: 20px;
     flex-wrap: wrap;
 
+    @media(max-width: 767px){
+        width: 100%;
+    }
     .member-container{
         width: 48%;
         border-radius: 10px;
@@ -20,19 +23,17 @@
 
         }
         .image{
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+           
             img{
-                width: 150px !important;
+                width: 150px;
                 height: 150px;
                 object-fit: cover;
                 border-radius: 50%w;
-            }
-            @media(max-width: 767px){
-                width: 80px;
-                height: 80px;
-    
+                @media(max-width: 767px){
+                    width: 80px;
+                    height: 80px;
+        
+                }
             }
         }
 

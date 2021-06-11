@@ -33,7 +33,7 @@ const PatronDetails = () => {
         alt="patron"
       />
       <div class="section">
-        <h1>{patronDetails.Name}</h1>
+        {/* <h1>{patronDetails.Name}</h1> */}
         
       </div>
     </>

@@ -13,6 +13,12 @@
       flex-wrap: wrap;
 }
 
+@media (max-width: 767px) {
+  .family {
+    width: 100%;
+  }
+}
+
 .family .member-container {
   width: 48%;
   border-radius: 10px;
@@ -39,15 +45,8 @@
   }
 }
 
-.family .member-container .image {
-  width: 150px;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .family .member-container .image img {
-  width: 150px !important;
+  width: 150px;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -55,7 +54,7 @@
 }
 
 @media (max-width: 767px) {
-  .family .member-container .image {
+  .family .member-container .image img {
     width: 80px;
     height: 80px;
   }
