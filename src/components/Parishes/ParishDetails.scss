@@ -43,7 +43,9 @@
 .inner-nav{
     margin: 30px;
     justify-self: center; 
-
+    @media(max-width: 767px){
+        margin:  30px 0;
+    }
     ul{
         display: flex;
         flex-direction: row;
@@ -65,6 +67,7 @@
         }
         .active{
             background-color: rgb(225, 229, 248);
+            font-weight: 600;
         }
     }
 }

@@ -17,7 +17,6 @@ const ParisheDetails = () => {
   const [error, seterror] = useState("");
   const { id } = useParams();
 
-  const [click, setclick] = useState("")
   
 
   const handleClick = (e) => {
