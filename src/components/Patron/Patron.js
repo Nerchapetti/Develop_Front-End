@@ -86,7 +86,7 @@ const Patron = () => {
     return (
     <div className="main">
       <Header />
-      <div className="main-container">
+      <div className="main-container-patron">
         <PatronDetails />
       </div>
       <div className="details">
