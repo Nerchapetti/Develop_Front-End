@@ -1,13 +1,11 @@
 import { useParams } from "react-router";
 import getRequest from "../../API/getRequest";
 import { useEffect, useState } from "react";
-import { createImgURL } from "../../API/utilities";
 import Header from "../NavBar/Header";
 import Footer from "../Footer/Footer";
 import "./CampaignDetails.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faArrowAltCircleRight,
   faHeart,
   faClock,
 } from "@fortawesome/free-solid-svg-icons";

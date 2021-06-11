@@ -6,10 +6,8 @@ import {
   faArrowAltCircleRight,
   faClock,
   faHeart,
-  faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
 import getRequest from "../../API/getRequest";
-import { createImgURL, toBase64 } from "../../API/utilities";
 import { Link } from "react-router-dom";
 import {
   FacebookShareButton,
@@ -49,7 +47,7 @@ const Campaigns = ({ ids }) => {
           console.log(err);
         });
     }
-  }, []);
+  }, [ids]);
   useEffect(() => {
     if (ids) {
       setisLoading(true)
@@ -153,7 +151,7 @@ const Campaigns = ({ ids }) => {
 
       <div className="campaign-container">
         {campaign.map((data) => (
-          <>
+          
             <div className="camp-container" key={data._id}>
                 <div className="camp-img">
                   <img className="img" src={data.imageUrl} alt="" />
@@ -223,7 +221,7 @@ const Campaigns = ({ ids }) => {
                 </TwitterShareButton>
               </div>
             </div>
-          </>
+          
         ))}
       </div>
 

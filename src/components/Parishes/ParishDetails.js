@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { useParams, useRouteMatch } from "react-router";
 import getRequest from "../../API/getRequest";
 import Payment from "./Payment";
-import { BrowserRouter as Router, Switch, Route, Link, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./About";
 import Committe from "./Committe";
 import Offerings from "./Offerings";

@@ -1,8 +1,6 @@
-import { faMailchimp } from '@fortawesome/free-brands-svg-icons'
-import { faMailBulk, faMale, faPhoneAlt, faPhoneSquare, faVoicemail } from '@fortawesome/free-solid-svg-icons'
+import { faMailBulk, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import { MailruIcon } from 'react-share'
 import avatar from "./avatar.svg"
 import "./family.css"
 
@@ -10,9 +8,9 @@ const Family = ({patron}) => {
     return (
         <div className="family">
 
-            {patron.family.map(member => (
+            {patron.family.map((member, i) => (
 
-              <div className="member-container">
+              <div className="member-container" key={i}>
                 <div className="image">
                     <img src={avatar} alt="" />
                 </div>

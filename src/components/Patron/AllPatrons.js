@@ -30,12 +30,12 @@ const AllPatrons = () => {
     <div>
       <Header />
           <div className="allpatrons">
-            {patrons.map((patron) => (
+            {patrons.map((patron, i) => (
               <>
                   <Link to={`/patron/${patron._id}/about`}>
-                    <div className="patron">
+                    <div className="patron" key={i}>
                       <div className="image">
-                        <img src="http://www.nerchapetti.com/patron/images/priest.png" />
+                        <img src={patron.imageUrl} alt="patronimage"/>
                       </div>
                       <div className="details">
                         <h1>{patron.about.name}</h1>

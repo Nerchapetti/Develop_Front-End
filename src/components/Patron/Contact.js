@@ -1,7 +1,5 @@
-import { faFacebookF, faInstagram, faMailchimp, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faLandmark, faLocationArrow, faMailBulk, faPhone, faPhoneAlt, faVoicemail } from '@fortawesome/free-solid-svg-icons';
+import { faLandmark, faMailBulk, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { EmailIcon } from 'react-share';
 import "./contact.css"
 const Contact = ({patron}) => {
     return (
@@ -9,10 +7,9 @@ const Contact = ({patron}) => {
         <div className="phone">
             <FontAwesomeIcon className="icon" icon={faPhoneAlt} />
             <div className="numbers">
-            {patron.contact.phoneNumber.map(phone => (
-                <>
-            <p>{phone}</p>
-            </>
+            {patron.contact.phoneNumber.map((phone, i) => (
+            <p key={i}>{phone}</p>
+
             ))}
             </div>
         </div>

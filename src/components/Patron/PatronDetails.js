@@ -1,24 +1,9 @@
 import { faMailBulk, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router";
-import getPatron from "../../API/getPatron";
 import "./patronDetails.css"
 
 const PatronDetails = ({patron}) => {
-  // const { id } = useParams();
-  // const [patronDetails, setpatronDetails] = useState();
 
-  // useEffect(() => {
-  //   getPatron(id)
-  //     .then((res) => {
-  //       setpatronDetails(res.data);
-  //       console.log(res.data);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }, []);
 
   if (!patron) {
     return (

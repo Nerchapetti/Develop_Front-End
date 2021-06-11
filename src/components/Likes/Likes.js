@@ -6,7 +6,6 @@ import "./likes.css";
 const Likes = ({ likes:l, id}) => {
 
     const [likes, setlikes] = useState(l)
-  const [click, setclick] = useState(false);
   const [isLiked, setisLiked] = useState(false);
 
   useEffect(() => {
@@ -14,7 +13,6 @@ const Likes = ({ likes:l, id}) => {
   }, [isLiked]);
 
   const addLike = (e) => {
-    setclick(true);
     if(localStorage.getItem(id)){
         localStorage.removeItem(id);
         setlikes(likes - 1)
