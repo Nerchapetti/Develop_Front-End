@@ -9,41 +9,24 @@ import "./family.css"
 const Family = ({patron}) => {
     return (
         <div className="family">
+
+            {patron.family.map(member => (
+
               <div className="member-container">
                 <div className="image">
                     <img src={avatar} alt="" />
                 </div>
                 <div className="member-details">
-                    <h2 className="name">Surya </h2>
-                    <p className="member-position">Wife</p>
-                    <p className="member-contact"><FontAwesomeIcon icon={faPhoneAlt}/> {"  "} 9747406685</p>
-                    <p className="member-email"><FontAwesomeIcon icon={faMailBulk}/> {"  "} rahul@gmail.com</p>
+                    <h2 className="name">{member.name} </h2>
+                    <p className="member-position">{member.relation}</p>
+                    <p className="member-contact"><FontAwesomeIcon icon={faPhoneAlt}/> {"  "} {member.contactNumber}</p>
+                    <p className="member-email"><FontAwesomeIcon icon={faMailBulk}/> {"  "} {member.email}</p>
                 </div>
             </div>
 
-            <div className="member-container">
-                <div className="image">
-                    <img src={avatar} alt="" />
-                </div>
-                <div className="member-details">
-                    <h2 className="name">Surya </h2>
-                    <p className="member-position">Wife</p>
-                    <p className="member-contact"><FontAwesomeIcon icon={faPhoneAlt}/> {"  "} 9747406685</p>
-                    <p className="member-email"><FontAwesomeIcon icon={faMailBulk}/> {"  "} rahul@gmail.com</p>
-                </div>
-            </div>
+            ))}
 
-            <div className="member-container">
-                <div className="image">
-                    <img src={avatar} alt="" />
-                </div>
-                <div className="member-details">
-                    <h2 className="name">Surya </h2>
-                    <p className="member-position">Wife</p>
-                    <p className="member-contact"><FontAwesomeIcon icon={faPhoneAlt}/> {"  "} 9747406685</p>
-                    <p className="member-email"><FontAwesomeIcon icon={faMailBulk}/> {"  "} rahul@gmail.com</p>
-                </div>
-            </div>
+           
         </div>
     )
 }

@@ -9,22 +9,24 @@ const Contact = ({patron}) => {
         <div className="phone">
             <FontAwesomeIcon className="icon" icon={faPhoneAlt} />
             <div className="numbers">
-            <p>9747406685</p>
-            <p>9747406685</p>
+            {patron.contact.phoneNumber.map(phone => (
+                <>
+            <p>{phone}</p>
+            </>
+            ))}
             </div>
         </div>
 
         <div className="email">
             <FontAwesomeIcon className="icon" icon={faMailBulk} />
-            <p>rahulmanoj@cet.ac.in</p>
+            <p>{patron.contact.email}</p>
         </div>
 
         <div className="location">
             <FontAwesomeIcon className="icon" icon={faLandmark} />
-            <p>Paravan Kandi Meethal</p>
-            <p>Puthur</p>
-            <p>Vadakara</p>
-            <p>673104</p>
+            <p>{patron.contact.presentAddress.city}</p>
+            <p>{patron.contact.presentAddress.state}</p>
+            <p>{patron.contact.presentAddress.pin}</p>
         </div>
     </div>
     )

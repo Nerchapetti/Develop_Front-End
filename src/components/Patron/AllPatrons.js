@@ -29,72 +29,23 @@ const AllPatrons = () => {
   return (
     <div>
       <Header />
-      {patrons.map((patron) => (
-        <>
           <div className="allpatrons">
-            <Link to={`/patron/${patron._id}/about`}>
-              <div className="patron">
-                <div className="image">
-                  <img src="http://www.nerchapetti.com/patron/images/priest.png" />
-                </div>
-                <div className="details">
-                  <h1>Name</h1>
-                  <p>some beatuiful bio of this patron</p>
-                </div>
-              </div>
-            </Link>
-
-            <Link to={`/patron/${patron._id}/about`}>
-              <div className="patron">
-                <div className="image">
-                  <img src="http://www.nerchapetti.com/patron/images/priest.png" />
-                </div>
-                <div className="details">
-                  <h1>Name</h1>
-                  <p>some beatuiful bio of this patron</p>
-                </div>
-              </div>
-            </Link>
-            <Link to={`/patron/${patron._id}/about`}>
-              <div className="patron">
-                <div className="image">
-                  <img src="http://www.nerchapetti.com/patron/images/priest.png" />
-                </div>
-                <div className="details">
-                  <h1>Name</h1>
-                  <p>some beatuiful bio of this patron</p>
-                </div>
-              </div>
-            </Link>
-
-            <Link to={`/patron/${patron._id}/about`}>
-              <div className="patron">
-                <div className="image">
-                  <img src="http://www.nerchapetti.com/patron/images/priest.png" />
-                </div>
-                <div className="details">
-                  <h1>Name</h1>
-                  <p>some beatuiful bio of this patron</p>
-                </div>
-              </div>
-            </Link>
-
-            <Link to={`/patron/${patron._id}/about`}>
-              <div className="patron">
-                <div className="image">
-                  <img src="http://www.nerchapetti.com/patron/images/priest.png" />
-                </div>
-                <div className="details">
-                  <h1>Name</h1>
-                  <p>some beatuiful bio of this patron</p>
-                </div>
-              </div>
-            </Link>
+            {patrons.map((patron) => (
+              <>
+                  <Link to={`/patron/${patron._id}/about`}>
+                    <div className="patron">
+                      <div className="image">
+                        <img src="http://www.nerchapetti.com/patron/images/priest.png" />
+                      </div>
+                      <div className="details">
+                        <h1>{patron.about.name}</h1>
+                        <p>{patron.about.about}</p>
+                      </div>
+                    </div>
+                  </Link>
+              </>
+            ))}
           </div>
-
-         
-        </>
-      ))}
       <Footer />
     </div>
   );

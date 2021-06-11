@@ -3,7 +3,7 @@ import "./about.css"
 const About = ({patron}) => {
     return (
     <div className="About">
-        <p>{patron.about}</p>
+        <p>{patron.about.about}</p>
     </div>
     )
 }
