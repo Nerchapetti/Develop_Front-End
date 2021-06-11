@@ -1,6 +1,6 @@
 import './footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF, faInstagram, faLinkedinIn, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -9,38 +9,37 @@ const Footer = () => {
             <div className="container">
                 <div className="list-container">
                     <div className="title">
-                        <h1 className="companyname">Nerchapetti</h1>
+                    <Link to="/"><h1 className="companyname">Nerchapetti</h1></Link>
                         <p>About nerchapetti </p>
                     </div>
                         <div className="details">
                             <ul className="list-footer">
-                                <li className="">About</li>
-                                <li className="">Contact</li>
+                                <li className=""><Link to="/about">About</Link></li>
+                                <li className=""><Link to="/contact">Contact</Link></li>
                                 <li className="">Enroll</li>
-                                <li className=""><Link to="/patrons" class="link">Patron</Link></li>
+                                <li className=""><Link to="/patrons">Patron</Link></li>
                                 <li className="">Pricing</li>
                             </ul>
                         </div>
                         <div className="teamsandpolicy">
                             <ul className="policy">
-                                <li className="">Privacy Policy</li>
-                                <li className="">Teams of Use</li>
-                                <li className="">Refund Policy</li>
-                                <li className="">AML Policy</li>
+                                <li className=""><Link to="/policies/privacy-policy">Privacy Policy</Link></li>
+                                <li className=""><Link to="/policies/terms-of-use">Terms of Use</Link></li>
+                                <li className=""><Link to="/policies/refund-policy">Refund Policy</Link></li>
+                                <li className=""><Link to="/policies/aml-policy">AML Policy</Link></li>
                             </ul>
                         </div>
                         <div className="socialmedia">
-                            <h3 className="letschat">Let's chat! </h3>
                             <ul className="icons-footer">
-                                 <li className=""><FontAwesomeIcon icon={faFacebookF} /></li>
-                                 <li className=""><FontAwesomeIcon icon={faInstagram}/></li> 
-                                <li className=""><FontAwesomeIcon icon={faYoutube}/></li>
-                                <li className=""><FontAwesomeIcon icon={faTwitter}/></li> 
+                                 <li className="" style={{color: "#1a73e8"}}><a target="_blank" rel="noreferrer" href="https://facebook.com"><FontAwesomeIcon icon={faFacebookF} /></a></li>
+                                 <li className="" style={{color: "#b0487b"}}><a target="_blank" rel="noreferrer" href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} /></a></li> 
+                                <li className="" style={{color: "#4ea6e8"}}><a target="_blank" rel="noreferrer" href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                                <li className="" style={{color: "#2874b0"}}><a target="_blank" rel="noreferrer" href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedinIn} /></a></li> 
                             </ul>
                         </div>
                  </div>
                  <div className="licence">
-                    <p>© 2021, Copyright John Zakariah Technologies. All Rights Reserved</p>
+                    <p>© 2021, Copyright <a target="_blank" rel="noreferrer" href="https://johnzakariah.com/"> John Zakariah Technologies</a> All Rights Reserved</p>
                 </div>
             </div>
         </div>

@@ -25,13 +25,13 @@
   }
 }
 
-.list-container .title {
-  font-size: 15px;
+.list-container .title a .companyname {
+  font-size: 2rem;
   color: #1a73e8;
   text-align: center;
 }
 
-.list-container p {
+.list-container .title p {
   color: #AAB2BD;
 }
 
@@ -39,7 +39,7 @@
   padding: 10px;
 }
 
-.list-container .details .link {
+.list-container .details a {
   color: #AAB2BD;
 }
 
@@ -60,6 +60,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 10px;
 }
 
 @media (max-width: 767px) {
@@ -78,13 +79,24 @@
 }
 
 .list-container .socialmedia ul li {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
   padding: 10px;
 }
 
-@media (max-width: 767px) {
-  .list-container .socialmedia ul li {
-    padding: 20px 35px;
-  }
+.list-container .socialmedia ul li a {
+  color: inherit;
 }
 
 .list-container .teamsandpolicy .policy {
@@ -95,6 +107,10 @@
   padding: 10px;
 }
 
+.list-container .teamsandpolicy li a {
+  color: #AAB2BD;
+}
+
 .list-container .teamsandpolicy li:hover {
   text-decoration: underline;
 }
@@ -102,5 +118,10 @@
 .licence p {
   text-align: center;
   padding: 0px 20px 20px 0px;
+}
+
+.licence p a {
+  font-size: 1.4rem;
+  color: #1a73e8;
 }
 /*# sourceMappingURL=footer.css.map */

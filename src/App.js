@@ -6,6 +6,10 @@ import ParisheDetails from "./components/Parishes/ParishDetails";
 import AllPatrons from "./components/Patron/AllPatrons";
 import Contact from "./components/Contact/ContactUs";
 import patron from "./components/Patron/Patron";
+import { AMLPolicy } from "./components/Policies/AMLPolicy";
+import { PrivacyPolicy } from "./components/Policies/PrivacyPolicy";
+import { RefundPolicy } from "./components/Policies/RefundPolicy";
+import { TermsOfUse } from "./components/Policies/TermsOfUse";
 
 
 function App() {
@@ -19,6 +23,10 @@ function App() {
       <Route path="/parish-details/:id" component={ParisheDetails} />
       <Route path="/patrons" component={AllPatrons} />
       <Route path="/patron/:id" component={patron} />
+      <Route path="/policies/aml-policy" component={AMLPolicy} />
+      <Route path="/policies/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/policies/refund-policy" component={RefundPolicy} />
+      <Route path="/policies/terms-of-use" component={TermsOfUse} />
     </Router>
     </div>
   );

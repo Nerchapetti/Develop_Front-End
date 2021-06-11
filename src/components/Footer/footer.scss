@@ -13,20 +13,27 @@
             flex-direction: column;
 
         }
-        .title  {
-            font-size: 15px;
-            color: #1a73e8;
-            text-align: center;
+        a{
         }
-        p{
-            color: #AAB2BD;
+        .title  {
+            a{
+                .companyname{
+                    font-size: 2rem;
+                    color: #1a73e8;
+                    text-align: center;
+                }
+            }
+            p{
+                color: #AAB2BD;
+            }
         }
         .details{
             .list-footer li {
                 padding: 10px;
             }
-            .link{
+            a{
                 color: #AAB2BD; 
+                
             }
             .list-footer li:hover{
                 text-decoration: underline;
@@ -40,17 +47,29 @@
             ul{
                 display: flex;
                 flex-direction: column;
-
+                gap: 10px;
                 @media(max-width: 767px){
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
                 }
                 li{
-                    padding: 10px;
-                    @media(max-width: 767px){
-                        padding:20px 35px;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #fff;
+
+                    a{
+                        color: inherit;
                     }
+                    
+                    padding: 10px;
+                    
+
+
                 }
             }
             
@@ -60,6 +79,9 @@
             margin-top: 5px;
         }li{
             padding: 10px;
+            a{
+                color: #AAB2BD;
+            }
                 
         }
         li:hover{
@@ -71,8 +93,9 @@
     p{
         text-align: center;
         padding: 0px 20px 20px 0px;
-    //     @media(max-width: 767px){
-            
-    // }
+        a{
+            font-size: 1.4rem;
+            color: #1a73e8;
+        }
     }
 }
