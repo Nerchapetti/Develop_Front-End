@@ -164,41 +164,6 @@
   font-weight: 600;
 }
 
-.About {
-  margin: 10px 60px 20px 60px;
-}
-
-.contact {
-  margin: 10px 60px 20px 60px;
-}
-
-.contact .list {
-  font-size: 20px;
-}
-
-.contact .list li {
-  padding: 10px;
-}
-
-.contact .list span {
-  margin: 2px 0px 2px 20px;
-}
-
-.contact .socialmedia {
-  padding: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.contact .socialmedia li {
-  padding: 20px;
-}
-
 .orientation {
   margin: 0;
   padding: 0;

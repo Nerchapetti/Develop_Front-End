@@ -1,4 +1,6 @@
-.parish-committe {
+.family {
+  width: 80%;
+  margin: 50px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,7 +13,7 @@
       flex-wrap: wrap;
 }
 
-.parish-committe .member-container {
+.family .member-container {
   width: 48%;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
@@ -32,20 +34,20 @@
 }
 
 @media (max-width: 1024px) {
-  .parish-committe .member-container {
+  .family .member-container {
     width: 100%;
   }
 }
 
-.parish-committe .member-container .image {
+.family .member-container .image {
   width: 150px;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.parish-committe .member-container .image img {
-  width: 150px;
+.family .member-container .image img {
+  width: 150px !important;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -53,13 +55,13 @@
 }
 
 @media (max-width: 767px) {
-  .parish-committe .member-container .image {
+  .family .member-container .image {
     width: 80px;
     height: 80px;
   }
 }
 
-.parish-committe .member-container .member-details {
+.family .member-container .member-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,4 +71,4 @@
           flex-direction: column;
   gap: 10px;
 }
-/*# sourceMappingURL=Committe.css.map */
+/*# sourceMappingURL=family.css.map */

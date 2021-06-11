@@ -34,7 +34,7 @@ const PatronDetails = () => {
       />
       <div class="section">
         <h1>{patronDetails.Name}</h1>
-        <button>Contribute</button>
+        
       </div>
     </>
   );

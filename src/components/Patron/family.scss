@@ -1,8 +1,11 @@
-.parish-committe{
+.family{
+    width: 80%;
+    margin: 50px auto;
     display: flex;
     flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
+
     .member-container{
         width: 48%;
         border-radius: 10px;
@@ -21,7 +24,7 @@
             height: 150px;
             object-fit: cover;
             img{
-                width: 150px;
+                width: 150px !important;
                 height: 150px;
                 object-fit: cover;
                 border-radius: 50%w;
