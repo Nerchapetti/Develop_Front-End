@@ -16,7 +16,7 @@ const PatronDetails = ({patron}) => {
   return (
     <div className="patron-details">
       <img
-        src="http://www.nerchapetti.com/patron/images/priest.png"
+        src={patron.imageUrl}
         alt="patron"
       />
       <div class="section">
