@@ -9,7 +9,7 @@ const About = ({parish}) => {
             <h1 className="churchName">{parish.about.churchName}</h1>
             <img className="img" src={parish.imageUrl} alt="" />
             <Likes id={parish._id} likes={25}/>
-            <p>{parish.about.content}</p>
+            <p dangerouslySetInnerHTML={ {__html: parish.about.content} }></p>
         </div>
     )
 }
