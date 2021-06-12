@@ -95,13 +95,6 @@
   gap: 20px;
 }
 
-@media (max-width: 1024px) {
-  .allpatrons {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media (max-width: 767px) {
   .allpatrons {
     -ms-grid-columns: 1fr;

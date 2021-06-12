@@ -1,0 +1,73 @@
+.main-container-about {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container-about .about h1 {
+  color: #5E5E5E;
+  font: 48px freight-display-pro, sansserif;
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.main-container-about .about p {
+  text-align: center;
+}
+
+.main-container-about .team h1 {
+  color: #5E5E5E;
+  font: 48px freight-display-pro, sansserif;
+  text-align: center;
+  padding: 5px 20px;
+  font-weight: 500;
+}
+
+.main-container-about .team p {
+  margin: 5px 60px;
+  text-align: center;
+}
+
+.main-container-about .team .team-members {
+  margin: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.main-container-about .team .team-members .member {
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(80, 69, 69, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(80, 69, 69, 0.288) !important;
+  max-width: 320px;
+}
+
+.main-container-about .team .team-members .member img {
+  height: 300px;
+  width: 300px;
+}
+
+.main-container-about .team .team-members .member .name {
+  text-align: center;
+  font: 25px freight-display-pro, sansserif;
+}
+
+.main-container-about .team .team-members .member p {
+  margin: 10px;
+}
+
+.main-container-about .team .team-members .detail-icon {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.main-container-about .team .team-members .detail-icon span {
+  margin: 10px;
+  padding: 10px;
+}
+/*# sourceMappingURL=about.css.map */
