@@ -163,7 +163,7 @@ const Campaigns = ({ ids }) => {
               >
                   <div className="camp-heading">
                     <h1 className="title">{data.title}</h1>
-                    <p>{data.content}</p>
+                    <p dangerouslySetInnerHTML={ {__html: data.content.slice(0, 30)} }></p>
                   </div>
               </Link>
                   <div className="organiser-details">
