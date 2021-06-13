@@ -35,7 +35,11 @@
                 margin-bottom: 30px;
                 padding: 10px;
                 box-sizing: border-box;
-                box-shadow: 0 4px 11px 3px rgba(80, 69, 69, 0.288) !important;
+                box-shadow: rgba(215, 223, 226, 0.4) 5px 5px,
+                rgba(215, 223, 226, 0.4) 10px 10px,
+                rgba(215, 223, 226, 0.4) 15px 15px,
+                rgba(215, 223, 226, 0.4) 20px 20px,
+                rgba(215, 223, 226, 0.4) 25px 25px;
                 // background-color: brown;
                 max-width: 320px;
                 img{
