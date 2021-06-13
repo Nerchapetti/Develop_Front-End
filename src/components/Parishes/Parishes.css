@@ -83,8 +83,8 @@
   min-width: 320px;
   max-width: 320px;
   border-radius: 20px;
-  -webkit-box-shadow: rgba(215, 223, 226, 0.4) 5px 5px, rgba(215, 223, 226, 0.4) 10px 10px, rgba(215, 223, 226, 0.4) 15px 15px, rgba(215, 223, 226, 0.4) 20px 20px;
-          box-shadow: rgba(215, 223, 226, 0.4) 5px 5px, rgba(215, 223, 226, 0.4) 10px 10px, rgba(215, 223, 226, 0.4) 15px 15px, rgba(215, 223, 226, 0.4) 20px 20px;
+  -webkit-box-shadow: 10px 10px 20px 15px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 10px 10px 20px 15px rgba(192, 192, 192, 0.288) !important;
 }
 
 @media (max-width: 767px) {

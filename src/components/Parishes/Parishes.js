@@ -118,6 +118,14 @@ const Parishes = ({ ids }) => {
     );
   }
 
+  if(Parishes.length === 0){
+    return(
+      <div className="nothing">
+        <h1>No Parishes Found</h1>
+      </div>
+    )
+  }
+
   const handleClick = (id) => {
     window.location = `/parish-details/${id}/about`;
   };
@@ -151,7 +159,7 @@ const Parishes = ({ ids }) => {
               </div>
           </Link>
           <div className="likes-share">
-          <Likes likes={25} id={data._id}/>
+          <Likes likes={data.likes} id={data._id} likeFor="parish"/>
               <div className="share">
                 <WhatsappShareButton url="http://nerchapetti.com">
                   <FontAwesomeIcon className="shareicon" icon={faShareAlt} />{" "}

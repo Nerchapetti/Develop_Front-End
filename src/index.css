@@ -28,6 +28,17 @@ button{
     outline: none;
 }
 
+.nothing{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .error{
   display: flex;
   align-items: center;

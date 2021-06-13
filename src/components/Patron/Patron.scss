@@ -81,12 +81,12 @@
     padding: 20px 10px;
 
     .image {
-      width: 90%;
       margin: auto;
       img{
           border-radius: 50%;
           height: 150px;
           width: 150px;
+          object-fit: cover;
         
       }
     }

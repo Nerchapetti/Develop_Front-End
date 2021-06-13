@@ -39,7 +39,7 @@ const AllPatrons = () => {
                       </div>
                       <div className="details">
                         <h1>{patron.about.name}</h1>
-                        <p>{patron.about.about}</p>
+                        <p dangerouslySetInnerHTML={ {__html: patron.about.about.slice(0, 25)} }></p>
                       </div>
                     </div>
                   </Link>

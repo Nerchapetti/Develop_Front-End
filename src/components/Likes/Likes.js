@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import incrementLike from "../../API/incrementLike";
 import "./likes.css";
-const Likes = ({ likes:l, id}) => {
+const Likes = ({ likes:l, id, likeFor}) => {
 
     const [likes, setlikes] = useState(l)
   const [isLiked, setisLiked] = useState(false);
@@ -12,22 +12,46 @@ const Likes = ({ likes:l, id}) => {
 
   }, [isLiked]);
 
+
   const addLike = (e) => {
     if(localStorage.getItem(id)){
+      
         localStorage.removeItem(id);
         setlikes(likes - 1)
         e.target.classList.remove('liked')
         console.log("REMOVING");
         setisLiked(false)
+
+        if(likeFor === "parish"){
+          incrementLike(`http://localhost:5000/api/unlike-parish/${id}`).then(res => {
+              console.log(res);
+          })
+        } else if(likeFor === "campaign"){
+          incrementLike(`http://localhost:5000/api/unlike-campaign/${id}`).then(res => {
+              console.log(res);
+          })
+        }
     } else{
-        setisLiked(true)
-        incrementLike(id).then(res => {
-            console.log(res);
-        })
-        setlikes(likes + 1)
-        localStorage.setItem(id, true)
-        e.target.classList.add("liked");
-        console.log("ADDING");
+
+        if(likeFor === "parish"){
+          setisLiked(true)
+          incrementLike(`http://localhost:5000/api/like-parish/${id}`).then(res => {
+              console.log(res);
+          })
+          setlikes(likes + 1)
+          localStorage.setItem(id, true)
+          e.target.classList.add("liked");
+          console.log("ADDING");
+        } else if(likeFor === "campaign"){
+          setisLiked(true)
+          incrementLike(`http://localhost:5000/api/like-campaign/${id}`).then(res => {
+              console.log(res);
+          })
+          setlikes(likes + 1)
+          localStorage.setItem(id, true)
+          e.target.classList.add("liked");
+          console.log("ADDING");
+        }
 
     }
   };

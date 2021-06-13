@@ -21,7 +21,7 @@ const PatronDetails = ({patron}) => {
       />
       <div class="section">
         <h1>{patron.about.name}</h1>
-        <p>{patron.about.about} </p>
+        <p dangerouslySetInnerHTML={ {__html: patron.about.about} }></p>
         <p><FontAwesomeIcon icon={faPhoneAlt} /> {patron.contact.phoneNumber[0]} </p>
         <p><FontAwesomeIcon icon={faMailBulk}/> {patron.contact.email} </p>
         

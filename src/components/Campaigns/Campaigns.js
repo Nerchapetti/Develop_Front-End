@@ -117,6 +117,7 @@ const Campaigns = ({ ids }) => {
     window.location = `/campaign-details/${id}`;
   };
 
+
   if(isLoading){
     return <div className="isLoading"></div>
   }
@@ -136,6 +137,14 @@ const Campaigns = ({ ids }) => {
       </div>
     );
   }
+  if(campaign.length === 0){
+    return (
+      <div className="nothing">
+      <h1>No Campaigns Found</h1>
+      </div>
+    )
+  }
+
   return (
     <div className="Campaigns">
       <h1 className="camp-title">Campaign</h1>
@@ -172,7 +181,7 @@ const Campaigns = ({ ids }) => {
                       alt=""
                     />
                     <p>{data.fundRaiser}</p>
-                    <Likes id={data._id} likes={data.likes} />
+                    <Likes id={data._id} likes={data.likes} likeFor="campaign" />
                   </div>
 
                   <div className="fund-details">

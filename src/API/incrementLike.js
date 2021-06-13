@@ -1,5 +1,5 @@
-const incrementLike = async(id) => {
-    const res = await fetch(`http://localhost:5000/api/like/${id}`, {
+const incrementLike = async(url) => {
+    const res = await fetch(url, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

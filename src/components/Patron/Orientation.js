@@ -1,8 +1,10 @@
 import React from 'react'
 import "./orientation.css"
+import Patron from './Patron'
+import PatronDetails from './PatronDetails'
 
 
-const Orientation = () => {
+const Orientation = ({patron}) => {
     return (
         <div className="orientation">
           {/* <div className="dates">
@@ -14,6 +16,11 @@ const Orientation = () => {
               </ul>
           </div> */}
           <div className="tabledata">
+            <h1 className="tablehead">List of Churches and Institutions Served</h1>
+            <div  dangerouslySetInnerHTML={ {__html: patron.serves} } /> 
+          </div>
+
+          {/* <div className="tabledata">
               <h1 className="tablehead">List of Churches and Institutions Served</h1>
               <table border="1">
                   <tr>
@@ -47,7 +54,7 @@ const Orientation = () => {
                       <td>	2014-onwards</td>
                   </tr>
               </table>
-          </div>
+          </div> */}
       </div>
     )
 }

@@ -68,7 +68,7 @@ const CampaignDetails = () => {
         <div className="camp-details-inner-container">
           <div style={{position: "relative"}} className="left-camp-container">
             <img className="img" src={campaignData.imageUrl} alt="" />
-            <Likes id={campaignData._id} likes={campaignData.likes}/>
+            <Likes id={campaignData._id} likes={campaignData.likes} likeFor="campaign"/>
             <div className="share">
               <WhatsappShareButton url="http://nerchapetti.com">
                 <FontAwesomeIcon className="shareicon" icon={faWhatsapp} />{" "}
