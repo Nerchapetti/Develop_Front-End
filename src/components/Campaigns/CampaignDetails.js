@@ -81,25 +81,9 @@ const CampaignDetails = () => {
               </TwitterShareButton>
             </div>
 
-            <div className="about">
-              <p>
-                My friend Rohit Sharma is suffering from brain haemorrhage and
-                without urgent treatment, he will not survive.
-                <br /> <br />
-                Rohit is a doting husband and a loving father to a 2-year-old
-                baby girl. 5 years ago, his father met with a horrible accident
-                which left him paralysed and also caused memory loss. While
-                their family was still processing the devastation, Rohit had
-                suffered from a stroke.
-                <br /> <br />
-                On 24 February 2020, Rohit suddenly collapsed and was rushed to
-                the hospital. The doctor told his wife that he suffered from
-                brain haemorrhage because of which he will have to be admitted
-                to the hospital. He also told her that Rohit’s condition was
-                critical and that he will have to stay in the hospital for a
-                long time for treatment & recovery.
-              </p>
-            </div>
+            <div className="about" dangerouslySetInnerHTML={ {__html: campaignData.content} } />
+             
+            
           </div>
 
           <div className="right-camp-container">

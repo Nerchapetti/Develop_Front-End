@@ -145,7 +145,7 @@ const Parishes = ({ ids }) => {
           >
               <div className="catagory">{data.about.churchcategory}</div>
               <div className="churchname">{data.about.churchName}</div>
-              <div className="about">{data.about.content}</div>
+              <div className="about" dangerouslySetInnerHTML={ {__html: data.about.content.slice(0,20)} }></div>
               <div className="location">
                 <p>location : {data.about.location}</p>
               </div>
