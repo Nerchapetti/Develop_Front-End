@@ -8,6 +8,12 @@
   margin-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+  .campaign-details-container .title {
+    font-size: 1.2rem;
+  }
+}
+
 .campaign-details-container .camp-details-inner-container {
   display: -ms-grid;
   display: grid;

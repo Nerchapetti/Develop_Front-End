@@ -2,6 +2,12 @@
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .search-bar {
+    position: unset;
+  }
+}
+
 .search-bar .search-result {
   position: absolute;
   background-color: #ffff;
@@ -14,6 +20,14 @@
   z-index: 10;
   max-height: 70vh;
   overflow-y: scroll;
+}
+
+@media (max-width: 767px) {
+  .search-bar .search-result {
+    width: 100%;
+    position: fixed;
+    left: 0;
+  }
 }
 
 .search-bar .search-result::-webkit-scrollbar {
@@ -39,5 +53,9 @@
 
 .result-Card .result-img {
   width: 50px;
+}
+
+.result-Card:hover {
+  background-color: #cfe1f896;
 }
 /*# sourceMappingURL=search.css.map */

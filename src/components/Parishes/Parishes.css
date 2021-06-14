@@ -74,7 +74,7 @@
 
 @media (max-width: 767px) {
   .Parishes-containor {
-    gap: 15px;
+    margin-right: 10px;
     padding: 40px 5px;
   }
 }
@@ -90,6 +90,8 @@
 @media (max-width: 767px) {
   .Parishes-containor .cards {
     min-width: 300px;
+    -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+            box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
   }
 }
 

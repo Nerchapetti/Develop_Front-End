@@ -1,7 +1,9 @@
 .search-bar{
     position: relative;
 
-
+    @media(max-width: 767px){
+        position: unset;
+    }
     
 
     .search-result{
@@ -15,6 +17,13 @@
         z-index: 10;
         max-height: 70vh;
         overflow-y: scroll;
+
+        @media(max-width: 767px){
+            width: 100%;
+            position: fixed;
+            left: 0;
+            
+        }
 
         &::-webkit-scrollbar{
             width: 5px;
@@ -33,5 +42,9 @@
     border-bottom: 1px solid #00000010;
     .result-img{
         width: 50px;
+    }
+
+    &:hover{
+        background-color: #cfe1f896;
     }
 }
