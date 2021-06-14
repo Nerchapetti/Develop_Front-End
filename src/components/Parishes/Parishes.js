@@ -152,7 +152,7 @@ const Parishes = ({ ids }) => {
             onClick={() => handleClick(data._id)}
           >
               <div className="catagory">{data.about.churchcategory}</div>
-              <div className="churchname">{data.about.churchName}</div>
+              <div className="churchname">{data.about.churchName.slice(0, 20)}..</div>
               <div className="about" dangerouslySetInnerHTML={ {__html: data.about.content.slice(0,20)} }></div>
               <div className="location">
                 <p>location : {data.about.location}</p>
