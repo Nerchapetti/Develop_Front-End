@@ -19,13 +19,20 @@
   padding: 1rem 2.5rem;
 }
 
+.navbar .search-bar{
+  border-radius: 8px;
+  width: 50%;
+  position: relative;
+  background-color: #ebedf5;
+}
+
 .navbar .search{
   padding: 10px;
   outline: none;
   border: none;
   font-size: 1rem;
   border-radius: 8px;
-  width: 50%;
+  width: 100%;
   position: relative;
   background-color: #ebedf5;
 }

@@ -1,0 +1,35 @@
+.search-bar {
+  position: relative;
+}
+
+.search-bar .search-result {
+  position: absolute;
+  background-color: #ffff;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid #00000020;
+  width: 100%;
+  padding: 20px;
+  z-index: 10;
+  max-height: 70vh;
+}
+
+.result-Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.result-Card .result-img {
+  width: 50px;
+}
+/*# sourceMappingURL=search.css.map */
