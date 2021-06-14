@@ -45,7 +45,7 @@ export const AMLPolicy = () => {
           <li>5. Other steps/actions that our management may deem appropriate.</li>
           </p>
           <h2>V. CONSEQUENCES OF AML POLICY VIOLATIONS</h2>
-          <p><li>Users agree that irreparable damage would occur to the company if any of the provisions of this AML Policy are not complied with. Accordingly, users agree that the company is entitled to claim damages from users for violating this AML Policy in addition to any other remedy to which they are entitled at law or in equity.<li></p>
+          <p><li>Users agree that irreparable damage would occur to the company if any of the provisions of this AML Policy are not complied with. Accordingly, users agree that the company is entitled to claim damages from users for violating this AML Policy in addition to any other remedy to which they are entitled at law or in equity.</li></p>
           <h2>VI. NO LIABILITY</h2>
           <p>
           <li>To the extent permitted under applicable law, the company shall have no liability in respect of any illegal transactions that take place on its platform. The company shall also not be liable for any consequences (monetary or otherwise) suffered by the stakeholders of a campaign or other users if it takes action (in its sole discretion) pursuant to this policy and applicable law.</li>
@@ -83,4 +83,5 @@ export const AMLPolicy = () => {
       <Footer />
     </div>
   );
+
 };
