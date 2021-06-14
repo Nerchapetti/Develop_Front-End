@@ -31,7 +31,7 @@ const Campaigns = ({ ids }) => {
 
   useEffect(() => {
     if (!ids) {
-      getRequest("http://localhost:5000/api/get-all-campaigns")
+      getRequest(`${window.URI}/get-all-campaigns`)
         .then((data) => {
           if (data.status === "ok") {
             console.log(data);
@@ -64,7 +64,7 @@ const Campaigns = ({ ids }) => {
         });
         setisLoading(false)
       } else {
-        getRequest("http://localhost:5000/api/get-all-campaigns")
+        getRequest(`${window.URI}/get-all-campaigns`)
           .then((data) => {
             if (data.status === "ok") {
               console.log(data);

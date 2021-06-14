@@ -28,7 +28,7 @@ const CampaignDetails = () => {
   const { id } = useParams();
   const [error, seterror] = useState("");
   useEffect(() => {
-    getRequest(`http://localhost:5000/api/get-campaign/${id}`)
+    getRequest(`${window.URI}/get-campaign/${id}`)
       .then((res) => {
         if(res.status === "ok"){
           console.log(res);

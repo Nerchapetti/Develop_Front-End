@@ -32,7 +32,7 @@ const ParisheDetails = () => {
 
   console.log(url);
   useEffect(() => {
-    getRequest(`http://localhost:5000/api/get-parish/${id}`)
+    getRequest(`${window.URI}/get-parish/${id}`)
       .then((res) => {
         if (res.status === "ok") {
           console.log(res);
