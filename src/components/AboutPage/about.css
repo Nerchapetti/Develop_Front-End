@@ -29,36 +29,28 @@
 }
 
 .main-container-about .team .team-members {
-  margin: 40px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 50px;
 }
 
 .main-container-about .team .team-members .member {
-  margin: auto;
-  margin-bottom: 30px;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  margin: 10px;
   -webkit-box-shadow: rgba(215, 223, 226, 0.4) 5px 5px, rgba(215, 223, 226, 0.4) 10px 10px, rgba(215, 223, 226, 0.4) 15px 15px, rgba(215, 223, 226, 0.4) 20px 20px, rgba(215, 223, 226, 0.4) 25px 25px;
           box-shadow: rgba(215, 223, 226, 0.4) 5px 5px, rgba(215, 223, 226, 0.4) 10px 10px, rgba(215, 223, 226, 0.4) 15px 15px, rgba(215, 223, 226, 0.4) 20px 20px, rgba(215, 223, 226, 0.4) 25px 25px;
-  max-width: 320px;
+  max-width: 202px;
 }
 
 .main-container-about .team .team-members .member img {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
 }
 
 .main-container-about .team .team-members .member .name {
   text-align: center;
   font: 25px freight-display-pro, sansserif;
-}
-
-.main-container-about .team .team-members .member p {
-  margin: 10px;
 }
 
 .main-container-about .team .team-members .detail-icon {

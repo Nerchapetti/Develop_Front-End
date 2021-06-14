@@ -11,7 +11,7 @@ const Payment = () => {
                 <li>IFSC: <br/><span>2216546646545465</span></li>
                 <li>A/C NO : <br/><span>45456468465465</span></li>
                 <div className="button">      
-                    <button>Pay</button>
+                    <button>Donate</button>
                 </div>
             </ul>  
         </div>

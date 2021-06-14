@@ -26,32 +26,32 @@
             text-align: center;
         }
         .team-members{
-            // background-color: #027A95;
-            margin: 40px;
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            margin: 50px;
+            // background-color: blue;
             .member{
-                margin: auto;
-                margin-bottom: 30px;
-                padding: 10px;
-                box-sizing: border-box;
+                margin: 10px;
+                // margin:10px  0px 0px 30px;
+                // box-sizing: border-box;
+                // background-color: brown;
                 box-shadow: rgba(215, 223, 226, 0.4) 5px 5px,
                 rgba(215, 223, 226, 0.4) 10px 10px,
                 rgba(215, 223, 226, 0.4) 15px 15px,
                 rgba(215, 223, 226, 0.4) 20px 20px,
                 rgba(215, 223, 226, 0.4) 25px 25px;
                 // background-color: brown;
-                max-width: 320px;
+                max-width: 202px;
                 img{
-                    height: 300px;
-                    width: 300px;
+                    height: 200px;
+                    width: 200px;
                 }
                 .name{
                     text-align: center;
                     font: 25px freight-display-pro, sansserif;
                 }
                 p{
-                    margin: 10px;
+                    // margin: 10px;
                 }
             }
             .detail-icon{
