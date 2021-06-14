@@ -171,7 +171,7 @@ const Campaigns = ({ ids }) => {
                 onClick={() => handleClick(data._id)}
               >
                   <div className="camp-heading">
-                    <h1 className="title">{data.title}</h1>
+                    <h1 className="title">{data.title.slice(0, 20)}...</h1>
                     <p dangerouslySetInnerHTML={ {__html: data.content.slice(0, 30)} }></p>
                   </div>
               </Link>

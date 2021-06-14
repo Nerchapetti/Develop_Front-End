@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import SearchBar from "../Search/SearchBar";
 import "./Header.css";
 
 const Header = () => {
@@ -11,7 +12,7 @@ const Header = () => {
     <header className="header">
       <nav className="navbar">
       <Link className="nav-logo" to="/">Nerchapetti</Link>
-            <input autoFocus className="search" type="search" placeholder="search.." />
+            <SearchBar />
         <ul className={click ? 'nav-menu active': "nav-menu"}>
           <li className="nav-item" onClick={closeMobileMenu}>
             <Link to="/about">ABOUT</Link>
