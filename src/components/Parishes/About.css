@@ -4,6 +4,12 @@
   margin-bottom: 10px;
 }
 
+@media (max-width: 767px) {
+  .parish-about .churchName {
+    font-size: 1.5rem;
+  }
+}
+
 .parish-about .likes {
   position: relative;
   left: 0;

@@ -35,8 +35,8 @@
   width: 100%;
   position: relative;
   background-color: #ebedf5;
+  
 }
-
 
 .hamburger {
   display: none;
@@ -91,9 +91,6 @@
   .navbar {
       justify-content: space-between;
       padding: 0.5rem 1rem;
-  }
-  .search{
-      width: 45% !important;
   }
   .nav-menu {
       position: fixed;
