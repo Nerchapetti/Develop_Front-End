@@ -15,6 +15,12 @@
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .main-container-about .about p {
+    margin: 2px 10px;
+  }
+}
+
 .main-container-about .team h1 {
   color: #5E5E5E;
   font: 48px freight-display-pro, sansserif;
@@ -25,7 +31,18 @@
 
 .main-container-about .team p {
   margin: 5px 60px;
-  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .main-container-about .team p {
+    margin: 2px 10px;
+  }
+}
+
+.main-container-about .team .position {
+  text-align: left;
+  margin: 20px;
+  font-size: 40px;
 }
 
 .main-container-about .team .team-members {
@@ -36,8 +53,22 @@
   margin: 50px;
 }
 
+@media (max-width: 767px) {
+  .main-container-about .team .team-members {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow-x: scroll;
+    margin: 50px 10px 50px 60px;
+  }
+}
+
 .main-container-about .team .team-members .member {
-  margin: 10px;
+  margin: 20px;
   -webkit-box-shadow: rgba(215, 223, 226, 0.4) 5px 5px, rgba(215, 223, 226, 0.4) 10px 10px, rgba(215, 223, 226, 0.4) 15px 15px, rgba(215, 223, 226, 0.4) 20px 20px, rgba(215, 223, 226, 0.4) 25px 25px;
           box-shadow: rgba(215, 223, 226, 0.4) 5px 5px, rgba(215, 223, 226, 0.4) 10px 10px, rgba(215, 223, 226, 0.4) 15px 15px, rgba(215, 223, 226, 0.4) 20px 20px, rgba(215, 223, 226, 0.4) 25px 25px;
   max-width: 202px;
@@ -56,10 +87,17 @@
 .main-container-about .team .team-members .detail-icon {
   font-size: 25px;
   padding: 10px;
-}
-
-.main-container-about .team .team-members .detail-icon span {
-  margin: 10px;
-  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=about.css.map */

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faLinkedin, faMailchimp } from "@fortawesome/free-brands-svg-icons"
+import { faInstagram, faLinkedin, faMailchimp, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import "./about.css"
 
 const TeamMember = ({ name , about}) => {
@@ -11,6 +11,7 @@ const TeamMember = ({ name , about}) => {
             <p className="name-detail">{ about }</p>
             <div className="detail-icon">
                 <span><FontAwesomeIcon icon={faInstagram} /></span>
+                <span><FontAwesomeIcon icon={faTwitter} /></span>
                 <span><FontAwesomeIcon icon={faLinkedin} /></span>
                 <i class="fas fa-envelope"></i>
                 {/* <FontAwesomeIcon icon={faemai} /> */}
