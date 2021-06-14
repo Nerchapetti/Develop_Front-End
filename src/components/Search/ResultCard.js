@@ -15,7 +15,8 @@ const ResultCard = ({result}) => {
           >
           <div className="result-Card">
             <img className="result-img" src={result.imageUrl} alt="" />
-            <p>{result.about.churchName}</p>
+            <p>{result.about.churchName}</p> 
+            <p>{result.about.location}</p>
           </div>
             </Link>
         </div>

@@ -23,6 +23,10 @@ const SearchBar = () => {
 
   }, []);
 
+  if(error){
+      return null
+  }
+
   if(!parishes){
       return(
           null
