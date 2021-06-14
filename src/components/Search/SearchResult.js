@@ -32,7 +32,9 @@ const SearchResult = ({keyword, parishes}) => {
     return (
         <div className="search-result">
             {result.map(r => (
+                <>
                 <ResultCard result={r} />
+                </>
             ))}
         </div>
     )
