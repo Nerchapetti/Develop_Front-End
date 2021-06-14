@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 window.URI = "https://nerchapetti-backend.herokuapp.com/api"
 ReactDOM.render(
-  <BrowserRouter basename="/frontend">
+  <BrowserRouter basename="/">
     <App />
   </BrowserRouter>,
   document.getElementById('root')
