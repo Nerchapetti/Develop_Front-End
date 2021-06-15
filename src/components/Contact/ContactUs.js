@@ -78,44 +78,45 @@ function ContactUs() {
   return (
     <>
       <Header />
-      <form className="contact-form" onSubmit={sendEmail}>
+      <div className="contactdata">
+        <form className="contact-form" onSubmit={sendEmail}>
 
-        <div className="form-data">
-        <h1 style={{textAlign: "center"}}>Contact US</h1>
-        </div>
+          <div className="form-data">
+          <h1 style={{textAlign: "center"}}>Contact US</h1>
+          </div>
 
-        <div className="form-data">
-          <select name="query" id="">
-          <option value="s">Select a Query Type</option>
-            <option value="general">General Query</option>
-            <option value="patnership">Patnership Query</option>
-            <option value="report">Report</option>
-          </select>
-        </div>
-        <div className="form-data">
-          <label>Phone No <span>*</span></label>
-          <input name="contact_number" required />
-        </div>
-        <div className="form-data">
-          <label>Name <span>*</span></label>
-          <input type="text" name="user_name" required/>
-        </div>
+          <div className="form-data">
+            <select name="query" id="">
+            <option value="s">Select a Query Type</option>
+              <option value="general">General Query</option>
+              <option value="patnership">Patnership Query</option>
+              <option value="report">Report</option>
+            </select>
+          </div>
+          <div className="form-data">
+            <label>Phone No <span>*</span></label>
+            <input name="contact_number" required />
+          </div>
+          <div className="form-data">
+            <label>Name <span>*</span></label>
+            <input type="text" name="user_name" required/>
+          </div>
 
-        <div className="form-data">
-          <label>Email <span>*</span></label>
-          <input type="email" name="user_email" required/>
-        </div>
+          <div className="form-data">
+            <label>Email <span>*</span></label>
+            <input type="email" name="user_email" required/>
+          </div>
 
-        <div className="form-data">
-          <label>Message</label>
-          <textarea rows="8" name="message" />
-        </div>
+          <div className="form-data">
+            <label>Message</label>
+            <textarea rows="8" name="message" />
+          </div>
 
-        <div className="form-data">
-          <input type="submit" value="Send" />
-        </div>
-      </form>
-
+          <div className="form-data">
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
       <Footer />
     </>
   );

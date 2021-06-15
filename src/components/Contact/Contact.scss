@@ -9,11 +9,14 @@ form {
     align-items: center;
     @media(max-width: 767px){
         width: 90%;
+        
     }
     .form-data{
         padding: 30px;
         width: 80%;
         position: relative;
+        text-align: center;
+        justify-content: center;
         
         @media(max-width: 767px){
             width: 100%;
@@ -23,6 +26,7 @@ form {
         label{
             position: absolute;
             top: 0;
+            
             span{
                 color: red;
             }
@@ -31,9 +35,10 @@ form {
             width: 100%;
             align-self: center;
             padding: 9px 20px;
-            border: 1px solid #4285f4;
             font-size: 1rem;
-            border-radius: 10px;
+            border: none;
+            border-bottom: 1px solid rgb(104, 96, 96);
+            // border-right:1px solid rgb(104, 96, 96);
             &:focus{
                 box-shadow: 0 4px 11px 3px hsla(0,0%,75.3%,.288)!important;    
                 border: none;
@@ -49,13 +54,17 @@ form {
             }
             
         }
-
+        
         input[type=submit]{
             background-color: #ffffff;
             width: fit-content;
+            width: 200px;
+            border-radius: 20px;
+            background-color: #1A73E8;
             box-shadow: 0 4px 11px 3px hsla(0,0%,75.3%,.288)!important;
             cursor: pointer;
             transition: 0.3s all ease;
+            
             &:hover{
                 background-color: #4285f4;
                 color: #ffffff;
