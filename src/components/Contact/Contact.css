@@ -42,7 +42,7 @@ form .form-data {
 
 form .form-data label {
   position: absolute;
-  top: 0;
+  top: 40px;
 }
 
 form .form-data label span {
@@ -58,6 +58,8 @@ form .form-data input, form .form-data textarea, form .form-data select {
   font-size: 1rem;
   border: none;
   border-bottom: 1px solid #686060;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 form .form-data input:focus, form .form-data textarea:focus, form .form-data select:focus {
@@ -65,6 +67,12 @@ form .form-data input:focus, form .form-data textarea:focus, form .form-data sel
           box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
   border: none;
   outline: none;
+  border-bottom: 1px solid #686060;
+}
+
+form .form-data input:focus:focus ~ label, form .form-data textarea:focus:focus ~ label, form .form-data select:focus:focus ~ label {
+  -webkit-transform: translatey(-40px);
+          transform: translatey(-40px);
 }
 
 form .form-data select {

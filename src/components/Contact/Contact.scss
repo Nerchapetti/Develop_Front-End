@@ -25,9 +25,8 @@ form {
         
         label{
             position: absolute;
-            top: 0;
-            
-            span{
+            top: 40px;
+                        span{
                 color: red;
             }
         }
@@ -38,11 +37,17 @@ form {
             font-size: 1rem;
             border: none;
             border-bottom: 1px solid rgb(104, 96, 96);
+            transition: all 0.3s ease;
+
             // border-right:1px solid rgb(104, 96, 96);
             &:focus{
                 box-shadow: 0 4px 11px 3px hsla(0,0%,75.3%,.288)!important;    
                 border: none;
                 outline: none;
+                border-bottom: 1px solid rgb(104, 96, 96);
+            &:focus ~ label{
+                    transform: translatey(-40px);                
+                }
             }
             
         }
