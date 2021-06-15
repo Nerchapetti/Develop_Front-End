@@ -23,4 +23,35 @@
 .policy .dot {
   margin: 30px;
 }
+
+.privacy-policy-container {
+  width: 90%;
+  margin: auto;
+}
+
+.privacy-policy-container h1 {
+  margin: 20px 0;
+}
+
+.privacy-policy-container h2 {
+  margin: 50px 0 10px 0;
+}
+
+.privacy-policy-container p, .privacy-policy-container h3 {
+  margin: 20px 10px;
+}
+
+.privacy-policy-container a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.refund-policy {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.refund-policy p {
+  margin: 20px 10px;
+}
 /*# sourceMappingURL=privacy.css.map */

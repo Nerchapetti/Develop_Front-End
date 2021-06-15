@@ -219,13 +219,13 @@ const Campaigns = ({ ids }) => {
                   </div>
                 </div>
               <div className="share">
-                <WhatsappShareButton url="http://nerchapetti.com">
+                <WhatsappShareButton url={`https://nerchapetti.com/campaign-details/${data._id}`}>
                   <FontAwesomeIcon className="shareicon" icon={faWhatsapp} />{" "}
                 </WhatsappShareButton>
-                <FacebookShareButton url="http://nerchapetti.com">
+                <FacebookShareButton url={`https://nerchapetti.com/campaign-details/${data._id}`}>
                   <FontAwesomeIcon className="shareicon" icon={faFacebook} />{" "}
                 </FacebookShareButton>
-                <TwitterShareButton url="http://nerchapetti.com">
+                <TwitterShareButton url={`https://nerchapetti.com/campaign-details/${data._id}`}>
                   <FontAwesomeIcon className="shareicon" icon={faTwitter} />{" "}
                 </TwitterShareButton>
               </div>
