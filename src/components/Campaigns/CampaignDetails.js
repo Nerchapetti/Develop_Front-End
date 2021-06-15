@@ -70,13 +70,13 @@ const CampaignDetails = () => {
             <img className="img" src={campaignData.imageUrl} alt="" />
             <Likes id={campaignData._id} likes={campaignData.likes} likeFor="campaign"/>
             <div className="share">
-              <WhatsappShareButton url="http://nerchapetti.com">
+              <WhatsappShareButton url={`https://nerchapetti.com/campaign-details/${campaignData._id}`}>
                 <FontAwesomeIcon className="shareicon" icon={faWhatsapp} />{" "}
               </WhatsappShareButton>
-              <FacebookShareButton url="http://nerchapetti.com">
+              <FacebookShareButton url={`https://nerchapetti.com/campaign-details/${campaignData._id}`}>
                 <FontAwesomeIcon className="shareicon" icon={faFacebook} />{" "}
               </FacebookShareButton>
-              <TwitterShareButton url="http://nerchapetti.com">
+              <TwitterShareButton url={`https://nerchapetti.com/campaign-details/${campaignData._id}`}>
                 <FontAwesomeIcon className="shareicon" icon={faTwitter} />{" "}
               </TwitterShareButton>
             </div>

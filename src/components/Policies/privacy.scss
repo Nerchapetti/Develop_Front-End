@@ -18,3 +18,33 @@
         margin: 30px;
     }
 }
+
+
+.privacy-policy-container{
+    width: 90%;
+    margin: auto;
+
+    h1{
+        margin: 20px 0;
+    }
+    h2{
+        margin: 50px 0 10px 0;
+    }
+    p, h3{
+        margin: 20px 10px;
+    }
+    a{
+        color: blue;
+        text-decoration: underline;
+    }
+}
+
+.refund-policy{
+    width: 90%;
+    margin: 50px auto;
+    
+
+    p{
+        margin: 20px 10px;
+    }
+}
