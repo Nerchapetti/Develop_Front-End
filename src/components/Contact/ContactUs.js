@@ -94,22 +94,22 @@ function ContactUs() {
             </select>
           </div>
           <div className="form-data">
+            <input className="inputbox" name="contact_number" required />
             <label>Phone No <span>*</span></label>
-            <input name="contact_number" required />
           </div>
           <div className="form-data">
+            <input type="text" className="inputbox" name="user_name" required/>
             <label>Name <span>*</span></label>
-            <input type="text" name="user_name" required/>
           </div>
 
           <div className="form-data">
+            <input className="inputbox2" type="email" name="user_email" required/>
             <label>Email <span>*</span></label>
-            <input type="email" name="user_email" required/>
           </div>
 
           <div className="form-data">
+            <textarea className="inputbox" rows="8"  name="message" />
             <label>Message</label>
-            <textarea rows="8" name="message" />
           </div>
 
           <div className="form-data">
