@@ -23,21 +23,36 @@ form {
             padding: 30px 10px;
         }
         
-        label{
+        // label{
+        //     position: absolute;
+        //     top: 40px;
+        //     pointer-events: inherit;
+        //                 span{
+        //         color: red;
+        //     }
+        // }
+
+        label {
+            font-size: 18px;
+            font-weight: normal;
             position: absolute;
+            pointer-events: none;
+            left: 35px;
             top: 40px;
-                        span{
-                color: red;
-            }
+            transition: all 0.2s ease;
         }
+
         input, textarea, select{
+            font-size: 18px;
+            padding: 10px 10px 10px 5px;
+            -webkit-appearance: none;
+            display: block;
+            background: #fafafa;
+            color: #636363;
             width: 100%;
-            align-self: center;
-            padding: 9px 20px;
-            font-size: 1rem;
             border: none;
-            border-bottom: 1px solid rgb(104, 96, 96);
-            transition: all 0.3s ease;
+            border-radius: 0;
+            border-bottom: 1px solid #757575;
 
             // border-right:1px solid rgb(104, 96, 96);
             &:focus{
@@ -45,12 +60,32 @@ form {
                 border: none;
                 outline: none;
                 border-bottom: 1px solid rgb(104, 96, 96);
-            &:focus ~ label{
-                    transform: translatey(-40px);                
-                }
+
+                
+                
             }
-            
+           
+           
         }
+
+        input:focus ~ label{
+            left: 15px;
+            top: 15px;
+            transform: scale(.80); 
+            color: #4a89dc;
+        }
+
+        input:active ~ label {
+            left: 15px;
+            top: 15px;
+            transform: scale(.80); 
+            color: #4a89dc;
+        }
+        
+
+        // input:focus ~ label{
+        //     background-color: red !important;
+        // }
 
         select{
             background-color: #fff;
@@ -76,8 +111,11 @@ form {
             }
         }
     }
+
+    
     
 }
+
 
 .success{
     display: flex;
