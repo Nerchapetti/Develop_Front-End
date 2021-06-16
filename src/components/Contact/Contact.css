@@ -62,17 +62,20 @@ form .form-data input, form .form-data textarea, form .form-data select {
   transition: all 0.3s ease;
 }
 
+form .form-data input:focus ~ label,
+form .form-data input.valid ~ label, form .form-data textarea:focus ~ label,
+form .form-data textarea.valid ~ label, form .form-data select:focus ~ label,
+form .form-data select.valid ~ label {
+  -webkit-transform: translatey(-40px);
+          transform: translatey(-40px);
+}
+
 form .form-data input:focus, form .form-data textarea:focus, form .form-data select:focus {
   -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
           box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
   border: none;
   outline: none;
   border-bottom: 1px solid #686060;
-}
-
-form .form-data input:focus:focus ~ label, form .form-data textarea:focus:focus ~ label, form .form-data select:focus:focus ~ label {
-  -webkit-transform: translatey(-40px);
-          transform: translatey(-40px);
 }
 
 form .form-data select {
