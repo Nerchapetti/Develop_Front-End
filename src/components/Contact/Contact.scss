@@ -64,23 +64,19 @@ form {
             }
         }
         .inputbox:focus ~ label{
-            left: 15px;
-            top: 15px;
+            left: 25px;
+            top: 10px;
             transform: scale(.80); 
             color: #4a89dc;
         }
         .inputbox:valid ~ label {
-            left: 15px;
-            top: 15px;
+            left: 25px;
+            top: 10px;
             transform: scale(.80); 
             color: #4a89dc;
         }
-        .inputbox2:focus ~ label{
-            top: 15px;
-        }
-        .inputbox2:valid ~ label {
-            top: 15px;
-        }
+       
+        
         select{
             background-color: #fff;
             &:focus{
@@ -88,10 +84,23 @@ form {
             }
             
         }
+
+        textarea:focus ~ label{
+            left: 25px;
+            top: 10px;
+            transform: scale(.80); 
+            color: #4a89dc;
+        }
+        textarea:valid ~ label {
+            left: 25px;
+            top: 10px;
+            transform: scale(.80); 
+            color: #4a89dc;
+        }
         
         input[type=submit]{
-            background-color: #ffffff;
             width: fit-content;
+            color: #fff !important;
             width: 200px;
             border-radius: 20px;
             background-color: #1A73E8;

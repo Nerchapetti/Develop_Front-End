@@ -103,12 +103,12 @@ function ContactUs() {
           </div>
 
           <div className="form-data">
-            <input className="inputbox2" type="email" name="user_email" required/>
+            <input className="inputbox" type="email" name="user_email" required/>
             <label>Email <span>*</span></label>
           </div>
 
           <div className="form-data">
-            <textarea className="inputbox" rows="8"  name="message" />
+            <textarea rows="8"  name="message" />
             <label>Message</label>
           </div>
 
