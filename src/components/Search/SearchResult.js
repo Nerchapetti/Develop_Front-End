@@ -8,7 +8,7 @@ const SearchResult = ({keyword, parishes}) => {
 
     useEffect(() => {
         let searchResult = parishes.filter(parish => {
-            return parish.about.churchName.toLowerCase().includes(keyword.toLowerCase())
+            return parish.about.churchName.toLowerCase().includes(keyword.toLowerCase()) || parish._id.includes(keyword)
         })
         setresult(searchResult)
         console.log(result);

@@ -1,0 +1,119 @@
+.qurbana-panam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.qurbana-panam .feedback {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+}
+
+.qurbana-panam .feedback span {
+  color: red;
+}
+
+.qurbana-panam .feedback ul li {
+  padding: 5px;
+}
+
+.qurbana-panam .feedback .btn {
+  padding: 10px;
+  background-color: #b4d2f8;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.qurbana-panam .qurbana-item {
+  width: 48%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 1024px) {
+  .qurbana-panam .qurbana-item {
+    width: 100%;
+  }
+}
+
+.qurbana-panam .qurbana-item .qurbana-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.qurbana-panam .qurbana-item .input {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.qurbana-panam .qurbana-item .input .name-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00000020;
+  outline: none;
+}
+
+.qurbana-panam .qurbana-item .input .btn {
+  width: 50px;
+  padding: 10px;
+  background-color: #b4d2f8;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=QurbanaPanam.css.map */

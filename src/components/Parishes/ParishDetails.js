@@ -10,6 +10,7 @@ import About from "./About";
 import Committe from "./Committe";
 import Offerings from "./Offerings";
 import Location from "./Location";
+import QurbanaPanam from "./QurbanaPanam";
 
 const ParisheDetails = () => {
   let { url } = useRouteMatch();
@@ -81,6 +82,10 @@ const ParisheDetails = () => {
       path: `${url}/location`,
       main: () => <Location parish={parishData} />,
     },
+    {
+      path: `${url}/qurbana-panam`,
+      main: () => <QurbanaPanam parish={parishData} />,
+    },
   ];
 
   return (
@@ -102,6 +107,9 @@ const ParisheDetails = () => {
                 </li>
                 <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/location`}>Location</Link>
+                </li>
+                <li onClick={(e) => handleClick(e)}>
+                  <Link to={`${url}/qurbana-panam`}>Qurbana Panam</Link>
                 </li>
               </ul>
             </div>
