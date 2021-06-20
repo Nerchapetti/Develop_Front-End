@@ -6,6 +6,28 @@
     gap: 20px;
     flex-wrap: wrap;
 
+    .qurbana-error{
+        width: 100%;
+        background-color: rgb(241, 182, 182);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: red;
+        font-weight: 500;
+    }    
+    .qurbana-success{
+        width: 100%;
+        background-color: rgb(170, 243, 136);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: green;
+        font-weight: 500;
+    }    
+
+
     .feedback{
         width: 50%;
         display: flex;
