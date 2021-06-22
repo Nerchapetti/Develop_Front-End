@@ -29,7 +29,7 @@ const Footer = () => {
                                 Veera Marthanda Varma Road, Podiyadi P. O. <br />
                                 Thiruvalla, Kerala – 689 110 (India)  <br /> <br />
                                 Email:
-                                AllenVengal@gmail.com  <br /> 
+                                nerchapetti@gmail.com  <br /> 
                                 Time: Mon - Fri (9:00 -
                                 16:00)
                             </p>
