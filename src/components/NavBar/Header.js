@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import SearchBar from "../Search/SearchBar";
 import "./Header.css";
+import logo from "./logo.png"
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -11,7 +12,7 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="navbar">
-      <Link className="nav-logo" to="/">Nerchapetti</Link>
+      <Link className="nav-logo" to="/"><img src={logo} alt="Logo" /></Link>
             <SearchBar />
         <ul className={click ? 'nav-menu active': "nav-menu"}>
           <li className="nav-item" onClick={closeMobileMenu}>
