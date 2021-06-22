@@ -27,12 +27,19 @@
 
 .list-container .title a .companyname {
   font-size: 2rem;
-  color: #1a73e8;
-  text-align: center;
+  color: #4b93f0;
 }
 
 .list-container .title p {
   color: #AAB2BD;
+}
+
+.list-container .title .address a p {
+  color: #ffffff;
+}
+
+.list-container .title .address p {
+  margin: 10px 0;
 }
 
 .list-container .details .list-footer li {

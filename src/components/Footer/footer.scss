@@ -13,18 +13,26 @@
             flex-direction: column;
 
         }
-        a{
-        }
         .title  {
             a{
                 .companyname{
                     font-size: 2rem;
-                    color: #1a73e8;
-                    text-align: center;
+                    color: #4b93f0;
                 }
             }
             p{
                 color: #AAB2BD;
+            }
+
+            .address{
+                a{
+                    p{
+                        color: #ffffff;
+                    }
+                }
+                p{
+                    margin: 10px 0;
+                }
             }
         }
         .details{
