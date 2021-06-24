@@ -28,11 +28,13 @@ function ContactUs() {
           if(result.text === 'OK'){
             setsuccess(true)
             setisLoading(false)
+            window.scrollTo(0,0)
             
           }
           else{
             seterror(true)
             setisLoading(false)
+            window.scrollTo(0,0)
             console.log(result);
           }
         },
@@ -40,6 +42,7 @@ function ContactUs() {
           console.log(error.text);
           seterror(true)
           setisLoading(false)
+          window.scrollTo(0,0)
         }
       );
   }
