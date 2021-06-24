@@ -30,8 +30,8 @@
   }
 }
 
-.search-bar .search-result::-webkit-scrollbar {
-  width: 5px;
+.resultCard {
+  cursor: pointer;
 }
 
 .result-Card {
@@ -52,7 +52,8 @@
 }
 
 .result-Card .result-img {
-  width: 50px;
+  min-width: 50px;
+  max-width: 50px;
 }
 
 .result-Card:hover {

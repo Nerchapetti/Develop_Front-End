@@ -14,16 +14,16 @@ const About = () => {
         <div>
             <Header />
             <div className="main-container-about">
-                <div className="about">
+                {/* <div className="about">
                     <h1>About</h1>
                     <p>
                     providing a platform for supporting local charity causes and for raising campaign for donations.
                     </p>
-                </div>
+                </div> */}
                 <div className="team">
                     <h1>Our Team</h1>
-                    <p>Sometimes you meet someone, and it's so clear that two of you, on some level belong together. As friends or as co-workers or as something entirely different. You meet these people throughout your life, out of nowhere, under the strangest circumstances, and they help you feel alive. And that's what we feel here at Team Nerchapetti.</p>
-                    <h1 className="position">Technical Team</h1>
+                    {/* <p>Sometimes you meet someone, and it's so clear that two of you, on some level belong together. As friends or as co-workers or as something entirely different. You meet these people throughout your life, out of nowhere, under the strangest circumstances, and they help you feel alive. And that's what we feel here at Team Nerchapetti.</p> */}
+                    {/* <h1 className="position">Technical Team</h1> */}
                     <div className="team-members">
                         <TeamMember name="Amritha M L" about="DevOps-Web" img={amritha} l="amritha-ml-9401b014b" i="" t=""/>
                         <TeamMember name="Shameer M R" about="DevOps-Web" img={shameer} l="shameer-m-r-5916771b6" i="" t=""/>

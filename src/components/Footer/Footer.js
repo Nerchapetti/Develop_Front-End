@@ -43,7 +43,7 @@ const Footer = () => {
                             <li className="">
                                 <Link to="/contact">Contact</Link>
                             </li>
-                            <li className="">Enroll</li>
+                            <li className="">How it works</li>
                             <li className="">
                                 <Link to="/patrons">Patron</Link>
                             </li>

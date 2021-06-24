@@ -1,0 +1,18 @@
+.success-popup{
+    color: green;
+    background-color: rgb(157, 202, 130);
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+}
+
+.success-popup h1{
+    font-size: 2rem;
+}
+
+@media(max-width: 767px){
+    .success-popup h1{
+        font-size: 1rem;
+    }
+}

@@ -3,8 +3,8 @@ import "./Contact.css";
 import Header from "../NavBar/Header";
 import Footer from "../Footer/Footer";
 import { useState } from "react";
-
-
+import Error from "../Error/Error"
+import Success from "../Success/Success"
 
 function ContactUs() {
   const [isLoading, setisLoading] = useState(false)
@@ -32,38 +32,19 @@ function ContactUs() {
           }
           else{
             seterror(true)
+            setisLoading(false)
+            console.log(result);
           }
         },
         (error) => {
           console.log(error.text);
           seterror(true)
+          setisLoading(false)
         }
       );
   }
 
-  if(error){
-    return(
-      <>
-      <Header />
-      <div className="error">
-        <h1>Something went wrong !!! <br /> Please Try again after sometime</h1> 
-      </div>
-      <Footer />
-      </>
-    )
-  }
 
-  if(success){
-    return(
-      <>
-      <Header />
-      <div className="success">
-        <h1>Message sent successfully!!!!</h1> 
-      </div>
-      <Footer />
-      </>
-    )
-  }
 
   if(isLoading){
     return (
@@ -78,6 +59,8 @@ function ContactUs() {
   return (
     <>
       <Header />
+      {error ? <Error error={error} /> : ""}
+      {success ? <Success success={success} message="message sent successfully" /> : ""}
       <div className="contactdata">
         <form className="contact-form" onSubmit={sendEmail}>
 
@@ -89,7 +72,7 @@ function ContactUs() {
             <select name="query" id="">
             <option value="s">Select a Query Type</option>
               <option value="general">General Query</option>
-              <option value="patnership">Patnership Query</option>
+              <option value="partnership">Partnership Query</option>
               <option value="report">Report</option>
             </select>
           </div>

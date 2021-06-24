@@ -6,6 +6,8 @@ import SearchResult from "./SearchResult";
 const SearchBar = () => {
   const [keyword, setkeyword] = useState("");
   const [parishes, setparishes] = useState("")
+  const [campaigns, setcampaigns] = useState("")
+  const [patrons, setpatrons] = useState("")
   const [error, seterror] = useState(false)
   useEffect(() => {
 
@@ -21,17 +23,42 @@ const SearchBar = () => {
         console.log(err);
       })
 
+      getRequest(`${window.URI}/get-all-campaigns`).then((data) => {
+        if(data.status === 'ok'){
+          setcampaigns(data.data);
+          console.log(data);
+          
+        }
+        
+      }).catch(err => {
+        seterror(true)
+        console.log(err);
+      })
+
+      getRequest(`${window.URI}/get-all-patrons`).then((data) => {
+        if(data.status === 'ok'){
+          setpatrons(data.data);
+          console.log(data);
+          
+        }
+        
+      }).catch(err => {
+        seterror(true)
+        console.log(err);
+      })
+
   }, []);
 
   if(error){
       return null
   }
 
-  if(!parishes){
+  if(!parishes || !patrons || !campaigns){
       return(
           null
       )
   }
+
   return (
     <div className="search-bar">
       <input
@@ -42,7 +69,7 @@ const SearchBar = () => {
         onChange={(e) => setkeyword(e.target.value)}
         placeholder="search.. "
       />
-      <SearchResult parishes={parishes} keyword={keyword}/>
+      <SearchResult parishes={parishes} patrons={patrons} campaigns={campaigns} keyword={keyword}/>
     </div>
   );
 };
