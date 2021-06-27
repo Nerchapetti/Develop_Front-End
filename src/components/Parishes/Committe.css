@@ -11,6 +11,32 @@
       flex-wrap: wrap;
 }
 
+.parish-committe .core-committe {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.parish-committe .heading {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+}
+
 .parish-committe .member-container {
   width: 48%;
   border-radius: 10px;
@@ -27,8 +53,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1024px) {
@@ -38,15 +65,15 @@
 }
 
 .parish-committe .member-container .image {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .parish-committe .member-container .image img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -61,8 +88,8 @@
 
 @media (max-width: 767px) {
   .parish-committe .member-container .image {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -75,5 +102,14 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  text-align: right;
+}
+
+.parish-committe .member-container .member-details .member-title {
+  color: #a18fff;
+}
+
+.parish-committe .member-container .offer-details {
+  text-align: left;
 }
 /*# sourceMappingURL=Committe.css.map */

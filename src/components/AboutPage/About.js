@@ -9,6 +9,7 @@ import shameer from "./teams/shameer.jpg"
 import vyshnav from "./teams/vyshnav.jpeg"
 import rahul from "./teams/rahul.jpg"
 import surya from "./teams/surya.jpeg"
+import jebin from "./teams/jebin.jpeg"
 const About = () => {
     return (
         <div>
@@ -31,6 +32,7 @@ const About = () => {
                         <TeamMember name="Vyshnav P" about="DevOps-Web" img={vyshnav} l="vrv-vyshnav" i="" t=""/>                                             
                         <TeamMember name="Surya V R" about="DevOps-Web" img={surya} l="surya-vr-8a7b501a7" i="" t=""/>                                             
                         <TeamMember name="Rahul T" about="DevOps-Web" img={rahul} l="rahulmanojcet" i="" t=""/>                                             
+                        <TeamMember name="Jebin Jose " about="Operations" img={jebin} l="jebin-jose-6b30491b8" i="" t=""/> 
                         
                     </div>
                     <h1 className="position">Alumini</h1>

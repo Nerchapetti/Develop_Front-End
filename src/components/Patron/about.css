@@ -2,3 +2,29 @@
     width: 80%;
     margin: 50px auto;
 }
+
+.About p{
+    margin: 20px 0;
+    line-height: 2;
+}
+
+.About a{
+    color: blue;
+}
+
+.About ul{
+    list-style: disc !important;
+    
+}
+
+.About ul li{
+    list-style: disc !important;
+}
+
+.About ol li{
+    list-style: decimal;
+}
+
+.About table td{
+    border: 1px solid #00000030;
+}

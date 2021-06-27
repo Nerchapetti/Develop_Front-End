@@ -23,7 +23,7 @@ const Footer = () => {
                             <a href="mailto:nerchapetti@gmail.com"><p>nerchapetti@gmail.com </p></a>
 
 
-                            <h3>Operating Address</h3>
+                            <h3>Address</h3>
                             <p>
                                 Nerchapetti.com, John Zakariah Technologies, <br />
                                 Veera Marthanda Varma Road, Podiyadi P. O. <br />
