@@ -126,9 +126,6 @@ const Parishes = ({ ids }) => {
     )
   }
 
-  const handleClick = (id) => {
-    window.location = `/parish-details/${id}/about`;
-  };
 
   return (
     <div className="parishes">
@@ -149,7 +146,7 @@ const Parishes = ({ ids }) => {
               </div>
           <Link
             to={`/parish-details/${data._id}/about`}
-            onClick={() => handleClick(data._id)}
+            
           >
               <div className="catagory">{data.about.churchcategory}</div>
               <div className="churchname">{data.about.churchName.slice(0, 20)}</div>

@@ -113,10 +113,6 @@ const Campaigns = ({ ids }) => {
     });
   };
 
-  const handleClick = (id) => {
-    window.location = `/campaign-details/${id}`;
-  };
-
 
   if(isLoading){
     return <div className="isLoading"></div>
@@ -168,7 +164,7 @@ const Campaigns = ({ ids }) => {
                 <div className="camp-details-container">
               <Link
                 to={createLink(data._id)}
-                onClick={() => handleClick(data._id)}
+               
               >
                   <div className="camp-heading">
                     <h1 className="title">{data.title.slice(0, 20)}...</h1>

@@ -2,24 +2,26 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 const ResultCard = ({imageurl, id, title, category}) => {
-    const handleClick = (id) => {
+    const createLink = (id) => {
         if(category === "parish"){
-          window.location = `/parish-details/${id}/about`;
+          return `/parish-details/${id}/about`;
         } else if(category === "campaign"){
-          window.location = `/campaign-details/${id}`;
+          return `/campaign-details/${id}`;
         } else if(category === "patron"){
-          window.location = `/patron/${id}/about`;
+          return `/patron/${id}/about`;
         }
       };
 
     return (
-        <div className="resultCard"  onClick={() => handleClick(id)}>
+        <Link to={e => createLink(id)}>
+        <div className="resultCard" >
           <div className="result-Card">
             <img className="result-img" src={imageurl} alt="na" />
             <p>{title}</p> 
           </div>
 
         </div>
+        </Link>
     )
 }
 

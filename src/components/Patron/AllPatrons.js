@@ -38,8 +38,8 @@ const AllPatrons = () => {
                         <img src={patron.imageUrl} alt="patronimage"/>
                       </div>
                       <div className="details">
-                        <h1>{patron.about.name}</h1>
-                        <p dangerouslySetInnerHTML={ {__html: patron.about.about.slice(0, 25)} }></p>
+                        <h1 style={{textAlign: "right"}}>{patron.about.name}</h1>
+                        {/* <p dangerouslySetInnerHTML={ {__html: patron.about.about.slice(0, 25)} }></p> */}
                       </div>
                     </div>
                   </Link>
