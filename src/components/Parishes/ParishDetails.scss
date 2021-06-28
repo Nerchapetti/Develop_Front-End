@@ -43,12 +43,17 @@
 .inner-nav{
     margin: 30px;
     justify-self: center; 
+    display: flex;
+    flex-direction: column;
     @media(max-width: 767px){
         margin:  30px 0;
     }
     ul{
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         padding: 5px;
         border-radius: 10px;
         box-shadow: 0 4px 11px 3px hsla(0, 0%, 75.3%, 0.288) !important;

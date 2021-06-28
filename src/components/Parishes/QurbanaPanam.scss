@@ -37,6 +37,9 @@
         padding: 20px;
         box-shadow: 0 4px 11px 3px hsla(0,0%,75.3%,.288)!important;
 
+        @media(max-width: 767px){
+            width: 100%;
+        }
         span{
             color: red;
         }

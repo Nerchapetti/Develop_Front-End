@@ -55,8 +55,14 @@
 
 .inner-nav {
   margin: 30px;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 767px) {
@@ -73,6 +79,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 5px;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;

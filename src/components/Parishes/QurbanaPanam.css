@@ -71,6 +71,12 @@
           box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
 }
 
+@media (max-width: 767px) {
+  .qurbana-panam .feedback {
+    width: 100%;
+  }
+}
+
 .qurbana-panam .feedback span {
   color: red;
 }

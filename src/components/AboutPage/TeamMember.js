@@ -15,7 +15,7 @@ const TeamMember = ({ name, about, img, l, i, t }) => {
       <h3 className="name">{name}</h3>
       <p className="name-detail">{about}</p>
       <div className="detail-icon">
-        <a href={`https://instagram.com/${i}`}>
+        {/* <a href={`https://instagram.com/${i}`}>
           <span>
             <FontAwesomeIcon
               style={{color: '#b0487b'}}
@@ -32,7 +32,7 @@ const TeamMember = ({ name, about, img, l, i, t }) => {
               icon={faTwitter}
             />
           </span>
-        </a>
+        </a> */}
         <a href={`https://linkedin.com/in/${l}`}>
           <span>
             <FontAwesomeIcon
