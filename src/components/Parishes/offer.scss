@@ -1,4 +1,4 @@
-.qurbana-panam{
+.offer-container{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -6,7 +6,7 @@
     gap: 20px;
     flex-wrap: wrap;
 
-    .qurbana-error, .offer-error{
+    .offer-error{
         width: 100%;
         background-color: rgb(241, 182, 182);
         padding: 10px;
@@ -16,7 +16,7 @@
         color: red;
         font-weight: 500;
     }    
-    .qurbana-success, .offer-success{
+    .offer-success{
         width: 100%;
         background-color: rgb(170, 243, 136);
         padding: 10px;
@@ -29,7 +29,7 @@
 
 
     .feedback{
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -59,7 +59,7 @@
         }
     }
 
-    .qurbana-item{
+    .offer-item{
         width: 48%;
         border-radius: 10px;
         box-shadow: 0 4px 11px 3px hsla(0,0%,75.3%,.288)!important;
@@ -73,7 +73,7 @@
 
         }
         
-        .qurbana-title{
+        .offer-title{
             font-size: 1.5rem;
             margin-bottom: 20px;
 

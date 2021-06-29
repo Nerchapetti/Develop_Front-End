@@ -1,4 +1,4 @@
-.qurbana-panam {
+.offer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +17,7 @@
       flex-wrap: wrap;
 }
 
-.qurbana-panam .qurbana-error, .qurbana-panam .offer-error {
+.offer-container .offer-error {
   width: 100%;
   background-color: #f1b6b6;
   padding: 10px;
@@ -34,7 +34,7 @@
   font-weight: 500;
 }
 
-.qurbana-panam .qurbana-success, .qurbana-panam .offer-success {
+.offer-container .offer-success {
   width: 100%;
   background-color: #aaf388;
   padding: 10px;
@@ -51,8 +51,8 @@
   font-weight: 500;
 }
 
-.qurbana-panam .feedback {
-  width: 50%;
+.offer-container .feedback {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,20 +72,20 @@
 }
 
 @media (max-width: 767px) {
-  .qurbana-panam .feedback {
+  .offer-container .feedback {
     width: 100%;
   }
 }
 
-.qurbana-panam .feedback span {
+.offer-container .feedback span {
   color: red;
 }
 
-.qurbana-panam .feedback ul li {
+.offer-container .feedback ul li {
   padding: 5px;
 }
 
-.qurbana-panam .feedback .btn {
+.offer-container .feedback .btn {
   padding: 10px;
   background-color: #b4d2f8;
   border: none;
@@ -95,7 +95,7 @@
   margin-top: 20px;
 }
 
-.qurbana-panam .qurbana-item {
+.offer-container .offer-item {
   width: 48%;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
@@ -116,17 +116,17 @@
 }
 
 @media (max-width: 1024px) {
-  .qurbana-panam .qurbana-item {
+  .offer-container .offer-item {
     width: 100%;
   }
 }
 
-.qurbana-panam .qurbana-item .qurbana-title {
+.offer-container .offer-item .offer-title {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
-.qurbana-panam .qurbana-item .input {
+.offer-container .offer-item .input {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,14 +141,14 @@
           align-items: center;
 }
 
-.qurbana-panam .qurbana-item .input .name-input {
+.offer-container .offer-item .input .name-input {
   width: 100%;
   padding: 10px;
   border: 1px solid #00000020;
   outline: none;
 }
 
-.qurbana-panam .qurbana-item .input .btn {
+.offer-container .offer-item .input .btn {
   width: 50px;
   padding: 10px;
   background-color: #b4d2f8;
@@ -156,4 +156,4 @@
   outline: none;
   cursor: pointer;
 }
-/*# sourceMappingURL=QurbanaPanam.css.map */
+/*# sourceMappingURL=offer.css.map */
