@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import avatar from "./avatar.svg"
 import "./Campaigns.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -172,7 +173,7 @@ const Campaigns = ({ ids }) => {
               </Link>
                   <div className="organiser-details">
                     <img
-                      src="https://kettocdn.gumlet.io/media/individual/1358000/1358229/image/5e58e4fc7b807.jpg?w=50&dpr=1.0"
+                      src={avatar}
                       alt=""
                     />
                     <p>{data.fundRaiser}</p>
