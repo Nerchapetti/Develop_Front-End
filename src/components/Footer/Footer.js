@@ -23,11 +23,12 @@ const Footer = () => {
                             <a href="mailto:nerchapetti@gmail.com"><p>nerchapetti@gmail.com </p></a>
 
 
-                            <h3>Address</h3>
                             <p>
-                                Nerchapetti.com, John Zakariah Technologies, <br />
-                                Veera Marthanda Varma Road, Podiyadi P. O. <br />
-                                Thiruvalla, Kerala – 689 110 (India)  <br /> <br />
+                                John Zakariah Technologies, <br />
+                                Veera Marthanda Varma Road, <br />
+                                Podiyadi P. O. <br />
+                                Thiruvalla, Kerala <br /> 
+                                689 110 (India)  <br /> <br />
                                 Email:
                                 nerchapetti@gmail.com  <br /> 
                                 Time: Mon - Fri (9:00 -
