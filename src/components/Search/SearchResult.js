@@ -15,13 +15,13 @@ const SearchResult = ({keyword, parishes, campaigns, patrons}) => {
 
 
         let parishesResult = parishes.filter(parish => {
-            return parish.about.churchName.toLowerCase().includes(keyword.toLowerCase()) || parish._id.includes(keyword)
+            return parish.about.churchName.toLowerCase().includes(keyword.toLowerCase()) || parish._id.includes(keyword) ||  parish.nerchapettiId.includes(keyword)
         })
         setparishResult(parishesResult)
 
 
         let patronsResult = patrons.filter(patron => {
-            return patron.about.name.toLowerCase().includes(keyword.toLowerCase()) || patron._id.includes(keyword)
+            return patron.about.name.toLowerCase().includes(keyword.toLowerCase()) || patron._id.includes(keyword) || patron.nerchapettiId.includes(keyword)
         })
         setpatronResult(patronsResult)
 
