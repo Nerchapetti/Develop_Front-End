@@ -155,7 +155,7 @@ const Campaigns = ({ ids }) => {
       </div>
 
       <div className="campaign-container">
-        {campaign.map((data) => (
+        {campaign.reverse().map((data) => (
           
             <div className="camp-container" key={data._id}>
                 <div className="camp-img">
@@ -164,11 +164,10 @@ const Campaigns = ({ ids }) => {
                 <div className="camp-details-container">
               <Link
                 to={createLink(data._id)}
-               
               >
                   <div className="camp-heading">
                     <h1 className="title">{data.title.slice(0, 20)}...</h1>
-                    <p dangerouslySetInnerHTML={ {__html: data.content.slice(0, 30)} }></p>
+                    <p dangerouslySetInnerHTML={ {__html: data.content.slice(0, 30)} } />
                   </div>
               </Link>
                   <div className="organiser-details">

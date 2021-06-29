@@ -139,7 +139,7 @@ const Parishes = ({ ids }) => {
         />
       </div>
       <div className="Parishes-containor">
-        {Parishes.map((data) => (
+        {Parishes.reverse().map((data) => (
             <div style={{position: 'relative'}} className="cards" key={data._id}>
               <div className="images">
                 <img src={data.imageUrl} alt="" />
@@ -149,10 +149,10 @@ const Parishes = ({ ids }) => {
             
           >
               <div className="catagory">{data.about.churchcategory}</div>
-              <div className="churchname">{data.about.churchName.slice(0, 20)}</div>
-              <div className="about" dangerouslySetInnerHTML={ {__html: data.about.content.slice(0,20)} }></div>
+              <div className="churchname">{data.about.churchName.slice(0, 20)}...</div>
+              <div className="about">Nerchapetti ID: <span style={{fontWeight: "500", }}>{data.nerchapettiId}</span></div>
               <div className="location">
-                <p>location : {data.about.location}</p>
+                <p>{data.about.location}</p>
               </div>
           </Link>
           <div className="likes-share">
