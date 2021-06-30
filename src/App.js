@@ -20,8 +20,8 @@ function App() {
       <Route exact path="/about" component={About} />
       <Route exact path="/contact" component={Contact} />
       <Route path="/campaign-details/:id" component={CampaignDetails} />
-      <Route path="/parish-details/:id" component={ParisheDetails} />
-      <Route path="/patrons" component={AllPatrons} />
+      <Route exact path="/:id" component={ParisheDetails} />
+      <Route path="/patrons/all" component={AllPatrons} />
       <Route path="/patron/:id" component={patron} />
       <Route path="/policies/aml-policy" component={AMLPolicy} />
       <Route path="/policies/privacy-policy" component={PrivacyPolicy} />

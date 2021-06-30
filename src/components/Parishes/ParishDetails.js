@@ -33,7 +33,7 @@ const ParisheDetails = () => {
 
   console.log(url);
   useEffect(() => {
-    getRequest(`${window.URI}/get-parish/${id}`)
+    getRequest(`${window.URI}/get-parish-id/${id}`)
       .then((res) => {
         if (res.status === "ok") {
           console.log(res);
@@ -67,8 +67,9 @@ const ParisheDetails = () => {
 
   const routes = [
     {
-      path: `${url}/about`,
+      path: `${url}`,
       main: () => <About parish={parishData} />,
+      exact: true
     },
     {
       path: `${url}/committe-members`,
@@ -97,7 +98,7 @@ const ParisheDetails = () => {
             <div className="inner-nav">
               <ul>
                 <li className="active" onClick={(e) => handleClick(e)}>
-                  <Link to={`${url}/about`}>About</Link>
+                  <Link to={`${url}`}>About</Link>
                 </li>
                 <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/committe-members`}>Committe</Link>
@@ -114,6 +115,7 @@ const ParisheDetails = () => {
               </ul>
             </div>
             <div className="parish-contents">
+              {/* <About parish={parishData} /> */}
               <Switch>
                 {routes.map((route, index) => (
                   <Route

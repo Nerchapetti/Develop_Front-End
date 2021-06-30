@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-const ResultCard = ({imageurl, id, title, category}) => {
-    const createLink = (id) => {
+const ResultCard = ({imageurl, id, title, category, nerchapettiId}) => {
+    const createLink = (nerchapettiId) => {
         if(category === "parish"){
-          return `/parish-details/${id}/about`;
+          return `/${nerchapettiId}`;
         } else if(category === "campaign"){
           return `/campaign-details/${id}`;
         } else if(category === "patron"){
@@ -13,7 +13,7 @@ const ResultCard = ({imageurl, id, title, category}) => {
       };
 
     return (
-        <Link to={e => createLink(id)}>
+        <Link to={e => createLink(nerchapettiId)}>
         <div className="resultCard" >
           <div className="result-Card">
             <img className="result-img" src={imageurl} alt="na" />

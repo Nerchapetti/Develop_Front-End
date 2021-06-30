@@ -46,7 +46,7 @@ const Footer = () => {
                             </li>
                             <li className="">How it works</li>
                             <li className="">
-                                <Link to="/patrons">Patron</Link>
+                                <Link to="/patrons/all">Patron</Link>
                             </li>
                             <li className="">Pricing</li>
                         </ul>

@@ -145,7 +145,7 @@ const Parishes = ({ ids }) => {
                 <img src={data.imageUrl} alt="" />
               </div>
           <Link
-            to={`/parish-details/${data._id}/about`}
+            to={`/${data.nerchapettiId}`}
             
           >
               <div className="catagory">{data.about.churchcategory}</div>
