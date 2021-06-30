@@ -39,10 +39,10 @@ const Footer = () => {
                     <div className="details">
                         <ul className="list-footer">
                             <li className="">
-                                <Link to="/about">About</Link>
+                                <Link to="/about/us">About</Link>
                             </li>
                             <li className="">
-                                <Link to="/contact">Contact</Link>
+                                <Link to="/contact/us">Contact</Link>
                             </li>
                             <li className="">How it works</li>
                             <li className="">

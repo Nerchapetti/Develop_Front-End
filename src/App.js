@@ -17,8 +17,8 @@ function App() {
     <div className="App">
     <Router>
       <Route exact path="/" component={HomePage} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/contact" component={Contact} />
+      <Route path="/about/us" component={About} />
+      <Route path="/contact/us" component={Contact} />
       <Route path="/campaign-details/:id" component={CampaignDetails} />
       <Route exact path="/:id" component={ParisheDetails} />
       <Route path="/patrons/all" component={AllPatrons} />

@@ -16,10 +16,10 @@ const Header = () => {
             <SearchBar />
         <ul className={click ? 'nav-menu active': "nav-menu"}>
           <li className="nav-item" onClick={closeMobileMenu}>
-            <Link to="/about">ABOUT</Link>
+            <Link to="/about/us">ABOUT</Link>
           </li>
           <li className="nav-item" onClick={closeMobileMenu}>
-            <Link to="/contact">CONTACT</Link>
+            <Link to="/contact/us">CONTACT</Link>
           </li>
         </ul>
           <div className={click ? 'hamburger active' : 'hamburger'} onClick={handleClick}>
