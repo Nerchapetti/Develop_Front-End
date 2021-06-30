@@ -60,7 +60,7 @@ const SearchResult = ({keyword, parishes, campaigns, patrons}) => {
             {patronResult.length === 0 ? "" : <h1>Patrons Results</h1>}
             {patronResult.length === 0 ? "" : patronResult.map(r => (
                 <>
-                <ResultCard imageurl={r.imageUrl} id={r._id} title={r.about.name} category={"patron"} />
+                <ResultCard nerchapettiId={r.nerchapettiId} imageurl={r.imageUrl} id={r._id} title={r.about.name} category={"patron"} />
                 
                 </>
             ))}

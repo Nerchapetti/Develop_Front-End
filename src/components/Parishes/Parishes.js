@@ -158,7 +158,7 @@ const Parishes = ({ ids }) => {
           <div className="likes-share">
           <Likes likes={data.likes} id={data._id} likeFor="parish"/>
               <div className="share">
-                <WhatsappShareButton url={`https://nerchapetti.com/parish-details/${data._id}`}>
+                <WhatsappShareButton url={`https://nerchapetti.com/${data.nerchapettiId}`}>
                   <FontAwesomeIcon className="shareicon" icon={faShareAlt} />{" "}
                 </WhatsappShareButton>
               </div>

@@ -157,7 +157,6 @@ const Campaigns = ({ ids }) => {
 
       <div className="campaign-container">
         {campaign.reverse().map((data) => (
-          
             <div className="camp-container" key={data._id}>
                 <div className="camp-img">
                   <img className="img" src={data.imageUrl} alt="" />
@@ -172,11 +171,13 @@ const Campaigns = ({ ids }) => {
                   </div>
               </Link>
                   <div className="organiser-details">
-                    <img
-                      src={avatar}
-                      alt=""
-                    />
-                    <p>{data.fundRaiser}</p>
+                      <img
+                        src={data.fundRaiser.imageUrl}
+                        alt=""
+                      />
+                    <Link to={`/patron/${data.fundRaiser.nerchapettiId}`}>
+                      <p>{data.fundRaiser.name}</p>
+                    </Link>
                     <Likes id={data._id} likes={data.likes} likeFor="campaign" />
                   </div>
 

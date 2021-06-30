@@ -8,7 +8,7 @@ const ResultCard = ({imageurl, id, title, category, nerchapettiId}) => {
         } else if(category === "campaign"){
           return `/campaign-details/${id}`;
         } else if(category === "patron"){
-          return `/patron/${id}/about`;
+          return `/patron/${nerchapettiId}`;
         }
       };
 

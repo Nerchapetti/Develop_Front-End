@@ -48,7 +48,7 @@ const Patron = () => {
     console.log(id);
     const routes = [
         {
-            path: `${url}/about`,
+            path: `${url}`,
             exact: true,
             main: () => <About patron={patronDetails}/>,
         },
@@ -95,7 +95,7 @@ const Patron = () => {
             <div className="detail">
               <ul>
                 <li className="active" onClick={(e) => handleClick(e)}>
-                  <Link to={`${url}/about`}>About</Link>
+                  <Link to={`${url}`}>About</Link>
                 </li>
                 <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/contact`}>Contact</Link>

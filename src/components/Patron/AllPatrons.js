@@ -32,7 +32,7 @@ const AllPatrons = () => {
           <div className="allpatrons">
             {patrons.map((patron, i) => (
               <>
-                  <Link to={`/patron/${patron._id}/about`}>
+                  <Link to={`/patron/${patron.nerchapettiId}`}>
                     <div className="patron" key={i}>
                       <div className="image">
                         <img src={patron.imageUrl} alt="patronimage"/>
