@@ -1,0 +1,69 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+.pricing-container {
+  .headline {
+    h1 {
+      margin: 30px 0 5px;
+      font-size: 24px;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      margin: 10px 0px;
+    }
+  }
+  .plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0px;
+    max-height: auto;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    gap: 50px;
+    text-align: center;
+
+    @media(max-width: 767px){
+        grid-template-columns: 1fr;
+        margin: 10px -20px;
+        
+    }
+    .planA {
+      box-shadow: 10px 10px 20px 15px hsla(0, 0%, 75.3%, 0.288) !important;
+      padding: 10px;
+
+      h3 {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 100px;
+      }
+      p {
+        padding: 20px;
+        h4 {
+          span {
+            font-size: 60px;
+            color: #1a73e8;
+          }
+        }
+      }
+      ul {
+          text-align: left;
+        li {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  .plan-end {
+    text-align: center;
+    margin: 30px 0px;
+    p{
+        margin-top: 10px
+    }
+
+  }
+}

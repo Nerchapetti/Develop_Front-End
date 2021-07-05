@@ -10,6 +10,7 @@ import { AMLPolicy } from "./components/Policies/AMLPolicy";
 import { PrivacyPolicy } from "./components/Policies/PrivacyPolicy";
 import { RefundPolicy } from "./components/Policies/RefundPolicy";
 import { TermsOfUse } from "./components/Policies/TermsOfUse";
+import Pricing from "./components/Pricing/Pricing";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Route path="/policies/privacy-policy" component={PrivacyPolicy} />
       <Route path="/policies/refund-policy" component={RefundPolicy} />
       <Route path="/policies/terms-of-use" component={TermsOfUse} />
+      <Route path="/pricing/plan" component={Pricing} />
     </Router>
     </div>
   );
