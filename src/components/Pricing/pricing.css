@@ -1,4 +1,4 @@
-.body {
+.pricing-container {
   margin: 0;
   padding: 0;
 }
@@ -21,9 +21,9 @@
       grid-template-columns: 1fr 1fr;
   margin: 30px 0px;
   max-height: auto;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
-  padding: 40px;
+  padding: 10px;
   gap: 50px;
   text-align: center;
 }
@@ -32,14 +32,13 @@
   .pricing-container .plans {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin: 10px -20px;
   }
 }
 
 .pricing-container .plans .planA {
   -webkit-box-shadow: 10px 10px 20px 15px rgba(192, 192, 192, 0.288) !important;
           box-shadow: 10px 10px 20px 15px rgba(192, 192, 192, 0.288) !important;
-  padding: 10px;
+  padding: 13px;
 }
 
 .pricing-container .plans .planA h3 {
