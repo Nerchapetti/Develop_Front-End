@@ -21,12 +21,25 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import Likes from "../Likes/Likes"
-
+import Popup from "../Popup/Popup";
 
 const CampaignDetails = () => {
   const [campaignData, setcampaignData] = useState();
   const { id } = useParams();
   const [error, seterror] = useState("");
+  const [isPopupOpen, setisPopupOpen] = useState(false)
+
+
+  const closePopup = () => {
+    setisPopupOpen(false)
+    console.log(isPopupOpen);
+  }
+
+  const openPopup = () => {
+    setisPopupOpen(true)
+    console.log(isPopupOpen)
+  }
+
   useEffect(() => {
     getRequest(`${window.URI}/get-campaign/${id}`)
       .then((res) => {
@@ -64,6 +77,7 @@ const CampaignDetails = () => {
     <div>
       <Header />
       <div className="campaign-details-container">
+        {isPopupOpen && <Popup id={campaignData._id} closePopup={closePopup} />}
         <h1 className="title">{campaignData.title}</h1>
         <div className="camp-details-inner-container">
           <div style={{position: "relative"}} className="left-camp-container">
@@ -87,7 +101,7 @@ const CampaignDetails = () => {
           </div>
 
           <div className="right-camp-container">
-            <button className="contribute">
+            <button className="contribute" onClick={openPopup}>
               <FontAwesomeIcon icon={faHeart} size="1x" /> Contribute Now
             </button>
 

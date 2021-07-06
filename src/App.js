@@ -11,6 +11,7 @@ import { PrivacyPolicy } from "./components/Policies/PrivacyPolicy";
 import { RefundPolicy } from "./components/Policies/RefundPolicy";
 import { TermsOfUse } from "./components/Policies/TermsOfUse";
 import Pricing from "./components/Pricing/Pricing";
+import PaymentSuccess from "./components/Payment/PaymentSuccess";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Route path="/policies/refund-policy" component={RefundPolicy} />
       <Route path="/policies/terms-of-use" component={TermsOfUse} />
       <Route path="/pricing/plan" component={Pricing} />
+      <Route path="/payment/success/:name" component={PaymentSuccess} />
     </Router>
     </div>
   );

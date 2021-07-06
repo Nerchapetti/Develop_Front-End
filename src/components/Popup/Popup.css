@@ -1,10 +1,177 @@
 .popup-container {
   position: fixed;
-  width: 100px;
-  height: 100px;
+  background-color: #333232a8;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.popup-container .popup-content {
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 90vh;
+}
+
+@media (max-width: 767px) {
+  .popup-container .popup-content {
+    width: 100%;
+  }
+}
+
+.popup-container .popup-content .close-popup {
+  background-color: #1A73E8;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bolder;
+  cursor: pointer;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+
+.popup-container .popup-content .payment-form {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.popup-container .popup-content .payment-form .input-field {
+  padding: 30px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .popup-container .popup-content .payment-form .input-field {
+    width: 100%;
+    padding: 30px 10px;
+  }
+}
+
+.popup-container .popup-content .payment-form .input-field label {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 35px;
+  top: 40px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.popup-container .popup-content .payment-form .input-field input, .popup-container .popup-content .payment-form .input-field textarea, .popup-container .popup-content .payment-form .input-field select {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  -webkit-appearance: none;
+  display: block;
+  background: #fafafa;
+  color: #636363;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #757575;
+}
+
+.popup-container .popup-content .payment-form .input-field input:focus, .popup-container .popup-content .payment-form .input-field textarea:focus, .popup-container .popup-content .payment-form .input-field select:focus {
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  border: none;
+  outline: none;
+  background: #fafafa;
+  color: #636363;
+  border-bottom: 1px solid #686060;
+}
+
+.popup-container .popup-content .payment-form .input-field .inputbox:focus ~ label {
+  left: 25px;
+  top: 10px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  color: #4a89dc;
+}
+
+.popup-container .popup-content .payment-form .input-field .inputbox:valid ~ label {
+  left: 25px;
+  top: 10px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  color: #4a89dc;
+}
+
+.popup-container .popup-content .payment-form .input-field select {
+  background-color: #fff;
+}
+
+.popup-container .popup-content .payment-form .input-field select:focus {
+  border: 1px solid #4285f4;
+}
+
+.popup-container .popup-content .payment-form .input-field textarea:focus ~ label {
+  left: 25px;
+  top: 10px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  color: #4a89dc;
+}
+
+.popup-container .popup-content .payment-form .input-field textarea:valid ~ label {
+  left: 25px;
+  top: 10px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  color: #4a89dc;
+}
+
+.popup-container .popup-content .payment-form .input-field input[type=submit] {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff !important;
+  width: 200px;
+  border-radius: 20px;
+  background-color: #1A73E8;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.popup-container .popup-content .payment-form .input-field input[type=submit]:hover {
+  background-color: #4285f4;
+  color: #ffffff;
 }
 /*# sourceMappingURL=Popup.css.map */

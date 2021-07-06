@@ -1,8 +1,145 @@
 .popup-container{
     position: fixed;
-    width: 100px;
-    height: 100px;
+    background-color: #333232a8;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    .popup-content{
+        background-color: #fff;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 90vh;
+
+        @media(max-width: 767px){
+            width: 100%;
+        }
+
+        .close-popup{
+            background-color: #1A73E8;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+            cursor: pointer;
+            position: absolute;
+            right: -10px;
+            top: -10px;
+        }
+
+        .payment-form{
+            
+            width: 100%;
+            padding: 10px 10px;
+            margin: 0;
+            border-radius: 10px;
+            .input-field{
+                padding: 30px;
+                position: relative;
+                @media(max-width: 767px){
+                    width: 100%;
+                    padding: 30px 10px;
+                }
+                
+        
+                label {
+                    font-size: 18px;
+                    font-weight: normal;
+                    position: absolute;
+                    pointer-events: none;
+                    left: 35px;
+                    top: 40px;
+                    transition: all 0.2s ease;
+                }
+        
+                input, textarea, select{
+                    font-size: 18px;
+                    padding: 10px 10px 10px 5px;
+                    -webkit-appearance: none;
+                    display: block;
+                    background: #fafafa;
+                    color: #636363;
+                    width: 100%;
+                    border: none;
+                    border-radius: 0;
+                    border-bottom: 1px solid #757575;
+        
+                    // border-right:1px solid rgb(104, 96, 96);
+                    &:focus{
+                        box-shadow: 0 4px 11px 3px hsla(0,0%,75.3%,.288)!important;    
+                        border: none;
+                        outline: none;
+                        background: #fafafa;
+                        color: #636363;
+                        border-bottom: 1px solid rgb(104, 96, 96);
+                    }
+                }
+                .inputbox:focus ~ label{
+                    left: 25px;
+                    top: 10px;
+                    transform: scale(.80); 
+                    color: #4a89dc;
+                }
+                .inputbox:valid ~ label {
+                    left: 25px;
+                    top: 10px;
+                    transform: scale(.80); 
+                    color: #4a89dc;
+                }
+               
+                
+                select{
+                    background-color: #fff;
+                    &:focus{
+                        border: 1px solid #4285f4;
+                    }
+                    
+                }
+        
+                textarea:focus ~ label{
+                    left: 25px;
+                    top: 10px;
+                    transform: scale(.80); 
+                    color: #4a89dc;
+                }
+                textarea:valid ~ label {
+                    left: 25px;
+                    top: 10px;
+                    transform: scale(.80); 
+                    color: #4a89dc;
+                }
+                
+                input[type=submit]{
+                    width: fit-content;
+                    color: #fff !important;
+                    width: 200px;
+                    border-radius: 20px;
+                    background-color: #1A73E8;
+                    box-shadow: 0 4px 11px 3px hsla(0,0%,75.3%,.288)!important;
+                    cursor: pointer;
+                    transition: 0.3s all ease;
+                    
+                    &:hover{
+                        background-color: #4285f4;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
 }
