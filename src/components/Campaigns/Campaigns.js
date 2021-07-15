@@ -32,7 +32,7 @@ const Campaigns = ({ ids }) => {
 
   useEffect(() => {
     if (!ids) {
-      getRequest(`${window.URI}/get-all-campaigns`)
+      getRequest(`${window.URI}/get-all-premium-campaigns`)
         .then((data) => {
           if (data.status === "ok") {
             console.log(data);

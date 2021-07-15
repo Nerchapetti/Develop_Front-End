@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Popup.css";
 import postRequest from "../../API/postRequest"
 
-const Popup = ({ closePopup, id }) => {
+const Popup = ({ closePopup, id, plan }) => {
     const [amount, setamount] = useState("");
     const [name, setname] = useState("");
     const [email, setemail] = useState("");
@@ -17,7 +17,8 @@ const Popup = ({ closePopup, id }) => {
             customerEmail: email,
             customerName: name,
             customerPhone: phoneNumber,
-            campaignId: id,
+            nerchapettiId: id,
+            plan: plan
         }
 
         postRequest(`${window.URI}/create-payment`, data).then(res => {

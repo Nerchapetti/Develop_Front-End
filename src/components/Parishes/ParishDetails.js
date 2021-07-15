@@ -130,7 +130,7 @@ const ParisheDetails = () => {
           </>
         </Router>
         <div className="details">
-          <Payment />
+          <Payment plan={parishData.plan} bank={parishData.bankAccount} nerchapettiId={parishData.nerchapettiId}/>
         </div>
       </div>
       <Footer />

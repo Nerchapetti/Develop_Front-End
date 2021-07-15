@@ -77,7 +77,7 @@ const CampaignDetails = () => {
     <div>
       <Header />
       <div className="campaign-details-container">
-        {isPopupOpen && <Popup id={campaignData._id} closePopup={closePopup} />}
+        {isPopupOpen && <Popup plan={campaignData.plan} id={campaignData._id} closePopup={closePopup} />}
         <h1 className="title">{campaignData.title}</h1>
         <div className="camp-details-inner-container">
           <div style={{position: "relative"}} className="left-camp-container">
@@ -143,7 +143,7 @@ const CampaignDetails = () => {
               </div>
 
               <div className="payment">
-                <Payment />
+                {/* <Payment /> */}
               </div>
             </div>
           </div>
