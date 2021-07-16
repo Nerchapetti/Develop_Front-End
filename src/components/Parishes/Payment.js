@@ -2,7 +2,7 @@ import { useState } from "react";
 import Popup from "../Popup/Popup";
 import "./Payment.css";
 
-const Payment = ({ bank, nerchapettiId, plan }) => {
+const Payment = ({ bank, nerchapettiId, plan, vendorEmail }) => {
     const [isPopupOpen, setisPopupOpen] = useState(false);
 
     const closePopup = () => {
@@ -16,7 +16,7 @@ const Payment = ({ bank, nerchapettiId, plan }) => {
     };
     return (
         <div className="bank_details">
-        {isPopupOpen && <Popup plan={plan} id={nerchapettiId} closePopup={closePopup} />}
+        {isPopupOpen && <Popup vendorEmail={vendorEmail} category="parish" plan={plan} id={nerchapettiId} closePopup={closePopup} />}
             <ul className="list">
                 <li className="head"> Bank Account Details</li>
                 <li>
@@ -42,7 +42,7 @@ const Payment = ({ bank, nerchapettiId, plan }) => {
                     <span>{bank.accountNo}</span>
                 </li>
                 <div className="button">
-                    <button onClick={openPopup}>Apreciate</button>
+                    <button onClick={openPopup}>Quick Pay</button>
                 </div>
             </ul>
         </div>

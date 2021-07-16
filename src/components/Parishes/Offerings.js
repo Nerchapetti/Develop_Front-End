@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Popup from "../Popup/Popup";
 import "./offer.css"
 
 
@@ -10,6 +11,19 @@ const Offerings = ({ parish }) => {
     const [isLoading, setisLoading] = useState(false)
     const [totalList, settotalList] = useState([])
 
+
+    const [isPopupOpen, setisPopupOpen] = useState(false);
+    const closePopup = () => {
+        setisPopupOpen(false);
+        console.log(isPopupOpen);
+    };
+
+    const openPopup = () => {
+        setisPopupOpen(true);
+        console.log(isPopupOpen);
+    };
+
+
     const add = (e) => {
         console.log(e.target.previousElementSibling.getAttribute('data-type'));
         let offerName = e.target.previousElementSibling.getAttribute('data-type')
@@ -20,6 +34,7 @@ const Offerings = ({ parish }) => {
     };
     return (
         <div className="offer-container">
+        {isPopupOpen && <Popup category="offerings" plan={parish.plan} id={parish.nerchapettiId} closePopup={closePopup} />}
             {error ? (
                 <div className="offer-error">
                     {" "}
@@ -45,7 +60,7 @@ const Offerings = ({ parish }) => {
                        
                     </ul>
 
-                    <button className="btn">
+                    <button className="btn" onClick={openPopup}>
                         Pay
                     </button>
                 </div>

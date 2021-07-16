@@ -101,7 +101,7 @@ const ParisheDetails = () => {
                   <Link to={`${url}`}>About</Link>
                 </li>
                 <li onClick={(e) => handleClick(e)}>
-                  <Link to={`${url}/committe-members`}>Committe</Link>
+                  <Link to={`${url}/committe-members`}>Committee</Link>
                 </li>
                 <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/offerings`}>Offerings</Link>
@@ -130,7 +130,7 @@ const ParisheDetails = () => {
           </>
         </Router>
         <div className="details">
-          <Payment plan={parishData.plan} bank={parishData.bankAccount} nerchapettiId={parishData.nerchapettiId}/>
+          <Payment vendorEmail={parishData.about.email} plan={parishData.plan} bank={parishData.bankAccount} nerchapettiId={parishData.nerchapettiId}/>
         </div>
       </div>
       <Footer />

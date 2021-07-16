@@ -21,7 +21,7 @@ const Parishes = ({ ids }) => {
 
   useEffect(() => {
     if (!ids) {
-      getRequest(`${window.URI}/get-all-premium-parishes`).then((data) => {
+      getRequest(`${window.URI}/get-all-parishes`).then((data) => {
         if(data.status === 'ok'){
           setParishesdata(data.data);
           console.log(data);

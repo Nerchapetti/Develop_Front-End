@@ -77,7 +77,7 @@ const CampaignDetails = () => {
     <div>
       <Header />
       <div className="campaign-details-container">
-        {isPopupOpen && <Popup plan={campaignData.plan} id={campaignData.nerchapettiId} closePopup={closePopup} />}
+        {isPopupOpen && <Popup vendorEmail="rahupmanoj@gmail.com" category="campaign" plan={campaignData.plan} id={campaignData.nerchapettiId} closePopup={closePopup} />}
         <h1 className="title">{campaignData.title}</h1>
         <div className="camp-details-inner-container">
           <div style={{position: "relative"}} className="left-camp-container">
