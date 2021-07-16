@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-const ResultCard = ({imageurl, id, title, category, nerchapettiId}) => {
+const ResultCard = ({imageurl, title, category, nerchapettiId}) => {
     const createLink = (nerchapettiId) => {
         if(category === "parish"){
           return `/${nerchapettiId}`;
         } else if(category === "campaign"){
-          return `/campaign-details/${id}`;
+          return `/campaign/${nerchapettiId}`;
         } else if(category === "patron"){
           return `/patron/${nerchapettiId}`;
         }

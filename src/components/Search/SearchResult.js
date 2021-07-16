@@ -51,7 +51,7 @@ const SearchResult = ({keyword, parishes, campaigns, patrons}) => {
             {campResult.length === 0 ? "" : <h1>Campaigns Results</h1>}
             {campResult.length === 0 ? "" : campResult.map(r => (
                 <>
-                <ResultCard imageurl={r.imageUrl} id={r._id} title={r.title} category={"campaign"} />
+                <ResultCard imageurl={r.imageUrl} nerchapettiId={r.nerchapettiId} title={r.title} category={"campaign"} />
                 
                 </>
             ))}

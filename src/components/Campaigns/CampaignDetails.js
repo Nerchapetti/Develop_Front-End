@@ -41,7 +41,7 @@ const CampaignDetails = () => {
   }
 
   useEffect(() => {
-    getRequest(`${window.URI}/get-campaign/${id}`)
+    getRequest(`${window.URI}/get-campaign-id/${id}`)
       .then((res) => {
         if(res.status === "ok"){
           console.log(res);
@@ -77,20 +77,20 @@ const CampaignDetails = () => {
     <div>
       <Header />
       <div className="campaign-details-container">
-        {isPopupOpen && <Popup plan={campaignData.plan} id={campaignData._id} closePopup={closePopup} />}
+        {isPopupOpen && <Popup plan={campaignData.plan} id={campaignData.nerchapettiId} closePopup={closePopup} />}
         <h1 className="title">{campaignData.title}</h1>
         <div className="camp-details-inner-container">
           <div style={{position: "relative"}} className="left-camp-container">
             <img className="img" src={campaignData.imageUrl} alt="" />
             <Likes id={campaignData._id} likes={campaignData.likes} likeFor="campaign"/>
             <div className="share">
-              <WhatsappShareButton url={`https://nerchapetti.com/campaign-details/${campaignData._id}`}>
+              <WhatsappShareButton url={`https://nerchapetti.com/campaign/${campaignData.nerchapettiId}`}>
                 <FontAwesomeIcon className="shareicon" icon={faWhatsapp} />{" "}
               </WhatsappShareButton>
-              <FacebookShareButton url={`https://nerchapetti.com/campaign-details/${campaignData._id}`}>
+              <FacebookShareButton url={`https://nerchapetti.com/campaign/${campaignData.nerchapettiId}`}>
                 <FontAwesomeIcon className="shareicon" icon={faFacebook} />{" "}
               </FacebookShareButton>
-              <TwitterShareButton url={`https://nerchapetti.com/campaign-details/${campaignData._id}`}>
+              <TwitterShareButton url={`https://nerchapetti.com/campaign/${campaignData.nerchapettiId}`}>
                 <FontAwesomeIcon className="shareicon" icon={faTwitter} />{" "}
               </TwitterShareButton>
             </div>

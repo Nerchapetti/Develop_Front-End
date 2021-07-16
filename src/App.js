@@ -21,7 +21,7 @@ function App() {
       <Route exact path="/" component={HomePage} />
       <Route path="/about/us" component={About} />
       <Route path="/contact/us" component={Contact} />
-      <Route path="/campaign-details/:id" component={CampaignDetails} />
+      <Route path="/campaign/:id" component={CampaignDetails} />
       <Route exact path="/:id" component={ParisheDetails} />
       <Route path="/patrons/all" component={AllPatrons} />
       <Route path="/patron/:id" component={patron} />

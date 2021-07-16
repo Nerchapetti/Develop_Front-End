@@ -92,7 +92,7 @@ const Campaigns = ({ ids }) => {
   }, [campaignData]);
 
   const createLink = (id) => {
-    return `/campaign-details/${id}`;
+    return `/campaign/${id}`;
   };
 
   const arrowStyle = {
@@ -163,7 +163,7 @@ const Campaigns = ({ ids }) => {
                 </div>
                 <div className="camp-details-container">
               <Link
-                to={createLink(data._id)}
+                to={createLink(data.nerchapettiId)}
               >
                   <div className="camp-heading">
                     <h1 className="title">{data.title.slice(0, 20)}...</h1>
@@ -216,13 +216,13 @@ const Campaigns = ({ ids }) => {
                   </div>
                 </div>
               <div className="share">
-                <WhatsappShareButton url={`https://nerchapetti.com/campaign-details/${data._id}`}>
+                <WhatsappShareButton url={`https://nerchapetti.com/campaign/${data.nerchapettiId}`}>
                   <FontAwesomeIcon className="shareicon" icon={faWhatsapp} />{" "}
                 </WhatsappShareButton>
-                <FacebookShareButton url={`https://nerchapetti.com/campaign-details/${data._id}`}>
+                <FacebookShareButton url={`https://nerchapetti.com/campaign/${data.nerchapettiId}`}>
                   <FontAwesomeIcon className="shareicon" icon={faFacebook} />{" "}
                 </FacebookShareButton>
-                <TwitterShareButton url={`https://nerchapetti.com/campaign-details/${data._id}`}>
+                <TwitterShareButton url={`https://nerchapetti.com/campaign/${data.nerchapettiId}`}>
                   <FontAwesomeIcon className="shareicon" icon={faTwitter} />{" "}
                 </TwitterShareButton>
               </div>
