@@ -64,7 +64,7 @@ export const AMLPolicy = () => {
           </p>
           <h2>X. AMENDMENT</h2>
           <p>
-          <li>The company reserves the right to modify and amend this AML Policy at any time. The company will not be liable to any users or third parties for any modification or amendment. Users are recommended to review the AML Policy from time to time, for the most up-to-date version. In the event of modification or amendment to the AML Policy, continued use of the web platform, after notice of material changes, will constitute acceptance of the modified or amended terms. If the modifications or amendments to the AML Policy are not acceptable by any registered users, the only remedy would be to cease usage of the web platform, by deleting the relevant account or writing to us at support@nerchapetti.com</li>
+          <li>The company reserves the right to modify and amend this AML Policy at any time. The company will not be liable to any users or third parties for any modification or amendment. Users are recommended to review the AML Policy from time to time, for the most up-to-date version. In the event of modification or amendment to the AML Policy, continued use of the web platform, after notice of material changes, will constitute acceptance of the modified or amended terms. If the modifications or amendments to the AML Policy are not acceptable by any registered users, the only remedy would be to cease usage of the web platform, by deleting the relevant account or writing to us at payments@nerchapetti.com</li>
           </p>
           <h2>XI. GOVERNING LAW</h2>
           <p>
@@ -76,7 +76,7 @@ export const AMLPolicy = () => {
          </p>
           <h2>XIII. QUERIES</h2>
           <p>
-          <li>Should have any queries or require any assistance in relation to this policy, please write to us at support@nerchapetti.com</li>
+          <li>Should have any queries or require any assistance in relation to this policy, please write to us at payments@nerchapetti.com</li>
           </p>
           </ul>
       </div>

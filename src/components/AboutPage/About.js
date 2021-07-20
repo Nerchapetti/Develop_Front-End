@@ -28,7 +28,7 @@ const About = () => {
                     <div className="team-members">
                         <TeamMember name="Amritha M L" about="DevOps-Web" img={amritha} l="amritha-ml-9401b014b" i="" t=""/>
                         <TeamMember name="Shameer M R" about="DevOps-Web" img={shameer} l="shameer-m-r-5916771b6" i="" t=""/>
-                        <TeamMember name="Allen Allen Vengal" about="Chief Operating Officer" img={allen} l="allen-vengal-79bb081a" i="" t=""/>                                             
+                        <TeamMember name="Allen Vengal" about="Chief Operating Officer" img={allen} l="allen-vengal-79bb081a" i="" t=""/>                                             
                         <TeamMember name="Vyshnav P" about="DevOps-Web" img={vyshnav} l="vrv-vyshnav" i="" t=""/>                                             
                         <TeamMember name="Surya V R" about="DevOps-Web" img={surya} l="surya-vr-8a7b501a7" i="" t=""/>                                             
                         <TeamMember name="Rahul T" about="DevOps-Web" img={rahul} l="rahulmanojcet" i="" t=""/>                                             

@@ -20,7 +20,7 @@ const Footer = () => {
                         </Link>
                         <div className="address">
                             <a href="tel:+919747121112"><p><FontAwesomeIcon icon={faPhoneAlt} /> 9747121112 </p></a>
-                            <a href="mailto:nerchapetti@gmail.com"><p>nerchapetti@gmail.com </p></a>
+                            <a href="mailto:payments@nerchapetti.com"><p>payments@nerchapetti.com </p></a>
 
 
                             <p>
@@ -30,7 +30,7 @@ const Footer = () => {
                                 Thiruvalla, Kerala <br /> 
                                 689 110 (India)  <br /> <br />
                                 Email:
-                                nerchapetti@gmail.com  <br /> 
+                                payments@nerchapetti.com <br /> 
                                 Time: Mon - Fri (9:00 -
                                 16:00)
                             </p>
