@@ -124,7 +124,7 @@ const Pricing = () => {
           <div className="plan-end">
             <h2>Let’s start a conversation. </h2>
             <p>
-              Contact us at nerchapetti@gmail.com or call us on +91 9747121112
+              Contact us at contact@nerchapetti.com or call us on +91 9747121112
             </p>
           </div>
         </div>
