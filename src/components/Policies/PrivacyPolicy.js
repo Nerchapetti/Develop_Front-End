@@ -153,7 +153,7 @@ We provide all users with the opportunity to opt-out of receiving non-essential 
 </p>
 
 <p>
-If you want to deactivate your account or remove your contact information from all lists and newsletters, please write to us at payments@nerchapetti.com
+If you want to deactivate your account or remove your contact information from all lists and newsletters, please write to us at contact@nerchapetti.com
 </p>
 
 <h2>
