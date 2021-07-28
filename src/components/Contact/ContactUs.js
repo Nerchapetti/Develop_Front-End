@@ -1,19 +1,21 @@
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import Header from "../NavBar/Header";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhoneAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../Footer/Footer";
 import { useState } from "react";
-import Error from "../Error/Error"
-import Success from "../Success/Success"
+import Error from "../Error/Error";
+import Success from "../Success/Success";
 
 function ContactUs() {
-  const [isLoading, setisLoading] = useState(false)
-  const [success, setsuccess] = useState(false)
-  const [error, seterror] = useState(false)
+  const [isLoading, setisLoading] = useState(false);
+  const [success, setsuccess] = useState(false);
+  const [error, seterror] = useState(false);
 
   function sendEmail(e) {
     e.preventDefault();
-    setisLoading(true)
+    setisLoading(true);
 
     emailjs
       .sendForm(
@@ -25,81 +27,106 @@ function ContactUs() {
       .then(
         (result) => {
           console.log(result.text);
-          if(result.text === 'OK'){
-            setsuccess(true)
-            setisLoading(false)
-            window.scrollTo(0,0)
-            
-          }
-          else{
-            seterror(true)
-            setisLoading(false)
-            window.scrollTo(0,0)
+          if (result.text === "OK") {
+            setsuccess(true);
+            setisLoading(false);
+            window.scrollTo(0, 0);
+          } else {
+            seterror(true);
+            setisLoading(false);
+            window.scrollTo(0, 0);
             console.log(result);
           }
         },
         (error) => {
           console.log(error.text);
-          seterror(true)
-          setisLoading(false)
-          window.scrollTo(0,0)
+          seterror(true);
+          setisLoading(false);
+          window.scrollTo(0, 0);
         }
       );
   }
 
-
-
-  if(isLoading){
+  if (isLoading) {
     return (
       <>
-      <Header />
-      <div className="isLoading"></div>
-      <Footer />
+        <Header />
+        <div className="isLoading"></div>
+        <Footer />
       </>
-    )
+    );
   }
 
   return (
     <>
       <Header />
       {error ? <Error error={error} /> : ""}
-      {success ? <Success success={success} message="message sent successfully" /> : ""}
+      {success ? (
+        <Success success={success} message="message sent successfully" />
+      ) : (
+        ""
+      )}
+      <h1 className="heading-contact">Contact US</h1>
       <div className="contactdata">
+        <div className="contact-container">
+          <div className="emailandphone">
+            <div className="span">
+            <FontAwesomeIcon icon={faEnvelope} className="icons" />
+               Email :<br /> <b> Nerchapetti@gmail.com </b> 
+            </div>
+            <div className="span">
+            <FontAwesomeIcon icon={faPhoneAlt} className="icons" />
+              Phone :<br /> <b> 9747121112</b> 
+            </div>
+          </div>
+        </div>
+
         <form className="contact-form" onSubmit={sendEmail}>
+          <div className="allcontain">
+            <div className="selects">
+              <div className="form-data">
+                <select name="query" id="">
+                  <option value="s">Select a Query Type</option>
+                  <option value="general">General Query</option>
+                  <option value="partnership">Partnership Query</option>
+                  <option value="report">Report</option>
+                </select>
+              </div>
+              <div className="form-data">
+                <input className="inputbox" name="contact_number" placeholder="Phone Number" required />
+                <label>Phone No</label>
+              </div>
+              <div className="form-data">
+                <input
+                  type="text"
+                  className="inputbox"
+                  name="user_name"
+                  required
+                  placeholder="Name"
+                />
+                <label>Name</label>
+              </div>
 
-          <div className="form-data">
-          <h1 style={{textAlign: "center"}}>Contact US</h1>
-          </div>
+              <div className="form-data">
+                <input
+                  className="inputbox"
+                  type="email"
+                  name="user_email"
+                  required
+                  placeholder='Email'
+                />
+                <label>Email</label>
+              </div>
+            </div>
 
-          <div className="form-data">
-            <select name="query" id="">
-            <option value="s">Select a Query Type</option>
-              <option value="general">General Query</option>
-              <option value="partnership">Partnership Query</option>
-              <option value="report">Report</option>
-            </select>
-          </div>
-          <div className="form-data">
-            <input className="inputbox" name="contact_number" required />
-            <label>Phone No <span>*</span></label>
-          </div>
-          <div className="form-data">
-            <input type="text" className="inputbox" name="user_name" required/>
-            <label>Name <span>*</span></label>
-          </div>
+            <div className="form-data-message">
+              <textarea rows="8" name="message" placeholder="message" />
+              {/* <label>Message</label> */}
+            </div>
 
-          <div className="form-data">
-            <input className="inputbox" type="email" name="user_email" required/>
-            <label>Email <span>*</span></label>
-          </div>
-
-          <div className="form-data">
-            <textarea rows="8"  name="message" />
-            <label>Message</label>
-          </div>
-
-          <div className="form-data">
-            <input type="submit" value="Send" />
+            <div className="form-data-submit">
+              <input type="submit" value="Send" />
+            </div>
           </div>
         </form>
       </div>
