@@ -26,7 +26,7 @@ const SearchResult = ({keyword, parishes, campaigns, patrons}) => {
         setpatronResult(patronsResult)
 
         let campaingsResult = campaigns.filter(camp => {
-            return camp.title.toLowerCase().includes(keyword.toLowerCase()) || camp._id.includes(keyword)
+            return camp.title.toLowerCase().includes(keyword.toLowerCase()) || camp._id.includes(keyword) || camp.nerchapettiId.includes(keyword)
         })
         setcampResult(campaingsResult)
 
