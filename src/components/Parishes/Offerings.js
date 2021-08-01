@@ -34,7 +34,7 @@ const Offerings = ({ parish }) => {
     };
     return (
         <div className="offer-container">
-        {isPopupOpen && <Popup category="offerings" plan={parish.plan} id={parish.nerchapettiId} closePopup={closePopup} />}
+        {isPopupOpen && <Popup totalListOfferings={totalList} category="offerings" plan={parish.plan} id={parish.nerchapettiId} closePopup={closePopup} />}
             {error ? (
                 <div className="offer-error">
                     {" "}

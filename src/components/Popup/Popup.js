@@ -2,13 +2,14 @@ import { useState } from "react";
 import "./Popup.css";
 import postRequest from "../../API/postRequest"
 
-const Popup = ({ closePopup, id, plan, category, vendorEmail }) => {
+const Popup = ({ closePopup, id, plan, category, vendorEmail, totalListOfferings }) => {
     const [amount, setamount] = useState("");
     const [name, setname] = useState("");
     const [email, setemail] = useState("");
     const [phoneNumber, setphoneNumber] = useState("");
-    
 
+
+    console.log(totalListOfferings)
     const submitForm = (e) => {
         e.preventDefault();
 
@@ -20,7 +21,8 @@ const Popup = ({ closePopup, id, plan, category, vendorEmail }) => {
             nerchapettiId: id,
             plan: plan,
             category: category,
-            vendorEmail: vendorEmail
+            vendorEmail: vendorEmail,
+            totalListOfferings: totalListOfferings
         }
 
         postRequest(`${window.URI}/create-payment`, data).then(res => {

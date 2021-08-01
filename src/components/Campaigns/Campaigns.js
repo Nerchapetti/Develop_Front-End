@@ -21,6 +21,8 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import Likes from "../Likes/Likes";
+import formatDistanceToNow from 'date-fns/formatDistanceToNow'
+import { format } from "date-fns/esm";
 
 const Campaigns = ({ ids }) => {
   const [campaignData, setCampaignData] = useState();
@@ -200,7 +202,7 @@ const Campaigns = ({ ids }) => {
                           style={{ color: "grey" }}
                           icon={faClock}
                         />{" "}
-                        91 Days Left
+                        {formatDistanceToNow(new Date(data.lastDate))} left
                       </p>
                     </div>
 
