@@ -72,11 +72,11 @@ function ContactUs() {
           <div className="emailandphone">
             <div className="span">
             <FontAwesomeIcon icon={faEnvelope} className="icons" />
-               Email :<br /> <b> Nerchapetti@gmail.com </b> 
+               Email :<br /> <b>  <a href="mailto:contact@nerchapetti.com">Contact@nerchapetti.com </a> </b> 
             </div>
             <div className="span">
             <FontAwesomeIcon icon={faPhoneAlt} className="icons" />
-              Phone :<br /> <b> 9747121112</b> 
+              Phone :<br /> <a href="tel:+919747121112"><b> 9747121112</b> </a> 
             </div>
           </div>
         </div>
@@ -121,7 +121,6 @@ function ContactUs() {
 
             <div className="form-data-message">
               <textarea rows="8" name="message" placeholder="message" />
-              {/* <label>Message</label> */}
             </div>
 
             <div className="form-data-submit">
