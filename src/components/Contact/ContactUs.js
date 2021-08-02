@@ -69,15 +69,26 @@ function ContactUs() {
       <h1 className="heading-contact">Contact US</h1>
       <div className="contactdata">
         <div className="contact-container">
-          <div className="emailandphone">
-            <div className="span">
-            <FontAwesomeIcon icon={faEnvelope} className="icons" />
-               Email :<br /> <b>  <a href="mailto:contact@nerchapetti.com">Contact@nerchapetti.com </a> </b> 
-            </div>
-            <div className="span">
-            <FontAwesomeIcon icon={faPhoneAlt} className="icons" />
-              Phone :<br /> <a href="tel:+919747121112"><b> 9747121112</b> </a> 
-            </div>
+          <div className="contactdatas">
+            <p>
+              <a href="tel:+919747121112">
+                <FontAwesomeIcon icon={faPhoneAlt} className="icons" />
+                &emsp; 9747121112
+              </a>
+              
+              <a href="mailto:contact@nerchapetti.com">
+                <FontAwesomeIcon icon={faEnvelope} className="icons" />
+                &emsp; Contact@nerchapetti.com
+              </a>
+            </p>
+            <p>
+              John Zakariah Technologies, <br />
+              Veera Marthanda Varma Road, <br />
+              Podiyadi P. O. <br />
+              Thiruvalla, Kerala <br />
+              689 110 (India) <br /> <br />
+              Time: Mon - Fri (9:00 - 16:00)
+            </p>
           </div>
         </div>
 
@@ -93,7 +104,12 @@ function ContactUs() {
                 </select>
               </div>
               <div className="form-data">
-                <input className="inputbox" name="contact_number" placeholder="Phone Number" required />
+                <input
+                  className="inputbox"
+                  name="contact_number"
+                  placeholder="Phone Number"
+                  required
+                />
                 <label>Phone No</label>
               </div>
               <div className="form-data">
@@ -113,7 +129,7 @@ function ContactUs() {
                   type="email"
                   name="user_email"
                   required
-                  placeholder='Email'
+                  placeholder="Email"
                 />
                 <label>Email</label>
               </div>
