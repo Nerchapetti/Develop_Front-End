@@ -12,7 +12,7 @@ import { RefundPolicy } from "./components/Policies/RefundPolicy";
 import { TermsOfUse } from "./components/Policies/TermsOfUse";
 import Pricing from "./components/Pricing/Pricing";
 import PaymentSuccess from "./components/Payment/PaymentSuccess";
-
+import Howitworks from "./components/HowItWorks/HowItWorks"
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
       <Route path="/policies/terms-of-use" component={TermsOfUse} />
       <Route path="/pricing/plan" component={Pricing} />
       <Route path="/payment/success/:name" component={PaymentSuccess} />
+      <Route path="/page/How-it-works" component={Howitworks} />
     </Router>
     </div>
   );

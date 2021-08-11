@@ -13,7 +13,6 @@ const Committe = ({parish}) => {
                 <CoreCommittee member={parish.trustee} title="Trustee" />
                 <CoreCommittee member={parish.secretary} title="Secretary" />
                 <CoreCommittee member={parish.accountant} title="Accountant" />
-
             </div>
             <h1 className="heading">Committee Members</h1>
             {parish.committee.map((member, i) => (
