@@ -7,7 +7,7 @@ import allen from "./teams/allen.jpg"
 import sapna from "./teams/sapna.jpg"
 import shameer from "./teams/shameer.jpg"
 import vyshnav from "./teams/vyshnav.jpeg"
-import rahul from "./teams/rahul.jpg"
+import rahul from "./teams/rahul.JPG"
 import surya from "./teams/surya.jpeg"
 import jebin from "./teams/jebin.jpeg"
 const About = () => {
