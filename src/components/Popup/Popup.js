@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Popup.css";
 import postRequest from "../../API/postRequest"
 
-const Popup = ({ closePopup, id, plan, category, vendorEmail, totalListOfferings }) => {
+const Popup = ({ closePopup, id, plan, category, vendorEmail, totalListOfferings, _amount }) => {
     const [amount, setamount] = useState("");
     const [name, setname] = useState("");
     const [email, setemail] = useState("");
     const [phoneNumber, setphoneNumber] = useState("");
 
+    useEffect(() => {
+        if(_amount > 0){
+            setamount(_amount)
+        }
+    }, [])
 
     console.log(totalListOfferings)
     const submitForm = (e) => {
