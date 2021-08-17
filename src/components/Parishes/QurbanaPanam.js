@@ -1,105 +1,71 @@
 import React, { useState } from "react";
 import "./QurbanaPanam.css";
 import postRequest from "../../API/postRequest";
+import Popup from "../Popup/Popup";
 
 const QurbanaPanam = ({ parish }) => {
-    const [BNames, setBNames] = useState([]);
-    const [SNames, setSNames] = useState([]);
-    const [DNames, setDNames] = useState([]);
     const [Price, setPrice] = useState(0);
     const [success, setsuccess] = useState(false);
     const [error, seterror] = useState(false);
+    const [totalList, settotalList] = useState([])
+    const [isPopupOpen, setisPopupOpen] = useState(false);
 
+    const closePopup = () => {
+        setisPopupOpen(false);
+        console.log(isPopupOpen);
+    };
 
+    const openPopup = () => {
+        setisPopupOpen(true);
+        console.log(isPopupOpen);
+    };
 
     const add = (e) => {
-        console.log(e.target.previousElementSibling);
-        if (
-            e.target.previousElementSibling.getAttribute("data-type") === "blessings"
-        ) {
-            console.log("blessings");
-            setBNames([...BNames, e.target.previousElementSibling.value]);
-            setPrice(Price + 5);
-            e.target.previousElementSibling.value = ""
-        } else if (
-            e.target.previousElementSibling.getAttribute("data-type") === "sick"
-        ) {
-            console.log("sick");
-            setSNames([...SNames, e.target.previousElementSibling.value]);
-            setPrice(Price + 5);
-            e.target.previousElementSibling.value = ""
-        } else if (
-            e.target.previousElementSibling.getAttribute("data-type") === "departed"
-        ) {
-            console.log("departed");
-            setDNames([...DNames, e.target.previousElementSibling.value]);
-            setPrice(Price + 5);
-            e.target.previousElementSibling.value = ""
-        }
+        console.log(e.target.previousElementSibling.getAttribute('data-type'));
+        let qurbanaName = e.target.previousElementSibling.getAttribute('data-type')
+        let amount = e.target.previousElementSibling.getAttribute('data-amount')
+        let username = e.target.previousElementSibling.value
+        setPrice(Price + parseFloat(amount))
+        settotalList([...totalList, {name: qurbanaName, username: username }])
+        e.target.previousElementSibling.value = ""
     };
 
-    const sendToParish = () => {
-        postRequest(`${window.URI}/qurbana-panam`, {
-            id: parish._id,
-            list: { blessings: BNames, sick: SNames, departed: DNames },
-        })
-            .then((res) => {
-                if (res.status === "ok") {
-                    setsuccess(true);
-                    setPrice(0)
-                    setBNames([])
-                    setDNames([])
-                    setSNames([])
-                    console.log(res);
-                } else {
-                    seterror(true);
-                    console.log(res);
-                    setPrice(0)
-                }
-            })
-            .catch((err) => {
-                seterror(true);
-                console.log(err);
-                setPrice(0)
-            });
-    };
+   
 
 
     return (
         <div className="qurbana-panam">
+            {isPopupOpen && <Popup _amount={Price} totalListOfferings={totalList} category="offerings" plan={parish.plan} id={parish.nerchapettiId} closePopup={closePopup} />}
             {error? <div className="qurbana-error"> Something went wrong, Please try again later </div> : ""}
             {success? <div className="qurbana-success"> List Sent Successfully </div> : ""}
-            {Price ? (
+            {totalList.length > 0 ? (
                 <div className="feedback">
                     <h1>
-                        Total Price: <span>{Price} Rs</span>{" "}
+                        Total Amount: <span>{Price} Rs</span>{" "}
                     </h1>
                     <ul>
-                        {BNames.map((b, i) => (
-                            <li key={i}>{b} - Blessings</li>
+                        {totalList.map(item => (
+                            <li>{item.name} - {item.username}</li>
                         ))}
-                        {SNames.map((b, i) => (
-                            <li key={i}>{b} - Sick</li>
-                        ))}
-                        {DNames.map((b, i) => (
-                            <li key={i}>{b} - Departed</li>
-                        ))}
+                       
                     </ul>
 
-                    <button onClick={sendToParish} className="btn">
-                        Send To Parish
+                    <button className="btn" onClick={openPopup}>
+                        Pay
                     </button>
                 </div>
             ) : (
                 ""
             )}
 
-            <div className="qurbana-item">
-                <h1 className="qurbana-title">Blessings</h1>
-                <p>Rs. 5</p>
+            {parish.qurbana.map(qur => (
+                <div className="qurbana-item">
+                <h1 className="qurbana-title">{qur.name}</h1>
+                <p>Rs. {qur.amount}</p>
                 <div className="input">
                     <input
-                        data-type="blessings"
+                        data-type={qur.name}
+                        data-amount={qur.amount}
                         className="name-input"
                         type="text"
                         placeholder="Name"
@@ -110,40 +76,8 @@ const QurbanaPanam = ({ parish }) => {
                     </button>
                 </div>
             </div>
-
-            <div className="qurbana-item">
-                <h1 className="qurbana-title">Sick</h1>
-                <p>Rs. 5</p>
-                <div className="input">
-                    <input
-                        data-type="sick"
-                        className="name-input"
-                        type="text"
-                        placeholder="Name"
-                        name="sick-name"
-                    />
-                    <button onClick={(e) => add(e)} className="btn">
-                        Add
-                    </button>
-                </div>
-            </div>
-
-            <div className="qurbana-item">
-                <h1 className="qurbana-title">Departed</h1>
-                <p>Rs. 5</p>
-                <div className="input">
-                    <input
-                        data-type="departed"
-                        className="name-input"
-                        type="text"
-                        placeholder="Name"
-                        name="departed-name"
-                    />
-                    <button onClick={(e) => add(e)} className="btn">
-                        Add
-                    </button>
-                </div>
-            </div>
+            ))}
+            
         </div>
     );
 };
