@@ -41,6 +41,7 @@
 }
 
 .HIW-container div hr {
+  display: none;
   margin: 20px 0 0 10px;
   border: 2px solid #4B93f0;
   left: 10px;
@@ -89,5 +90,21 @@
   .HIW-container div .paragraph p {
     width: auto;
   }
+}
+
+.HIW-container div .full-paragraph {
+  width: 80vw;
+  margin: auto;
+}
+
+.HIW-container div .full-paragraph p {
+  height: auto;
+  font-size: 19px;
+  font-weight: 200;
+  padding: 10px;
+}
+
+.HIW-container div .full-paragraph p li {
+  padding: 5px;
 }
 /*# sourceMappingURL=howitworks.css.map */
