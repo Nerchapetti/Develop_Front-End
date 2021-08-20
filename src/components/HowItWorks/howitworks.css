@@ -97,6 +97,12 @@
   margin: auto;
 }
 
+@media (max-width: 824px) {
+  .HIW-container div .full-paragraph {
+    width: 90vw;
+  }
+}
+
 .HIW-container div .full-paragraph p {
   height: auto;
   font-size: 19px;

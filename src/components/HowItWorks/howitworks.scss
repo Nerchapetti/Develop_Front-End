@@ -65,6 +65,9 @@
     .full-paragraph{
       width: 80vw;
       margin: auto;
+      @media(max-width: 824px){
+        width: 90vw;
+      }
       p{
         height: auto;
         font-size: 19px;

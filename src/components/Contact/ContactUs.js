@@ -66,7 +66,7 @@ function ContactUs() {
       ) : (
         ""
       )}
-      <h1 className="heading-contact">Contact US</h1>
+      <h1 className="heading-contact">CONTACT US</h1>
       <div className="contactdata">
         <div className="contact-container">
           <div className="contactdatas">
@@ -136,7 +136,7 @@ function ContactUs() {
             </div>
 
             <div className="form-data-message">
-              <textarea rows="8" name="message" placeholder="message" />
+              <textarea rows="8" name="message" placeholder="Message"/>
             </div>
 
             <div className="form-data-submit">

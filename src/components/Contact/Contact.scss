@@ -1,6 +1,7 @@
 .heading-contact {
   margin: 30px 0;
   text-align: center;
+  text-transform: lowercase;
   font-size: 25px;
   font-weight: 400;
 }
@@ -103,6 +104,10 @@
         padding: 9px;
         box-sizing: border-box;
         font-size: 15px;
+        &::placeholder{
+          font-family: sans-serif;
+          font-size: 14px;
+        }
         @media (max-width: 1023px) {
           width: 77vw;
         }
