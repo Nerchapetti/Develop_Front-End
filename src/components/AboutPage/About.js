@@ -7,9 +7,10 @@ import allen from "./teams/allen.jpg"
 import sapna from "./teams/sapna.jpg"
 import shameer from "./teams/shameer.jpg"
 import vyshnav from "./teams/vyshnav.jpeg"
-import rahul from "./teams/rahul.JPG"
+import rahul from "./teams/rahul.jpg"
 import surya from "./teams/surya.jpeg"
 import jebin from "./teams/jebin.jpeg"
+import sajan from "./teams/sajan.jpeg"
 const About = () => {
     return (
         <div>
@@ -33,6 +34,7 @@ const About = () => {
                         <TeamMember name="Surya V R" about="DevOps-Web" img={surya} l="surya-vr-8a7b501a7" i="" t=""/>                                             
                         <TeamMember name="Rahul T" about="DevOps-Web" img={rahul} l="rahulmanojcet" i="" t=""/>                                             
                         <TeamMember name="Jebin Jose " about="Operations" img={jebin} l="jebin-jose-6b30491b8" i="" t=""/> 
+                        <TeamMember name="Sajan Joseph " about="Operations" img={sajan} l="sajan-joseph-35331110a" i="" t=""/> 
                         
                     </div>
                     <h1 className="position">Alumini</h1>
