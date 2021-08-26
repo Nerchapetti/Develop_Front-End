@@ -30,7 +30,8 @@ function App() {
       <Route path="/policies/refund-policy" component={RefundPolicy} />
       <Route path="/policies/terms-of-use" component={TermsOfUse} />
       <Route path="/pricing/plan" component={Pricing} />
-      <Route path="/payment/success/:name" component={PaymentSuccess} />
+      {/* <Route path="/payment/success/:name" component={PaymentSuccess} /> */}
+      <Route path="/payment/success" component={PaymentSuccess} />
       <Route path="/page/How-it-works" component={Howitworks} />
     </Router>
     </div>

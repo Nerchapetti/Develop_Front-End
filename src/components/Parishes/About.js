@@ -1,17 +1,21 @@
-import React from 'react'
-import Likes from '../Likes/Likes'
-import "./About.css"
+import React from "react";
+import Likes from "../Likes/Likes";
+import "./About.css";
+import { BiMap } from "react-icons/bi";
 
+const About = ({ parish }) => {
+  return (
+    <div className="parish-about">
+      <h1 className="churchName">{parish.about.churchName}</h1>
+      <img className="img" src={parish.imageUrl} alt="" />
+      <Likes id={parish._id} likes={parish.likes} likeFor="parish" />
+      <a href="https://goo.gl/maps/VecoGYZ6Keq1C4Av8" className="location">
+        {" "}
+        <BiMap />{" "}
+      </a>
+      <p dangerouslySetInnerHTML={{ __html: parish.about.content }}></p>
+    </div>
+  );
+};
 
-const About = ({parish}) => {
-    return (
-        <div className="parish-about">
-            <h1 className="churchName">{parish.about.churchName}</h1>
-            <img className="img" src={parish.imageUrl} alt="" />
-            <Likes id={parish._id} likes={parish.likes} likeFor="parish"/>
-            <p dangerouslySetInnerHTML={ {__html: parish.about.content} }></p>
-        </div>
-    )
-}
-
-export default About
+export default About;

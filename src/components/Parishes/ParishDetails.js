@@ -79,10 +79,10 @@ const ParisheDetails = () => {
       path: `${url}/offerings`,
       main: () => <Offerings parish={parishData} />,
     },
-    {
-      path: `${url}/location`,
-      main: () => <Location parish={parishData} />,
-    },
+    // {
+    //   path: `${url}/location`,
+    //   main: () => <Location parish={parishData} />,
+    // },
     {
       path: `${url}/qurbana-panam`,
       main: () => <QurbanaPanam parish={parishData} />,
@@ -106,9 +106,9 @@ const ParisheDetails = () => {
                 <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/offerings`}>Offerings</Link>
                 </li>
-                <li onClick={(e) => handleClick(e)}>
+                {/* <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/location`}>Location</Link>
-                </li>
+                </li> */}
                 <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/qurbana-panam`}>Qurbana Panam</Link>
                 </li>

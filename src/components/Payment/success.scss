@@ -1,0 +1,59 @@
+.success {
+  background-color: rgb(50, 108, 216);
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+
+  a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 30px;
+  }
+  @keyframes tickk {
+    0% {
+      font-size: 55px;
+    }
+    25% {
+      font-size: 60px;
+    }
+    50% {
+      font-size: 65px;
+    }
+    75% {
+      font-size: 60px;
+    }
+    100% {
+      font-size: 55px;
+    }
+  }
+  .S-container {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    // background-color: red;
+    .tick {
+        // position: absolute;
+        // background-color: red;
+      font-weight: 2000;
+      font-size: 55px;
+      text-align: center;
+      animation: tick 2s ease-in-out infinite;
+      -webkit-animation: tick 2s ease-in-out infinite;
+    }
+    .content {
+        // background-color: orange;
+        h2 {
+          font-size: 15px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+        p {
+          padding: 20px 0;
+          width: 80vw;
+          margin: auto;
+        }
+    }
+  }
+}
