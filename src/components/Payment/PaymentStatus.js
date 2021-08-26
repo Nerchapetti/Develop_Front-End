@@ -10,7 +10,8 @@ const PaymentStatus = () => {
 
     useEffect(() => {
         getRequest(`${window.URI}/get-payment-status?orderId=${orderId}`).then(res => {
-            setpaymentStatus(res.status)
+            console.log(res)
+            setpaymentStatus(res.status.txStatus)
         })
         
     }, [])
@@ -25,10 +26,10 @@ const PaymentStatus = () => {
     } else if (paymentStatus === 'SUCCESS') {
         console.log(paymentStatus)
         return <PaymentSuccess />
-    } else if (paymentStatus === 'FAILED' || paymentStatus === 'CANCELLED') {
+    } else if (paymentStatus === 'FAILED' || paymentStatus === 'CANCELLED' || paymentStatus === 'USER_DROPPED') {
         console.log(paymentStatus)
         return <PaymentFailure />
-    }
+    } 
 
     
 }
