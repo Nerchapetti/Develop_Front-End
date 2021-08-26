@@ -17,16 +17,19 @@ import Parishes from "./Parishes";
 import "./Patron.css";
 import PatronDetails from "./PatronDetails";
 import getPatron from "../../API/getPatron";
+import Payment from "./Payment";
 
 
 const Patron = () => {
     let { url } = useRouteMatch();
     let {id} = useParams()
     const [patronDetails, setpatronDetails] = useState()
+    const [isPaymentEnabled, setisPaymentEnabled] = useState(false)
     useEffect(() => {
       getPatron(id)
         .then((res) => {
           setpatronDetails(res.data);
+          setisPaymentEnabled(res.data.isPaymentEnabled)
           console.log(res.data);
         })
         .catch((err) => {
@@ -51,6 +54,11 @@ const Patron = () => {
             path: `${url}`,
             exact: true,
             main: () => <About patron={patronDetails}/>,
+        },
+        {
+            path: `${url}/payment`,
+            exact: true,
+            main: () => <Payment patron={patronDetails}/>,
         },
         {
             path: `${url}/contact`,
@@ -97,6 +105,12 @@ const Patron = () => {
                 <li className="active" onClick={(e) => handleClick(e)}>
                   <Link to={`${url}`}>About</Link>
                 </li>
+              {
+                isPaymentEnabled && 
+                <li onClick={(e) => handleClick(e)}>
+                  <Link to={`${url}/payment`}>Payment</Link>
+                </li>
+              }
                 <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/contact`}>Contact</Link>
                 </li>

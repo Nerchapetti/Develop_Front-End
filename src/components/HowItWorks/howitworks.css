@@ -40,14 +40,6 @@
   }
 }
 
-.HIW-container div hr {
-  display: none;
-  margin: 20px 0 0 10px;
-  border: 2px solid #4B93f0;
-  left: 10px;
-  width: 2rem;
-}
-
 .HIW-container div .head2 {
   font-size: 32px;
 }
@@ -110,7 +102,9 @@
   padding: 10px;
 }
 
-.HIW-container div .full-paragraph p li {
+.HIW-container div .full-paragraph p ul li {
+  font-size: 20px;
+  list-style-type: lower-roman;
   padding: 5px;
 }
 /*# sourceMappingURL=howitworks.css.map */

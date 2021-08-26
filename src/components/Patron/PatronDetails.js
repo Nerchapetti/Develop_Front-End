@@ -1,32 +1,33 @@
 import { faMailBulk, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./patronDetails.css"
+import Payment from "../Parishes/Payment";
+import "./patronDetails.css";
 
-const PatronDetails = ({patron}) => {
+const PatronDetails = ({ patron }) => {
+    if (!patron) {
+        return (
+            <>
+                <div className="isLoading"></div>
+            </>
+        );
+    }
 
-
-  if (!patron) {
     return (
-      <>
-        <div className="isLoading"></div>
-      </>
+        <div className="patron-details">
+            <img src={patron.imageUrl} alt="patron" />
+            <div class="section">
+                <h1>{patron.about.name}</h1>
+                <p>
+                    <FontAwesomeIcon icon={faPhoneAlt} />{" "}
+                    {patron.contact.phoneNumber[0]}{" "}
+                </p>
+                <p>
+                    <FontAwesomeIcon icon={faMailBulk} /> {patron.contact.email}{" "}
+                </p>
+            </div>
+            
+        </div>
     );
-  }
-
-  return (
-    <div className="patron-details">
-      <img
-        src={patron.imageUrl}
-        alt="patron"
-      />
-      <div class="section">
-        <h1>{patron.about.name}</h1>
-        <p><FontAwesomeIcon icon={faPhoneAlt} /> {patron.contact.phoneNumber[0]} </p>
-        <p><FontAwesomeIcon icon={faMailBulk}/> {patron.contact.email} </p>
-        
-      </div>
-    </div>
-  );
 };
 
 export default PatronDetails;

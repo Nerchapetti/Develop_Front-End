@@ -16,7 +16,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2.5rem;
+  padding: .1rem 2.5rem;
+}
+.navbar .logo {
+  width: 200px;
 }
 
 .navbar .search-bar{

@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="navbar">
-      <Link className="nav-logo" to="/"><img src={logo} style={{width: "250px"}} alt="Logo" /></Link>
+      <Link className="nav-logo" to="/"><img src={logo} className="logo" alt="Logo" /></Link>
             <SearchBar />
         <ul className={click ? 'nav-menu active': "nav-menu"}>
           <li className="nav-item" onClick={closeMobileMenu}>
