@@ -7,11 +7,14 @@ import PaymentSuccess from "./PaymentSuccess"
 const PaymentStatus = () => {
     const {orderId} = useParams()
     const [paymentStatus, setpaymentStatus] = useState('pending')
-
+    
     useEffect(() => {
         getRequest(`${window.URI}/get-payment-status?orderId=${orderId}`).then(res => {
-            console.log(res)
-            setpaymentStatus(res.status.txStatus)
+            if(res.orderStatus === 'ACTIVE'){
+                setpaymentStatus('CANCELLED')
+            } else{
+                setpaymentStatus(res.status.txStatus)
+            }
         })
         
     }, [])
