@@ -10,7 +10,8 @@ const PaymentStatus = () => {
     
     useEffect(() => {
         getRequest(`${window.URI}/get-payment-status?orderId=${orderId}`).then(res => {
-            if(res.orderStatus === 'ACTIVE'){
+            console.log(res)
+            if(res.status.orderStatus === 'ACTIVE'){
                 setpaymentStatus('CANCELLED')
             } else{
                 setpaymentStatus(res.status.txStatus)
