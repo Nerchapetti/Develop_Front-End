@@ -1,6 +1,7 @@
 import "./success.css";
 import { FaCheck } from "react-icons/fa";
 import { IoArrowBackOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const PaymentSuccess = () => {
   return (
@@ -19,24 +20,19 @@ const PaymentSuccess = () => {
         <div className="content">
           <h2> Payment successfull</h2>
           <p>
-            &emsp; Your payment to st joseph is successfull . check your mail
-            for your receipt .
+            &emsp; Your payment is successfull. check your mail
+            for your receipt.
           </p>
 
-          {/* const PaymentSuccess = () => {
-    return (
-        <div>
-            <h1>Thank you, </h1>
-            <h2>Your payment is successfull</h2>
-            */}
+          
         </div>
         <div className="reciept">
           <a href="#">
             <button>Reciept</button>
           </a>
-          <a href="/">
+          <Link to="/">
             <button> Done </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
