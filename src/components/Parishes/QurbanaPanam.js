@@ -26,7 +26,7 @@ const QurbanaPanam = ({ parish }) => {
         let amount = e.target.previousElementSibling.getAttribute('data-amount')
         let username = e.target.previousElementSibling.value
         setPrice(Price + parseFloat(amount))
-        settotalList([...totalList, {name: qurbanaName, username: username }])
+        settotalList([...totalList, {name: qurbanaName, username: username, amount: amount }])
         e.target.previousElementSibling.value = ""
     };
 

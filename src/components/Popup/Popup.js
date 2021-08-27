@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./Popup.css";
 import postRequest from "../../API/postRequest"
 
-const Popup = ({ closePopup, id, plan, category, vendorEmail, totalListOfferings, _amount }) => {
+const Popup = ({ closePopup, id, plan, category, vendorEmail, totalListQurbana, totalListOfferings, _amount }) => {
     const [amount, setamount] = useState("");
     const [name, setname] = useState("");
     const [email, setemail] = useState("");
@@ -14,21 +14,35 @@ const Popup = ({ closePopup, id, plan, category, vendorEmail, totalListOfferings
         }
     }, [])
 
-    console.log(totalListOfferings)
     const submitForm = (e) => {
         e.preventDefault();
-
-        const data = {
-            orderAmount: amount,
-            customerEmail: email,
-            customerName: name,
-            customerPhone: phoneNumber,
-            nerchapettiId: id,
-            plan: plan,
-            category: category,
-            vendorEmail: vendorEmail,
-            totalListOfferings: totalListOfferings
+        let data = {}
+        if(category === "offerings"){
+            data = {
+                orderAmount: amount,
+                customerEmail: email,
+                customerName: name,
+                customerPhone: phoneNumber,
+                nerchapettiId: id,
+                plan: plan,
+                category: category,
+                vendorEmail: vendorEmail,
+                totalListOfferings: totalListOfferings
+            }
+        } else if(category === "qurbana") {
+            data = {
+                orderAmount: amount,
+                customerEmail: email,
+                customerName: name,
+                customerPhone: phoneNumber,
+                nerchapettiId: id,
+                plan: plan,
+                category: category,
+                vendorEmail: vendorEmail,
+                totalListQurbana: totalListQurbana
+            }
         }
+
 
         postRequest(`${window.URI}/create-payment`, data).then(res => {
             console.log(res);
