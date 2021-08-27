@@ -35,7 +35,7 @@ const QurbanaPanam = ({ parish }) => {
 
     return (
         <div className="qurbana-panam">
-            {isPopupOpen && <Popup _amount={Price} totalListOfferings={totalList} category="offerings" plan={parish.plan} id={parish.nerchapettiId} closePopup={closePopup} />}
+            {isPopupOpen && <Popup _amount={Price} totalListQurbana={totalList} category="qurbana" plan={parish.plan} id={parish.nerchapettiId} closePopup={closePopup} />}
             {error? <div className="qurbana-error"> Something went wrong, Please try again later </div> : ""}
             {success? <div className="qurbana-success"> List Sent Successfully </div> : ""}
             {totalList.length > 0 ? (
