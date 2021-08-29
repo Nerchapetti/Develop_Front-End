@@ -34,7 +34,7 @@ const Campaigns = ({ ids }) => {
 
   useEffect(() => {
     if (!ids) {
-      getRequest(`${window.URI}/get-all-campaigns`)
+      getRequest(`${process.env.REACT_APP_API_URI}/get-all-campaigns`)
         .then((data) => {
           if (data.status === "ok") {
             console.log(data);
@@ -67,7 +67,7 @@ const Campaigns = ({ ids }) => {
         });
         setisLoading(false)
       } else {
-        getRequest(`${window.URI}/get-all-campaigns`)
+        getRequest(`${process.env.REACT_APP_API_URI}/get-all-campaigns`)
           .then((data) => {
             if (data.status === "ok") {
               console.log(data);

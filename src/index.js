@@ -5,8 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
-window.URI = "https://api.nerchapetti.com/api"
-// window.URI = "http://localhost:5000/api"
+// process.env.REACT_APP_API_URI = "https://api.nerchapetti.com/api"
+// process.env.REACT_APP_API_URI = "http://localhost:5000/api"
 ReactDOM.render(
   <BrowserRouter>
     <App />

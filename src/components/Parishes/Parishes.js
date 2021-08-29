@@ -21,7 +21,7 @@ const Parishes = ({ ids }) => {
 
   useEffect(() => {
     if (!ids) {
-      getRequest(`${window.URI}/get-all-parishes`).then((data) => {
+      getRequest(`${process.env.REACT_APP_API_URI}/get-all-parishes`).then((data) => {
         if(data.status === 'ok'){
           setParishesdata(data.data);
           console.log(data);
@@ -55,7 +55,7 @@ const Parishes = ({ ids }) => {
         });
         setisLoading(false)
       } else {
-        getRequest(`${window.URI}/get-all-parishes`).then((data) => {
+        getRequest(`${process.env.REACT_APP_API_URI}/get-all-parishes`).then((data) => {
 
           if(data.status === "ok"){
             setParishesdata(data.data);

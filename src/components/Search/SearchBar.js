@@ -11,7 +11,7 @@ const SearchBar = () => {
   const [error, seterror] = useState(false)
   useEffect(() => {
 
-      getRequest(`${window.URI}/get-all-parishes`).then((data) => {
+      getRequest(`${process.env.REACT_APP_API_URI}/get-all-parishes`).then((data) => {
         if(data.status === 'ok'){
           setparishes(data.data);
           console.log(data);
@@ -23,7 +23,7 @@ const SearchBar = () => {
         console.log(err);
       })
 
-      getRequest(`${window.URI}/get-all-campaigns`).then((data) => {
+      getRequest(`${process.env.REACT_APP_API_URI}/get-all-campaigns`).then((data) => {
         if(data.status === 'ok'){
           setcampaigns(data.data);
           console.log(data);
@@ -35,7 +35,7 @@ const SearchBar = () => {
         console.log(err);
       })
 
-      getRequest(`${window.URI}/get-all-patrons`).then((data) => {
+      getRequest(`${process.env.REACT_APP_API_URI}/get-all-patrons`).then((data) => {
         if(data.status === 'ok'){
           setpatrons(data.data);
           console.log(data);

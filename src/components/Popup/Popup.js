@@ -41,10 +41,21 @@ const Popup = ({ closePopup, id, plan, category, vendorEmail, totalListQurbana, 
                 vendorEmail: vendorEmail,
                 totalListQurbana: totalListQurbana
             }
+        } else {
+            data = {
+                orderAmount: amount,
+                customerEmail: email,
+                customerName: name,
+                customerPhone: phoneNumber,
+                nerchapettiId: id,
+                plan: plan,
+                category: category,
+                vendorEmail: vendorEmail,
+            }
         }
 
 
-        postRequest(`${window.URI}/create-payment`, data).then(res => {
+        postRequest(`${process.env.REACT_APP_API_URI}/create-payment`, data).then(res => {
             console.log(res);
             window.location = res.link
         })

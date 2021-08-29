@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^12.8.3",
     "date-fns": "^2.23.0",
     "emailjs-com": "^3.0.2",
+    "env-cmd": "^10.1.0",
     "google-map-react": "^2.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -24,10 +25,12 @@
     "yarn": "^1.22.11"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "env-cmd -e development react-scripts start",
     "build": "react-scripts build",
-    "test-deploy": "npm run build && cp -r ./build/* ../frontend-build && cd ../frontend-build && git add . && git commit -m 'new build' && git push test master",
-    "production-deploy": "cd ../frontend-build && git push production master",
+    "build:testing": "env-cmd -e testing react-scripts build",
+    "build:production": "env-cmd -e production react-scripts build",
+    "test-deploy": "npm run build:testing && cp -r ./build/* ../frontend-test && cd ../frontend-test && git add . && git commit -m 'new build' && git push origin master",
+    "production-deploy": "npm run build:production && cp -r ./build/* ../frontend-production && cd ../frontend-production && git add . && git commit -m 'new build' && git push origin master",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

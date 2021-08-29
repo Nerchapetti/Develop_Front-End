@@ -17,6 +17,7 @@ import PaymentStatus from "./components/Payment/PaymentStatus";
 import PaymentFailure from "./components/Payment/PaymentFailure";
 
 function App() {
+  console.log({API_ENDPOINT: process.env.REACT_APP_API_URI})
   return (
     <div className="App">
     <Router>

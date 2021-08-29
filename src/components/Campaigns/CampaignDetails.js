@@ -42,7 +42,7 @@ const CampaignDetails = () => {
   }
 
   useEffect(() => {
-    getRequest(`${window.URI}/get-campaign-id/${id}`)
+    getRequest(`${process.env.REACT_APP_API_URI}/get-campaign-id/${id}`)
       .then((res) => {
         if(res.status === "ok"){
           console.log(res);

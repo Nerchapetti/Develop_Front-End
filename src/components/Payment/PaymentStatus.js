@@ -9,7 +9,7 @@ const PaymentStatus = () => {
     const [paymentStatus, setpaymentStatus] = useState('pending')
     
     useEffect(() => {
-        getRequest(`${window.URI}/get-payment-status?orderId=${orderId}`).then(res => {
+        getRequest(`${process.env.REACT_APP_API_URI}/get-payment-status?orderId=${orderId}`).then(res => {
             console.log(res)
             if(res.status.orderStatus === 'ACTIVE'){
                 setpaymentStatus('CANCELLED')

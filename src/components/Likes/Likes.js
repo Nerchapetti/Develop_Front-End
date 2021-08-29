@@ -23,11 +23,11 @@ const Likes = ({ likes:l, id, likeFor}) => {
         setisLiked(false)
 
         if(likeFor === "parish"){
-          incrementLike(`${window.URI}/unlike-parish/${id}`).then(res => {
+          incrementLike(`${process.env.REACT_APP_API_URI}/unlike-parish/${id}`).then(res => {
               console.log(res);
           })
         } else if(likeFor === "campaign"){
-          incrementLike(`${window.URI}/unlike-campaign/${id}`).then(res => {
+          incrementLike(`${process.env.REACT_APP_API_URI}/unlike-campaign/${id}`).then(res => {
               console.log(res);
           })
         }
@@ -35,7 +35,7 @@ const Likes = ({ likes:l, id, likeFor}) => {
 
         if(likeFor === "parish"){
           setisLiked(true)
-          incrementLike(`${window.URI}/like-parish/${id}`).then(res => {
+          incrementLike(`${process.env.REACT_APP_API_URI}/like-parish/${id}`).then(res => {
               console.log(res);
           })
           setlikes(likes + 1)
@@ -44,7 +44,7 @@ const Likes = ({ likes:l, id, likeFor}) => {
           console.log("ADDING");
         } else if(likeFor === "campaign"){
           setisLiked(true)
-          incrementLike(`${window.URI}/like-campaign/${id}`).then(res => {
+          incrementLike(`${process.env.REACT_APP_API_URI}/like-campaign/${id}`).then(res => {
               console.log(res);
           })
           setlikes(likes + 1)
