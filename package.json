@@ -29,8 +29,8 @@
     "build": "react-scripts build",
     "build:testing": "env-cmd -e testing react-scripts build",
     "build:production": "env-cmd -e production react-scripts build",
-    "test-deploy": "npm run build:testing && cp -r ./build/* ../frontend-test && cd ../frontend-test && git add . && git commit -m 'new build' && git push origin master",
-    "production-deploy": "npm run build:production && cp -r ./build/* ../frontend-production && cd ../frontend-production && git add . && git commit -m 'new build' && git push origin master",
+    "test-deploy": "npm run build:testing && cp -r ./build/* ../builds/frontend-test && cd ../builds/frontend-test && git add . && git commit -m 'new build' && git push origin master",
+    "production-deploy": "npm run build:production && cp -r ./build/* ../builds/frontend-production && cd ../builds/frontend-production && git add . && git commit -m 'new build' && git push origin master",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
