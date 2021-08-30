@@ -9,10 +9,10 @@ const About = ({ parish }) => {
       <h1 className="churchName">{parish.about.churchName}</h1>
       <img className="img" src={parish.imageUrl} alt="" />
       <Likes id={parish._id} likes={parish.likes} likeFor="parish" />
-      <a href="https://goo.gl/maps/VecoGYZ6Keq1C4Av8" className="location">
+      {/* <a href="https://goo.gl/maps/VecoGYZ6Keq1C4Av8" className="location">
         {" "}
         <BiMap />{" "}
-      </a>
+      </a> */}
       <div className="content">
       <div dangerouslySetInnerHTML={{ __html: parish.about.content }} />
       </div>
