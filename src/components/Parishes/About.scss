@@ -1,18 +1,22 @@
-.parish-about{
-    .churchName{
+.parish-about {
+    .churchName {
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 10px;
-        @media(max-width: 767px){
-            font-size: 1.5rem;
+        @media (max-width: 767px) {
+            font-size: 1.2rem;
         }
     }
-    .likes{
+    img{
+        height: 50vh;
+        object-fit: contain;
+    }
+    .likes {
         position: relative;
         left: 0;
         margin-bottom: 50px;
     }
-    .location{
+    .location {
         font-weight: 400;
         font-size: 40px;
     }

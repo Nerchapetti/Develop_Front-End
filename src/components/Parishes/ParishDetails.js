@@ -11,6 +11,7 @@ import Committe from "./Committe";
 import Offerings from "./Offerings";
 import Location from "./Location";
 import QurbanaPanam from "./QurbanaPanam";
+import Gallery from "./Gallery";
 
 const ParisheDetails = () => {
   let { url } = useRouteMatch();
@@ -72,6 +73,11 @@ const ParisheDetails = () => {
       exact: true
     },
     {
+      path: `${url}/gallery`,
+      main: () => <Gallery parish={parishData} />,
+      exact: true
+    },
+    {
       path: `${url}/committe-members`,
       main: () => <Committe parish={parishData} />,
     },
@@ -79,10 +85,6 @@ const ParisheDetails = () => {
       path: `${url}/offerings`,
       main: () => <Offerings parish={parishData} />,
     },
-    // {
-    //   path: `${url}/location`,
-    //   main: () => <Location parish={parishData} />,
-    // },
     {
       path: `${url}/qurbana-panam`,
       main: () => <QurbanaPanam parish={parishData} />,
@@ -101,14 +103,14 @@ const ParisheDetails = () => {
                   <Link to={`${url}`}>About</Link>
                 </li>
                 <li onClick={(e) => handleClick(e)}>
+                  <Link to={`${url}/gallery`}>Gallery</Link>
+                </li>
+                <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/committe-members`}>Committee</Link>
                 </li>
                 <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/offerings`}>Offerings</Link>
                 </li>
-                {/* <li onClick={(e) => handleClick(e)}>
-                  <Link to={`${url}/location`}>Location</Link>
-                </li> */}
                 <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/qurbana-panam`}>Qurbana Panam</Link>
                 </li>

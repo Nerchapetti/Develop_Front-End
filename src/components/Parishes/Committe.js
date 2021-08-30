@@ -22,7 +22,7 @@ const Committe = ({parish}) => {
                 </div>
                 <div className="member-details">
                     <h2 className="name">{member.name}</h2>
-                    <p className="member-position">{member.position}</p>
+                    <p className="member-position member-title">{member.position}</p>
                     {member.phoneNumber.map((phone, i) => (
                     <p className="member-contact" key={i}>{phone}</p>
                     ))}
