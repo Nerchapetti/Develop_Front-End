@@ -22,9 +22,25 @@
   width: 200px;
 }
 
+.navbar .logo-sm {
+  width: 30px;
+  display: none;
+}
+
+@media(max-width: 767px){
+  .navbar .logo-sm{
+    display: flex;
+    justify-self: left;
+  }
+  .navbar .logo {
+    display: none;
+  }
+  
+}
+
 .navbar .search-bar{
   border-radius: 8px;
-  width: 50%;
+  width: 80%;
   position: relative;
   background-color: #ebedf5;
 }
