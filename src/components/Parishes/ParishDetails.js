@@ -106,7 +106,7 @@ const ParisheDetails = () => {
                   <Link to={`${url}/gallery`}>Gallery</Link>
                 </li>
                 <li onClick={(e) => handleClick(e)}>
-                  <Link to={`${url}/committe-members`}>Committee</Link>
+                  <Link to={`${url}/committe-members`}>Office Bearers</Link>
                 </li>
                 <li onClick={(e) => handleClick(e)}>
                   <Link to={`${url}/offerings`}>Offerings</Link>

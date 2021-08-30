@@ -7,7 +7,7 @@ import allen from "./teams/allen.jpg"
 import sapna from "./teams/sapna.jpg"
 import shameer from "./teams/shameer.jpg"
 import vyshnav from "./teams/vyshnav.jpeg"
-import rahul from "./teams/rahul.jpg"
+import rahul from "./teams/rahul.JPG"
 import surya from "./teams/surya.jpeg"
 import jebin from "./teams/jebin.jpeg"
 import sajan from "./teams/sajan.jpeg"
@@ -37,7 +37,7 @@ const About = () => {
                         <TeamMember name="Sajan Joseph " about="Operations" img={sajan} l="sajan-joseph-35331110a" i="" t=""/> 
                         
                     </div>
-                    <h1 className="position">Alumini</h1>
+                    <h1 className="position">Alumni</h1>
                     <div className="team-members">
                         <TeamMember name="sapna" about="DevOps-Web" img={sapna} l="sapna2001" i="" t=""/>
                     </div>
