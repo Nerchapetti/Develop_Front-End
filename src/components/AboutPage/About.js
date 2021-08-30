@@ -1,6 +1,6 @@
 import Footer from "../Footer/Footer"
 import Header from "../NavBar/Header"
-import "./about.css"
+import "./about.scss"
 import TeamMember from "./TeamMember";
 import amritha from "./teams/amritha.jpg"
 import allen from "./teams/allen.jpg"

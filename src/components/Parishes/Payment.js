@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Popup from "../Popup/Popup";
-import "./Payment.css";
+import "./Payment.scss";
 
 const Payment = ({ bank, nerchapettiId, plan, vendorEmail }) => {
     const [isPopupOpen, setisPopupOpen] = useState(false);

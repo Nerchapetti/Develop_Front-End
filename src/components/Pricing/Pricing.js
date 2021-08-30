@@ -2,7 +2,7 @@ import { faCheckCircle, faCircle, faCircleNotch } from "@fortawesome/free-solid-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../Footer/Footer";
 import Header from "../NavBar/Header";
-import "./pricing.css";
+import "./pricing.scss";
 
 const Pricing = () => {
   return (

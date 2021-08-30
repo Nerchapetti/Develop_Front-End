@@ -14,7 +14,7 @@ import Contact from "./Contact";
 import Family from "./Family";
 import Orientation from "./Orientation";
 import Parishes from "./Parishes";
-import "./Patron.css";
+import "./Patron.scss";
 import PatronDetails from "./PatronDetails";
 import getPatron from "../../API/getPatron";
 import Payment from "./Payment";

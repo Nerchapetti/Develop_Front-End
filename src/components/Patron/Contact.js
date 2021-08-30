@@ -1,6 +1,6 @@
 import { faLandmark, faMailBulk, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import "./contact.css"
+import "./contact.scss"
 const Contact = ({patron}) => {
     return (
     <div className="contact">

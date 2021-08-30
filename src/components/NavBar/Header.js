@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import SearchBar from "../Search/SearchBar";
-import "./Header.css";
+import "./Header.scss";
 import logo from "./logo.png"
 
 const Header = () => {

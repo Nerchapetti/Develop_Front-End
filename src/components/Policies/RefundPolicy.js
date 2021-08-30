@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import Header from "../NavBar/Header";
-import "./privacy.css"
+import "./privacy.scss"
 
 export const RefundPolicy = () => {
   return (

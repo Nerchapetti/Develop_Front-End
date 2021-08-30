@@ -1,5 +1,5 @@
 import React from 'react'
-import "./orientation.css"
+import "./orientation.scss"
 import Patron from './Patron'
 import PatronDetails from './PatronDetails'
 

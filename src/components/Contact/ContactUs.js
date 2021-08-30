@@ -1,5 +1,5 @@
 import emailjs from "emailjs-com";
-import "./Contact.css";
+import "./Contact.scss";
 import Header from "../NavBar/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";

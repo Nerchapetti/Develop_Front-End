@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Parishes.css";
+import "./Parishes.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowAltCircleLeft,

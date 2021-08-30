@@ -1,5 +1,5 @@
 import React from 'react'
-import './Committe.css'
+import './Committe.scss'
 import avatar from "./avatar.svg"
 import CoreCommittee from './CoreCommittee'
 

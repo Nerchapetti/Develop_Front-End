@@ -3,7 +3,7 @@ import getRequest from "../../API/getRequest";
 import { useEffect, useState } from "react";
 import Header from "../NavBar/Header";
 import Footer from "../Footer/Footer";
-import "./CampaignDetails.css";
+import "./CampaignDetails.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHeart,

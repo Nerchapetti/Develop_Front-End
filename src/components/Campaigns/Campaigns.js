@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import avatar from "./avatar.svg"
-import "./Campaigns.css";
+import "./Campaigns.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowAltCircleLeft,

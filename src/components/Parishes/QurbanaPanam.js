@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./QurbanaPanam.css";
+import "./QurbanaPanam.scss";
 import postRequest from "../../API/postRequest";
 import Popup from "../Popup/Popup";
 

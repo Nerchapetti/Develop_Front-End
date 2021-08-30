@@ -5,7 +5,7 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import "./about.css";
+import "./about.scss";
 import { Link } from "react-router-dom";
 
 const TeamMember = ({ name, about, img, l, i, t }) => {

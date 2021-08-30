@@ -1,4 +1,4 @@
-import "./success.css";
+import "./success.scss";
 const Success = ({ success, message }) => {
   return (
     <>

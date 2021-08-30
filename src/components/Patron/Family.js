@@ -2,7 +2,7 @@ import { faMailBulk, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import avatar from "./avatar.svg"
-import "./family.css"
+import "./family.scss"
 
 const Family = ({patron}) => {
     return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Popup from "../Popup/Popup";
-import "./offer.css"
+import "./offer.scss"
 
 
 const Offerings = ({ parish }) => {

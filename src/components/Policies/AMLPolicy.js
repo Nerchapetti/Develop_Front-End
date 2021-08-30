@@ -1,6 +1,6 @@
 import Footer from "../Footer/Footer";
 import Header from "../NavBar/Header";
-import "./privacy.css"
+import "./privacy.scss"
 export const AMLPolicy = () => {
   return (
     <div>

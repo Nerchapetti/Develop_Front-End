@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ResultCard from './ResultCard'
-import "./search.css"
+import "./search.scss"
 
 const SearchResult = ({keyword, parishes, campaigns, patrons}) => {
 

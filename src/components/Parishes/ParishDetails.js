@@ -1,6 +1,6 @@
 import Footer from "../Footer/Footer";
 import Header from "../NavBar/Header";
-import "./ParishDetails.css";
+import "./ParishDetails.scss";
 import { useState, useEffect } from "react";
 import { useParams, useRouteMatch } from "react-router";
 import getRequest from "../../API/getRequest";

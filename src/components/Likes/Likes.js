@@ -2,7 +2,7 @@ import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import incrementLike from "../../API/incrementLike";
-import "./likes.css";
+import "./likes.scss";
 const Likes = ({ likes:l, id, likeFor}) => {
 
     const [likes, setlikes] = useState(l)

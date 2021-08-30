@@ -1,4 +1,4 @@
-import "./success.css";
+import "./success.scss";
 import { FaCheck } from "react-icons/fa";
 import { IoArrowBackOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";

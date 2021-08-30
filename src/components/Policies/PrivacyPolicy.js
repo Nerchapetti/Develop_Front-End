@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../NavBar/Header";
-import "./privacy.css"
+import "./privacy.scss"
 
 
 export const PrivacyPolicy = () => {

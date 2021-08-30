@@ -1,6 +1,6 @@
 import React from "react";
 import Likes from "../Likes/Likes";
-import "./About.css";
+import "./About.scss";
 import { BiMap } from "react-icons/bi";
 
 const About = ({ parish }) => {

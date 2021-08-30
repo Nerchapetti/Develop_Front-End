@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Popup.css";
+import "./Popup.scss";
 import postRequest from "../../API/postRequest"
 
 const Popup = ({ closePopup, id, plan, category, vendorEmail, totalListQurbana, totalListOfferings, _amount }) => {

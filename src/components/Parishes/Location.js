@@ -1,4 +1,4 @@
-import "./About.css"
+import "./About.scss"
 // import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 

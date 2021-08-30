@@ -1,5 +1,5 @@
 import {  AiOutlineClose } from "react-icons/ai";
-import "./failed.css"; 
+import "./failed.scss"; 
 
 const PaymentFailure = () => {
     return (

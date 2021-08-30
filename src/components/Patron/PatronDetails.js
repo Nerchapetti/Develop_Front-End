@@ -1,7 +1,7 @@
 import { faMailBulk, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Payment from "../Parishes/Payment";
-import "./patronDetails.css";
+import "./patronDetails.scss";
 
 const PatronDetails = ({ patron }) => {
     if (!patron) {

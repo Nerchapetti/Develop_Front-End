@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,MAAM,CAAA;EAEF,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,GAAG;EACV,gBAAgB,EAAE,SAAS;EAC3B,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,YAAY;EAC7B,MAAM,EAAE,OAAO;CAElB;;AAED,AAAA,MAAM,CAAA;EACF,KAAK,EAAE,OAAO;CACjB",
-    "sources": [
-        "likes.scss"
-    ],
-    "names": [],
-    "file": "likes.css"
-}

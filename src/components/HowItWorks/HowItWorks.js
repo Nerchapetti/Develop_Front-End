@@ -1,6 +1,6 @@
 import Footer from "../Footer/Footer";
 import Header from "../NavBar/Header";
-import "./howitworks.css";
+import "./howitworks.scss";
 
 const HowItWorks = () => {
   return (
