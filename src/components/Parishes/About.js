@@ -13,7 +13,9 @@ const About = ({ parish }) => {
         {" "}
         <BiMap />{" "}
       </a>
-      <p dangerouslySetInnerHTML={{ __html: parish.about.content }}></p>
+      <div className="content">
+      <div dangerouslySetInnerHTML={{ __html: parish.about.content }} />
+      </div>
     </div>
   );
 };
