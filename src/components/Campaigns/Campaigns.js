@@ -146,7 +146,7 @@ const Campaigns = ({ ids }) => {
 
   return (
     <div className="Campaigns">
-      <h1 className="camp-title">Campaign</h1>
+      {/* <h1 className="camp-title">Campaign</h1> */}
 
       <div className="left-scroll">
         <FontAwesomeIcon

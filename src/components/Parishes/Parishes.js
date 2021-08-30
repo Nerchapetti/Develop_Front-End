@@ -129,7 +129,7 @@ const Parishes = ({ ids }) => {
 
   return (
     <div className="parishes">
-      <h1 className="pari-title">Parish</h1>
+      {/* <h1 className="pari-title">Parish</h1> */}
       <div className="left-scroll">
         <FontAwesomeIcon
           style={arrowStyle}
