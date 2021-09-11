@@ -11,6 +11,7 @@
       text-align: center;
       padding: 20px;
     }
+    
     p {
       text-align: center;
       @media (max-width: 767px) {
@@ -19,15 +20,22 @@
     }
   }
   .team {
-    width: 80%;
+    width: 90%;
     margin: 50px auto;
     @media(max-width: 767px){
         width: 100%;
     }
     h1 {
       text-align: center;
-      padding: 5px 20px;
+      font-size: 25px;
+      font-weight: 400;
+      padding: 0 0 5px 0;
+
     }
+    hr{
+      width: 3.5rem;
+      margin: auto;
+     }
     p {
       text-align: center;
       margin: 5px;
@@ -49,31 +57,36 @@
       @media (max-width: 767px) {
         display: flex;
         flex-direction: row;
-        
       }
       .member {
+        // background-color: orange;
         display: flex;
         flex-direction: column;
         margin: 20px;
         border: 1px solid #00000030;
-        width: 300px;
-
-        box-shadow: rgba(215, 223, 226, 0.4) 5px 5px,
-          rgba(215, 223, 226, 0.4) 10px 10px, rgba(215, 223, 226, 0.4) 15px 15px,
-          rgba(215, 223, 226, 0.4) 20px 20px, rgba(215, 223, 226, 0.4) 25px 25px;
-        img {
-          width: 100%;
-          min-height: 200px;
-          max-height: 200px;
-          object-fit: cover;
+        width: 250px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        @media (max-width: 546px){
+          width: 70vw;
         }
+        img {
+          padding: 10px;
+          margin: auto;
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+}
         .name {
           text-align: center;
-          font-size: 1.2rem;
-          margin-top: 20px;
+          font-size: 1.0rem;
+          margin-top: 10px;
         }
         p {
-            padding: 20px 0;
+            padding: 8px 0;
         }
         .detail-icon {
           font-size: 25px;
@@ -81,7 +94,7 @@
           flex-direction: row;
           justify-content: space-around;
           cursor: pointer;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
         
         }
       }
