@@ -10,7 +10,9 @@ import vyshnav from "./teams/vyshnav.jpeg"
 import rahul from "./teams/rahul.JPG"
 import surya from "./teams/surya.jpeg"
 import jebin from "./teams/jebin.jpeg"
+import Sayujya from "./teams/Sayujya.jpeg"
 import sajan from "./teams/sajan.jpeg"
+
 const About = () => {
     return (
         <div>
@@ -30,10 +32,9 @@ const About = () => {
                     <div className="team-members">
                         <TeamMember name="Rahul T" about="DevOps-Web" img={rahul} l="rahulmanojcet" i="" t=""/>                                             
                         <TeamMember name="Surya V R" about="DevOps-Web" img={surya} l="surya-vr-8a7b501a7" i="" t=""/>                                             
-                        <TeamMember name="Vaishnav P" about="DevOps-Web" img={vyshnav} l="vrv-vyshnav" i="" t="" title="vyshnav vishnu"/>                                             
+                        <TeamMember name="Vaishnav P" about="DevOps-Web" img={vyshnav} l="vrv-vyshnav" i="" t=""/>                                             
+                        <TeamMember name="Sayujya" about="DevOps-Web" img={Sayujya} l="sayujya-surjit-49b6061b2" i="" t=""/>                                             
                         <TeamMember name="Amritha M L" about="DevOps-Web" img={amritha} l="amritha-ml-9401b014b" i="" t=""/>
-                        <TeamMember name="Jebin Jose " about="Operations" img={jebin} l="jebin-jose-6b30491b8" i="" t=""/> 
-                        <TeamMember name="Shameer M R" about="DevOps-Web" img={shameer} l="shameer-m-r-5916771b6" i="" t=""/>
                         <TeamMember name="Allen Vengal" about="Chief Operating Officer" img={allen} l="allen-vengal-79bb081a" i="" t=""/>                                             
                         <TeamMember name="Sajan Joseph " about="Operations" img={sajan} l="sajan-joseph-35331110a" i="" t=""/> 
                         
@@ -41,7 +42,9 @@ const About = () => {
                     <h1 className="position">Alumini</h1>
                     <hr />
                     <div className="team-members">
+                        <TeamMember name="Shameer M R" about="DevOps-Web" img={shameer} l="shameer-m-r-5916771b6" i="" t=""/>
                         <TeamMember name="sapna" about="DevOps-Web" img={sapna} l="sapna2001" i="" t=""/>
+                        <TeamMember name="Jebin Jose " about="Operations" img={jebin} l="jebin-jose-6b30491b8" i="" t=""/> 
                     </div>
                 </div>
             </div>
