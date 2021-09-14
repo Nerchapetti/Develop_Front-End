@@ -33,7 +33,7 @@ const About = () => {
                         <TeamMember name="Rahul T" about="DevOps-Web" img={rahul} l="rahulmanojcet" i="" t=""/>                                             
                         <TeamMember name="Surya V R" about="DevOps-Web" img={surya} l="surya-vr-8a7b501a7" i="" t=""/>                                             
                         <TeamMember name="Vaishnav P" about="DevOps-Web" img={vyshnav} l="vrv-vyshnav" i="" t=""/>                                             
-                        <TeamMember name="Sayujya" about="DevOps-Web" img={Sayujya} l="sayujya-surjit-49b6061b2" i="" t=""/>                                             
+                        <TeamMember name="Sayujya surjit" about="Content-Writer" img={Sayujya} l="sayujya-surjit-49b6061b2" i="" t=""/>                                             
                         <TeamMember name="Amritha M L" about="DevOps-Web" img={amritha} l="amritha-ml-9401b014b" i="" t=""/>
                         <TeamMember name="Allen Vengal" about="Chief Operating Officer" img={allen} l="allen-vengal-79bb081a" i="" t=""/>                                             
                         <TeamMember name="Sajan Joseph " about="Operations" img={sajan} l="sajan-joseph-35331110a" i="" t=""/> 
