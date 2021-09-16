@@ -150,11 +150,12 @@ const Parishes = ({ ids }) => {
           >
               <div className="catagory">{data.about.churchcategory}</div>
               <div className="churchname">{data.about.churchName.slice(0, 20)}...</div>
-              <div className="about">Nerchapetti ID: <span style={{fontWeight: "500", }}>{data.nerchapettiId}</span></div>
+              
               <div className="location">
                 <p>{data.about.location}</p>
               </div>
           </Link>
+          <div className="about">Nerchapetti ID: <span style={{fontWeight: "500", }}>{data.nerchapettiId}</span></div>
           <div className="likes-share">
           <Likes likes={data.likes} id={data._id} likeFor="parish"/>
               <div className="share">

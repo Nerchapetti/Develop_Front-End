@@ -1,9 +1,14 @@
-import { faMailBulk, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk, faPhoneAlt, faClipboard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Payment from "../Parishes/Payment";
 import "./patronDetails.scss";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { useState } from "react";
 
 const PatronDetails = ({ patron }) => {
+
+    const [copyText, setcopyText] = useState(patron.nerchapettiId)
+    const [copied, setcopied] = useState(false)
+
     if (!patron) {
         return (
             <>
@@ -24,8 +29,18 @@ const PatronDetails = ({ patron }) => {
                 <p>
                     <FontAwesomeIcon icon={faMailBulk} /> {patron.contact.email}{" "}
                 </p>
+
+                <div className="nerchapettiId">
+                    <p className="id">Nerchapetti ID : {patron.nerchapettiId}</p>
+                    <CopyToClipboard text={copyText}
+                        onCopy={() => setcopied(true)}>
+                        <button className="copybtn"><FontAwesomeIcon color={'blue'} icon={faClipboard} /></button>
+                    </CopyToClipboard>
+                </div>
+
+                {copied ? <span style={{color: 'green'}}>ID Copied.</span> : null}
             </div>
-            
+
         </div>
     );
 };

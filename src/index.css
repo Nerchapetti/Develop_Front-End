@@ -52,6 +52,19 @@ button{
   transform: translateX(-50%);
 }
 
+.nerchapettiId{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nerchapettiId .copybtn{
+  cursor: pointer;
+  padding: 2px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+}
+
 
 .isLoading,
 .isLoading:before,
