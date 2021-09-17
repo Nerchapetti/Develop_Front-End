@@ -7,13 +7,13 @@ const Committe = ({parish}) => {
     console.log(parish);
     return (
         <div className="parish-committe">
-            <div className="core-committe">
+            {/* <div className="core-committe">
                 <CoreCommittee member={parish.vicar} title="Vicar" />
                 <CoreCommittee member={parish.covicar} title="Covicar" />
                 <CoreCommittee member={parish.trustee} title="Trustee" />
                 <CoreCommittee member={parish.secretary} title="Secretary" />
                 <CoreCommittee member={parish.accountant} title="Accountant" />
-            </div>
+            </div> */}
             {/* <h1 className="heading">Office Bearers</h1> */}
             {parish.committee.map((member, i) => (
             <div className="member-container" key={i}>
