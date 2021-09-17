@@ -31,7 +31,7 @@ const About = () => {
                         <TeamMember name="Sajan Joseph " about="Operations" img={sajan} l="sajan-joseph-35331110a"/> 
                         
                     </div>
-                    <h1 className="position">Alumini</h1>
+                    <h1 className="position">Alumni</h1>
                     <hr />
                     <div className="team-members">
                         <TeamMember name="Shameer M R" about="DevOps-Web" img={shameer} l="shameer-m-r-5916771b6"/>
