@@ -29,6 +29,8 @@
         flex-direction: column;
         gap: 10px;
         height: 100%;
+
+        
         @media(max-width: 767px)
         {
            align-items: center;

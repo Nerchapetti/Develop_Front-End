@@ -33,6 +33,17 @@
         p{
             max-width: 100%;
             word-wrap: break-word;
+            text-align: justify;
+
+            a{
+                color: blue;
+                text-decoration: underline;
+
+                &:hover{
+                    color: rgb(111, 156, 240);
+                }
+            }
         }
+
     }
 }

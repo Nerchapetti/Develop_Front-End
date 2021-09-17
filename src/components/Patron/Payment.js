@@ -21,7 +21,7 @@ const Payment = ({ patron }) => {
             {isPopupOpen && (
                 <Popup
                     vendorEmail={contact.email}
-                    category="parish"
+                    category="patron"
                     plan="basic"
                     id={nerchapettiId}
                     closePopup={closePopup}

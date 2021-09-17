@@ -6,10 +6,11 @@
 .About p{
     margin: 20px 0;
     line-height: 2;
-}
-
-.About a{
-    color: blue;
+    text-align: justify;
+    a{
+        color: blue;
+        text-decoration: underline;
+    }
 }
 
 .About ul{

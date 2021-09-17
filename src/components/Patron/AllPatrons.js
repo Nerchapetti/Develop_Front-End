@@ -30,6 +30,7 @@ const AllPatrons = () => {
     <div>
       <Header />
           <div className="allpatrons">
+            {patrons.length === 0 && <h1>No patrons found</h1> }
             {patrons.map((patron, i) => (
               <>
                   <Link to={`/patron/${patron.nerchapettiId}`}>
