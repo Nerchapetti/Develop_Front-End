@@ -183,6 +183,107 @@ const HowItWorks = () => {
               </div>
             </div>
             <div>
+              <h2>Product Overview</h2>
+              <div className="full-paragraph">
+                <p>
+                  Nerchapetti.com is a website for addressing the needs for
+                  those institutions and organisations which collect offerings
+                  and donations. It is an online web-portal where multiple
+                  organizations may receive offerings / donations, as well as
+                  launch fund-raising campaigns, on a ‘single platform’.
+                </p>
+                <p>
+                  Our aim is to provide an easy and seamless platform for making
+                  offerings to religious organisations and fundraising of
+                  charitable causes.
+                </p>
+                <div className="subpara">
+                  <h2>Product Features</h2>
+                  <p>
+                    <span>
+                      Direct Settlements :- <br />
+                    </span>
+                    The payments received from the users are credited directly
+                    to bank accounts provided by the parish.
+                  </p>
+                  <p>
+                    <span>
+                      {" "}
+                      No Upfront Payment :- <br />
+                    </span>
+                    Free Enrollment for parishes and campaigns, under both Basic
+                    and Premium Plans
+                  </p>
+                  <p>
+                    <span>
+                      Pay-As-You-Use Pricing :- <br />
+                    </span>
+                    10% service charge is deducted for Premium plans, whereas no
+                    service charge is deducted for Basic plans, for each
+                    transaction (i.e., Transaction-Based Pricing)
+                  </p>
+                  <p>
+                    <span>
+                      {" "}
+                      Unique ID :- <br />
+                    </span>
+                    Nerchapetti ID is a unique ID for easy identification of
+                    each entity that is listed.
+                  </p>
+                  <p>
+                    <span>
+                      {" "}
+                      Complimentary Website :- <br />
+                    </span>
+                    The link to this webpage can be shared with those interested
+                    via WhatsApp or SMS.
+                  </p>
+                  <p>
+                    <span>
+                      Secure Transactions :- <br />
+                    </span>
+                    Our site is compliant with PCI
+                    <i>
+                      – DSS (Payment Card Industry – Data Security Standards)
+                    </i>
+                    &nbsp; requirements that are applicable for merchants.
+                  </p>
+                  <p>
+                    <span>
+                      {" "}
+                      Payment Gateway Integration :- <br />
+                    </span>
+                    We have partnered with Cashfree Payments India Pvt Ltd.,
+                    which is one of most popular payment gateways in India and
+                    is used by over 50,000+ businesses. It provides various
+                    payment options, as listed below:
+                    <ul>
+                      <li>
+                        {" "}
+                        Credit/Debit Card (Rupay, VISA, Master Card, Maestro,
+                        Amex)
+                      </li>
+
+                      <li>
+                        {" "}
+                        Netbanking (All prominent Banks registered with Reserve
+                        Bank of India)
+                      </li>
+
+                      <li>
+                        {" "}
+                        Wallets (Airtel Money, PhonePe, OLA Money, FreeCharge,
+                        MobiKwik, RelianceJioMoney)
+                      </li>
+
+                      <li> UPI (GPay, PayTm, AmazonPay, PhonePe, BHIM)</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
               <h2>Digital Marketing</h2>
               <div className="full-paragraph">
                 <p>

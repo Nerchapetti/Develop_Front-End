@@ -21,6 +21,7 @@ const PaymentSuccess = () => {
         </div>
         <div className="payment-details">
           <p>Payment Successfull</p>
+          <p>Rs : 7000</p>
           <div className="table1">
             <table>
               <tr>
