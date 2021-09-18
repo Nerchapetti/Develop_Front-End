@@ -1,5 +1,6 @@
 import Footer from "../Footer/Footer"
 import Header from "../NavBar/Header"
+import {Helmet} from "react-helmet";
 import "./about.scss"
 import TeamMember from "./TeamMember";
 import amritha from "./teams/amritha.jpg"
@@ -12,10 +13,20 @@ import surya from "./teams/surya.jpeg"
 import jebin from "./teams/jebin.jpeg"
 import Sayujya from "./teams/Sayujya.jpeg"
 import sajan from "./teams/sajan.jpeg"
-
+import logo from "../../assets/logo.png"
 const About = () => {
     return (
         <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>About US | Nerchapetti</title>
+                <meta property="og:site_name" content="Nerchapetti" />
+                <meta property="og:title" content="Team of Nerchapetti" />
+                <meta property="og:url" content="https://nerchapetti.com" />
+                <meta property="og:image" itemprop="image" content={logo} />
+                <meta property="og:type" content="website" />
+                <meta property="og:description" content="About the team of Nerchapetti" />
+            </Helmet>
             <Header />
             <div className="main-container-about">
                 <div className="team">
