@@ -25,7 +25,7 @@ function App() {
       <Route path="/about/us" component={About} />
       <Route path="/contact/us" component={Contact} />
       <Route path="/campaign/:id" component={CampaignDetails} />
-      <Route exact path="/:id" component={ParisheDetails} />
+      <Route path="/:id" component={ParisheDetails} />
       <Route path="/patrons/all" component={AllPatrons} />
       <Route path="/patron/:id" component={patron} />
       <Route path="/policies/aml-policy" component={AMLPolicy} />
