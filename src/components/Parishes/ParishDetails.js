@@ -12,6 +12,7 @@ import Offerings from "./Offerings";
 import Location from "./Location";
 import QurbanaPanam from "./QurbanaPanam";
 import Gallery from "./Gallery";
+import { Helmet } from "react-helmet";
 
 const ParisheDetails = () => {
   let { url } = useRouteMatch();
@@ -95,6 +96,16 @@ const ParisheDetails = () => {
     <>
       <Header />
       <div className="main-container">
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>About US | Nerchapetti</title>
+                <meta property="og:site_name" content={`Nerchapetti | ${parishData.about.churchName}`} />
+                <meta property="og:title" content={parishData.about.churchName} />
+                <meta property="og:url" content="https://nerchapetti.com" />
+                <meta property="og:image" itemprop="image" content={parishData.imageUrl} />
+                <meta property="og:type" content="website" />
+                <meta property="og:description" content={parishData.about.content} />
+            </Helmet>
         <Router>
           <>
             <div className="inner-nav">
