@@ -12,6 +12,7 @@
     width: 6rem;
   }
   div {
+    // background-color: red;
     margin: 30px 10px;
     h2 {
       text-align: center;
@@ -50,7 +51,7 @@
         height: auto;
         width: 40vw;
         font-size: 19px;
-        font-weight: 200;
+        font-weight: 100;
         padding: 10px;
         a {
           color: rgb(18, 18, 253);
@@ -69,11 +70,10 @@
       }
       p {
         text-align: justify;
-
         height: auto;
         font-size: 19px;
         font-weight: 200;
-        padding: 10px;
+        padding: 10px 0;
         ul {
           li {
             font-size: 20px;
@@ -82,23 +82,33 @@
           }
         }
       }
+      .word{
+        font-size: 22px;
+        width: 100%;
+        font-style: italic;
+        .writter{
+          text-align: right;
+          margin-right: 40px;
+          padding: 0px;
+        }
+      }
     }
     .subpara {
       width: 80vw;
       margin: auto;
       // background-color: orange;
-      @media (max-width: 824px){
+      @media (max-width: 824px) {
         width: 90vw;
       }
-      h3{
+      h3 {
         padding: 10px 0;
       }
-      p{
+      p {
         font-size: 19px;
         font-weight: 200;
         padding: 10px 0;
         text-align: justify;
-        margin: 0px 2.0em;
+        margin: 0px 2em;
         ul {
           li {
             font-size: 20px;
@@ -106,13 +116,13 @@
             padding: 8px 0 8px 5px;
           }
         }
-        span{
+        span {
           font-size: 21px;
           font-weight: 400;
           text-align: justify;
           margin: 0 0 0 -2em;
-          @media (max-width: 824px){
-           margin: 0 0 0 -1em;
+          @media (max-width: 824px) {
+            margin: 0 0 0 -1em;
           }
         }
       }

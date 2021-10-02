@@ -10,6 +10,27 @@ const HowItWorks = () => {
         <h1>How it works</h1>
         <hr />
         <div className="content-data">
+          <div className="full-paragraph">
+            <p className="word">
+              “I cannot do all the good that the world needs, but the world
+              needs all the good that I can do”
+              <p className="writter"> -Jana Stanfield</p>
+            </p>
+            <p>
+              We live in a very busy world. The clock is ticking so fast that we
+              don’t even wish to spend a minute to look at our fellow beings.
+              This world wasn’t built in a single day. The world we see today is
+              a result of the combined effort of millions of people who lived in
+              this soil. Yes, this place is built of their love.
+            </p>
+            <p>
+              Nerchappetti.com has built this website to help you in your path
+              to goodness. If you are willing to spend a few minutes of your
+              precious life, it can save a person’s whole life. We are here to
+              guide you throughout the process. You can find solutions to all
+              your queries here.
+            </p>
+          </div>
           <div>
             <h2>What is payment gateway charges?</h2>
 

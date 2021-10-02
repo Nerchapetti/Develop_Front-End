@@ -1,6 +1,5 @@
 import Footer from "../Footer/Footer"
 import Header from "../NavBar/Header"
-import "./about.scss"
 import TeamMember from "./TeamMember";
 import amritha from "./teams/amritha.jpg"
 import allen from "./teams/allen.jpg"
@@ -12,6 +11,7 @@ import surya from "./teams/surya.jpeg"
 import jebin from "./teams/jebin.jpeg"
 import Sayujya from "./teams/Sayujya.jpeg"
 import sajan from "./teams/sajan.jpeg"
+import "./about.scss"
 
 const About = () => {
     return (
@@ -22,10 +22,10 @@ const About = () => {
                     <h1>Our Team</h1>
                     <hr />
                     <div className="team-members">
-                        <TeamMember name="Rahul T" about="DevOps-Web" img={rahul} l="rahulmanojcet"/>                                             
-                        <TeamMember name="Surya V R" about="DevOps-Web" img={surya} l="surya-vr-8a7b501a7"/>                                             
-                        <TeamMember name="Vaishnav P" about="DevOps-Web" img={vyshnav} l="vrv-vyshnav"/>                                             
-                        <TeamMember name="Sayujya surjit" about="Content-Writer" img={Sayujya} l="sayujya-surjit-49b6061b2"/>                                             
+                        <TeamMember name="Rahul T" about="DevOps-Web" img={rahul} l="rahulmanojcet"/>                                      
+                        <TeamMember name="Surya V R" about="DevOps-Web" img={surya} l="surya-vr-8a7b501a7"/>                                           
+                        <TeamMember name="Vaishnav P" about="DevOps-Web" img={vyshnav} l="vrv-vyshnav"/>                              
+                        <TeamMember name="Sayujya surjit" about="Content-Writer" img={Sayujya} l="sayujya-surjit-49b6061b2"/> 
                         <TeamMember name="Amritha M L" about="DevOps-Web" img={amritha} l="amritha-ml-9401b014b"/>
                         <TeamMember name="Allen Vengal" about="Chief Operating Officer" img={allen} l="allen-vengal-79bb081a"/>                                             
                         <TeamMember name="Sajan Joseph " about="Operations" img={sajan} l="sajan-joseph-35331110a"/> 
@@ -44,5 +44,4 @@ const About = () => {
         </div>
     )
 }
-
-export default About
+export default About;

@@ -21,7 +21,7 @@ const Pricing = () => {
           <div className="plans">
             <div className="planA">
               <h3>BASIC</h3>
-              <p>
+              <p className="firstpara">
                 <h4>
                   {" "}
                   <span> 0% </span> Service charge
@@ -70,7 +70,7 @@ const Pricing = () => {
             </div>
             <div className="planA">
               <h3>PREMIUM</h3>
-              <p>
+              <p className="firstpara">
                 <h4>
                   {" "}
                   <span> 10% </span> Service Charge
