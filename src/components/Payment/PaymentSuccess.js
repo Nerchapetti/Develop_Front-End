@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const PaymentSuccess = () => {
   return (
-    <div>
+
       <div className="success">
         <div class="page-wrapper">
           <div class="circle-wrapper">
@@ -73,7 +73,6 @@ const PaymentSuccess = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

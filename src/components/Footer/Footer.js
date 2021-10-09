@@ -25,17 +25,16 @@ const Footer = () => {
                 </p>
               </a>
               <a href="mailto:contact@nerchapetti.com">
-                <p>Contact@nerchapetti.com </p>
+                <p>contact@nerchapetti.com </p>
               </a>
 
               <p>
-                John Zakariah Technologies, <br />
+                John Zakariah Technologies XI/328, <br />
                 Veera Marthanda Varma Road, <br />
                 Podiyadi P. O. <br />
                 Thiruvalla, Kerala <br />
                 689 110 (India) <br /> <br />
-                Email: contact@nerchapetti.com <br />
-                Time: Mon - Fri (9:00 - 16:00)
+                
               </p>
             </div>
           </div>
