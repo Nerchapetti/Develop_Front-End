@@ -1,3 +1,42 @@
+.content1{
+  width: 80%;
+  margin: auto;
+  padding: 25px 0;
+  box-sizing: border-box;
+  .full-paragraph {
+    width: 80vw;
+    margin: auto;
+    // background-color: red;
+    @media (max-width: 824px) {
+      width: 90vw;
+    }
+  
+    p {
+      text-align: justify;
+      height: auto;
+      font-size: 19px;
+      font-weight: 200;
+      padding: 10px 0;
+      ul {
+        li {
+          font-size: 20px;
+          list-style-type: lower-roman;
+          padding: 5px;
+        }
+      }
+    }
+    .word{
+      font-size: 22px;
+      width: 100%;
+      font-style: italic;
+      .writter{
+        text-align: right;
+        margin-right: 40px;
+        padding: 0px;
+      }
+    }
+  }
+}
 .main-container-about {
   margin: 0;
   padding: 0;

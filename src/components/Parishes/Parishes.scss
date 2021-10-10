@@ -41,17 +41,17 @@
     }
   }
 }
-.Parishes-containor::-webkit-scrollbar {
+.Parishes-containor::-webkit-scrollbar{
   display: none;
 }
 .Parishes-containor {
-  // background-color: red;
   display: flex;
   flex-direction: row;
   gap: 40px;
   margin: auto;
   padding: 30px;
   overflow-x: scroll;
+  scrollbar-width: none;
   @media (max-width: 767px) {
     margin-right: 10px;
     padding: 40px 5px;

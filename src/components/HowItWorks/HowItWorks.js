@@ -87,7 +87,7 @@ const HowItWorks = () => {
             </div>
           </div>
           <div>
-            <h2>Our Purpose</h2>
+            {/* <h2>Our Purpose</h2>
             <div className="full-paragraph">
               <p>
                 <ul>
@@ -101,9 +101,9 @@ const HowItWorks = () => {
                   </li>
                 </ul>
               </p>
-            </div>
+            </div> */}
           </div>
-          <div>
+          {/* <div>
             <h2>Our Mission:</h2>
             <div className="full-paragraph">
               <p>
@@ -112,7 +112,7 @@ const HowItWorks = () => {
                 time.
               </p>
             </div>
-          </div>
+          </div> */}
           <div>
             <h2>What about Security?</h2>
             <div className="full-paragraph">
