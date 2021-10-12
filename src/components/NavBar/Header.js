@@ -22,6 +22,9 @@ const Header = () => {
           <li className="nav-item" onClick={closeMobileMenu}>
             <Link to="/contact/us">CONTACT</Link>
           </li>
+          <li className="nav-item" onClick={closeMobileMenu}>
+            <Link to="/all/blogs">BLOGS</Link>
+          </li>
         </ul>
           <div className={click ? 'hamburger active' : 'hamburger'} onClick={handleClick}>
                 <span className="bar"></span>
