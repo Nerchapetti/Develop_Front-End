@@ -16,6 +16,7 @@ import Howitworks from "./components/HowItWorks/HowItWorks"
 import PaymentStatus from "./components/Payment/PaymentStatus";
 import PaymentFailure from "./components/Payment/PaymentFailure";
 import Blogs from "./components/Blogs/Blogs";
+import BlogDetails from "./components/Blogs/BlogDetails";
 
 function App() {
   console.log({API_ENDPOINT: process.env.REACT_APP_API_URI})
@@ -39,6 +40,7 @@ function App() {
       <Route path="/payment/success" component={PaymentSuccess} />
       <Route path="/page/How-it-works" component={Howitworks} />
       <Route path="/all/blogs" component={Blogs} />
+      <Route path="/show/blog" component={BlogDetails} />
     </Router>
     </div>
   );
