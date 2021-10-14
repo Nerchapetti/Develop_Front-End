@@ -40,7 +40,7 @@ function App() {
       <Route path="/payment/success" component={PaymentSuccess} />
       <Route path="/page/How-it-works" component={Howitworks} />
       <Route path="/all/blogs" component={Blogs} />
-      <Route path="/show/blog" component={BlogDetails} />
+      <Route path="/blog/:slug" component={BlogDetails} />
     </Router>
     </div>
   );

@@ -1,6 +1,6 @@
 import "./Blogs.scss";
 
-const blog = ({ image, heading, p, like, date }) => {
+const blog = ({ image, heading, p, like, date, authorImg, authorName }) => {
   return (
     <div className="blog">
       <div>
@@ -8,9 +8,9 @@ const blog = ({ image, heading, p, like, date }) => {
       </div>
       <div className="blog-data">
         <div className="auth-date">
-           <img src={image} alt="" />
+           <img src={authorImg} alt="" />
             <div className="auth">
-              <span>Sayujya</span>
+              <span>{authorName}</span>
               <span>{date}</span>
             </div>
         </div>

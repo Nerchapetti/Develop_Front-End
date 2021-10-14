@@ -49,7 +49,7 @@ const ParisheDetails = () => {
         seterror(err)
         console.log(err);
       });
-  }, []);
+  }, [id]);
 
   if(error){
     return (
