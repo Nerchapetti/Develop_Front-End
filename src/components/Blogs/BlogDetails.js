@@ -70,8 +70,7 @@ const BlogDetails = () => {
                 <span>{blog.date}</span>
               </div>
             </div>
-            <p>
-              {blog.content}
+            <p  dangerouslySetInnerHTML={ {__html: blog.content} }>
             </p>
           </div>
         </div>
