@@ -1,0 +1,59 @@
+.parish-about {
+  width: 100%;
+}
+
+.parish-about .churchName {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .parish-about .churchName {
+    font-size: 1.2rem;
+  }
+}
+
+.parish-about img {
+  height: 50vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.parish-about .likes {
+  position: relative;
+  left: 0;
+  margin-bottom: 50px;
+}
+
+.parish-about .location {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.parish-about .content {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+@media (max-width: 767px) {
+  .parish-about .content {
+    max-width: 300px;
+  }
+}
+
+.parish-about .content p {
+  max-width: 100%;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.parish-about .content p a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.parish-about .content p a:hover {
+  color: #6f9cf0;
+}
+/*# sourceMappingURL=About.css.map */

@@ -1,0 +1,169 @@
+.parishes {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .parishes {
+    width: 95%;
+  }
+}
+
+.parishes .pari-title {
+  text-align: center;
+  font-size: 40px;
+}
+
+@media (max-width: 767px) {
+  .parishes .pari-title {
+    font-size: 2rem;
+  }
+}
+
+.parishes .left-scroll,
+.parishes .right-scroll {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.parishes .left-scroll {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+}
+
+@media (max-width: 767px) {
+  .parishes .left-scroll {
+    display: none;
+  }
+}
+
+.parishes .right-scroll {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+}
+
+@media (max-width: 767px) {
+  .parishes .right-scroll {
+    display: none;
+  }
+}
+
+.Parishes-containor::-webkit-scrollbar {
+  display: none;
+}
+
+.Parishes-containor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 40px;
+  margin: auto;
+  padding: 30px;
+  overflow-x: scroll;
+}
+
+@media (max-width: 767px) {
+  .Parishes-containor {
+    margin-right: 10px;
+    padding: 40px 5px;
+  }
+}
+
+.Parishes-containor .cards {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 20px 15px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 10px 10px 20px 15px rgba(192, 192, 192, 0.288) !important;
+}
+
+@media (max-width: 767px) {
+  .Parishes-containor .cards {
+    min-width: 300px;
+    -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+            box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  }
+}
+
+.Parishes-containor .cards .images {
+  border-radius: 20px 20px 0 0;
+}
+
+.Parishes-containor .cards .images img {
+  border-radius: 20px 20px 0 0;
+  min-height: 180px;
+  max-height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Parishes-containor .cards .catagory {
+  position: relative;
+  left: 20px;
+  padding: 10px 0 10px 0;
+}
+
+.Parishes-containor .cards .churchname {
+  position: relative;
+  left: 20px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a73e8;
+}
+
+.Parishes-containor .cards .about {
+  position: relative;
+  padding: 10px 10px 10px 20px;
+}
+
+.Parishes-containor .cards .location {
+  position: relative;
+  padding: 6px 10px 10px 20px;
+}
+
+.Parishes-containor .cards .location p {
+  font-weight: 600;
+}
+
+.Parishes-containor .cards .likes-share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.Parishes-containor .cards .likes-share .likes {
+  position: relative;
+  left: 20px;
+}
+
+.Parishes-containor .cards .likes-share .share {
+  position: relative;
+  right: 20px;
+}
+
+.Parishes-containor .cards .likes-share .share .shareicon {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+/*# sourceMappingURL=Parishes.css.map */

@@ -1,0 +1,32 @@
+.About {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.About p {
+  margin: 20px 0;
+  line-height: 2;
+  text-align: justify;
+}
+
+.About p a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.About ul {
+  list-style: disc !important;
+}
+
+.About ul li {
+  list-style: disc !important;
+}
+
+.About ol li {
+  list-style: decimal;
+}
+
+.About table td {
+  border: 1px solid #00000030;
+}
+/*# sourceMappingURL=about.css.map */

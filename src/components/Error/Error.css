@@ -1,0 +1,21 @@
+.error-popup {
+  color: red;
+  background-color: #fda9a9;
+  padding: 10px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+}
+
+.error-popup h1 {
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  .error-popup h1 {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=Error.css.map */

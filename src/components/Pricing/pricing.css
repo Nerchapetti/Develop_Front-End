@@ -1,0 +1,89 @@
+.pricing-container {
+  margin: 0;
+  padding: 0;
+}
+
+.pricing-container .headline {
+  margin: 20px auto;
+  width: 90%;
+}
+
+.pricing-container .headline h1 {
+  margin: 30px 0 5px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.pricing-container .headline p {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.pricing-container .plans {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 30px 0px;
+  max-height: auto;
+  max-width: 75%;
+  margin: auto;
+  padding: 10px;
+  gap: 50px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .pricing-container .plans {
+    max-width: 90%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.pricing-container .plans .planA {
+  -webkit-box-shadow: 10px 10px 20px 15px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 10px 10px 20px 15px rgba(192, 192, 192, 0.288) !important;
+  padding: 13px;
+}
+
+.pricing-container .plans .planA h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 100px;
+}
+
+.pricing-container .plans .planA .firstpara {
+  text-align: center;
+}
+
+.pricing-container .plans .planA p {
+  padding: 20px;
+  text-align: justify;
+  word-spacing: -2px;
+}
+
+.pricing-container .plans .planA p h4 span {
+  font-size: 60px;
+  color: #1a73e8;
+}
+
+.pricing-container .plans .planA ul {
+  text-align: left;
+}
+
+.pricing-container .plans .planA ul li {
+  padding: 10px;
+}
+
+.pricing-container .plan-end {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.pricing-container .plan-end p {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=pricing.css.map */

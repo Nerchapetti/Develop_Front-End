@@ -1,0 +1,171 @@
+.HIW-container {
+  margin: 25px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.HIW-container h1 {
+  margin: 30px 0 10px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.HIW-container hr {
+  margin: auto;
+  width: 6rem;
+}
+
+.HIW-container div {
+  margin: 30px 10px;
+}
+
+.HIW-container div h2 {
+  text-align: center;
+  padding: 13px 0;
+  letter-spacing: 3px;
+  word-wrap: break-word;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: auto;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+@media (max-width: 770px) {
+  .HIW-container div h2 {
+    text-align: left;
+    font-size: 23px;
+  }
+}
+
+.HIW-container div .head2 {
+  font-size: 32px;
+}
+
+@media (max-width: 770px) {
+  .HIW-container div .head2 {
+    font-size: 20px;
+  }
+}
+
+.HIW-container div .paragraph {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  font-size: 19px;
+  width: 100%;
+  gap: 10px;
+  margin: auto;
+}
+
+@media (max-width: 760px) {
+  .HIW-container div .paragraph {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.HIW-container div .paragraph p {
+  text-align: justify;
+  height: auto;
+  width: 40vw;
+  font-size: 19px;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.HIW-container div .paragraph p a {
+  color: #1212fd;
+}
+
+@media (max-width: 770px) {
+  .HIW-container div .paragraph p {
+    width: auto;
+  }
+}
+
+.HIW-container div .full-paragraph {
+  width: 80vw;
+  margin: auto;
+}
+
+@media (max-width: 824px) {
+  .HIW-container div .full-paragraph {
+    width: 90vw;
+  }
+}
+
+.HIW-container div .full-paragraph p {
+  text-align: justify;
+  height: auto;
+  font-size: 19px;
+  font-weight: 200;
+  padding: 10px 0;
+}
+
+.HIW-container div .full-paragraph p ul li {
+  font-size: 20px;
+  list-style-type: lower-roman;
+  padding: 5px;
+}
+
+.HIW-container div .full-paragraph .word {
+  font-size: 22px;
+  width: 100%;
+  font-style: italic;
+}
+
+.HIW-container div .full-paragraph .word .writter {
+  text-align: right;
+  margin-right: 40px;
+  padding: 0px;
+}
+
+.HIW-container div .subpara {
+  width: 80vw;
+  margin: auto;
+}
+
+@media (max-width: 824px) {
+  .HIW-container div .subpara {
+    width: 90vw;
+  }
+}
+
+.HIW-container div .subpara h3 {
+  padding: 10px 0;
+}
+
+.HIW-container div .subpara p {
+  font-size: 19px;
+  font-weight: 200;
+  padding: 10px 0;
+  text-align: justify;
+  margin: 0px 2em;
+}
+
+.HIW-container div .subpara p ul li {
+  font-size: 20px;
+  list-style-type: lower-roman;
+  padding: 8px 0 8px 5px;
+}
+
+.HIW-container div .subpara p span {
+  font-size: 21px;
+  font-weight: 400;
+  text-align: justify;
+  margin: 0 0 0 -2em;
+}
+
+@media (max-width: 824px) {
+  .HIW-container div .subpara p span {
+    margin: 0 0 0 -1em;
+  }
+}
+/*# sourceMappingURL=howitworks.css.map */

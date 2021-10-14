@@ -1,0 +1,118 @@
+.parish-committe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.parish-committe .core-committe {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.parish-committe .heading {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.parish-committe .member-container {
+  width: 48%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .parish-committe .member-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.parish-committe .member-container .image img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .parish-committe .member-container .image img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.parish-committe .member-container .member-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .parish-committe .member-container .member-details {
+    text-align: center;
+  }
+}
+
+.parish-committe .member-container .member-details .member-title {
+  color: #7e6dce;
+  font-size: 1.2rem;
+}
+
+.parish-committe .member-container .offer-details {
+  text-align: left;
+}
+/*# sourceMappingURL=Committe.css.map */

@@ -1,0 +1,159 @@
+.offer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.offer-container .offer-error {
+  width: 100%;
+  background-color: #f1b6b6;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: red;
+  font-weight: 500;
+}
+
+.offer-container .offer-success {
+  width: 100%;
+  background-color: #aaf388;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: green;
+  font-weight: 500;
+}
+
+.offer-container .feedback {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+}
+
+@media (max-width: 767px) {
+  .offer-container .feedback {
+    width: 100%;
+  }
+}
+
+.offer-container .feedback span {
+  color: red;
+}
+
+.offer-container .feedback ul li {
+  padding: 5px;
+}
+
+.offer-container .feedback .btn {
+  padding: 10px;
+  background-color: #b4d2f8;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.offer-container .offer-item {
+  width: 48%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+          box-shadow: 0 4px 11px 3px rgba(192, 192, 192, 0.288) !important;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 1024px) {
+  .offer-container .offer-item {
+    width: 100%;
+  }
+}
+
+.offer-container .offer-item .offer-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.offer-container .offer-item .input {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer-container .offer-item .input .name-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00000020;
+  outline: none;
+}
+
+.offer-container .offer-item .input .btn {
+  width: 50px;
+  padding: 10px;
+  background-color: #b4d2f8;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=offer.css.map */
