@@ -1,15 +1,18 @@
 import Footer from "../Footer/Footer";
 import Header from "../NavBar/Header";
 import "./howitworks.scss";
+// import "./test.scss";
 
 const HowItWorks = () => {
   return (
     <div className="HowItWorks">
       <Header />
       <div className="HIW-container">
+        <div className="headings">
         <h1>How it works</h1>
         <hr />
-        <div className="content-data">
+        </div>
+        <div className="content">
           <div className="full-paragraph">
             <p className="word">
               “I cannot do all the good that the world needs, but the world
@@ -28,9 +31,71 @@ const HowItWorks = () => {
               to goodness. If you are willing to spend a few minutes of your
               precious life, it can save a person’s whole life. We are here to
               guide you throughout the process. You can find solutions to all
-              your queries here.
+              your queries here. Before signing up for this, we need you to be
+              free of all scepticism. We need you to have trust in us just like
+              we trust in humanity!
             </p>
+            <h2>FOR CONTRIBUTORS</h2>
+            <p>
+              When you want to make an offering to the parish or financially
+              support a campaign, but there is a constraint in space,
+              Nerchapetti.com is here to help you. Please follow the steps below
+              to make payment-
+            </p>
+            <p>
+                  <ul>
+                    <li>Go to Nerchapetti website </li>
+                    <li>Click on the parish or campaign to which you want to contribute. You will get more details about it there.</li>
+                    <li>Click on ‘Quick pay’.</li>
+                    <li>Type in the amount you are willing to pay, your phone number, name and e-mail.</li>
+                    <li>
+                    Click on ‘Proceed to pay’. You can make payment using 
+                    <ul>
+                      <li>Credit/Debit Card (Rupay, VISA, Master Card, Maestro, Amex)</li>
+                      <li>Netbanking (All prominent Banks registered with Reserve Bank of India)</li>
+                      <li>Wallets (Airtel Money, PhonePe, OLA Money, FreeCharge, MobiKwik, RelianceJioMoney)</li>
+                      <li>UPI (GPay, PayTm, AmazonPay, PhonePe, BHIM)</li>
+                    </ul>
+                    </li>
+                    <li>Make payment using any of the options above.</li>
+                  </ul>
+                </p>
           </div>
+          {/* <div>
+            <div>
+              <h2>Mission</h2>
+              <div className="full-paragraph">
+                <p>
+                  Our mission is to support Christian parishes and institutions
+                  in accepting offerings and other related payments. We also
+                  support fund-raising initiatives using the power of digital
+                  marketing.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2>Vision</h2>
+              <div className="full-paragraph">
+                <p>
+                  Be an instrument to God's Will, by ensuring that the necessary
+                  resources are made available to the right people at the right
+                  time.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2>Values</h2>
+              <div className="full-paragraph">
+                <p>
+                  <ul>
+                    <li>We lead with optimism</li>
+                    <li>We have faith in God</li>
+                    <li>We serve and let others serve for the humankind</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>  */}
           <div>
             <h2>What is payment gateway charges?</h2>
 

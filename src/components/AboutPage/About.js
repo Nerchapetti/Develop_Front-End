@@ -1,4 +1,3 @@
-import '../HowItWorks/howitworks.scss';
 import Footer from "../Footer/Footer";
 import Header from "../NavBar/Header";
 import { Helmet } from "react-helmet";
@@ -32,32 +31,43 @@ const About = () => {
         />
       </Helmet>
       <Header />
+      <div className="head">
+        <h2>About</h2>
+        <hr />
+      </div>
       <div className="content1">
         <div>
-            <h2>Our Mission:</h2>
-            <div className="full-paragraph">
-              <p>
-                Be an instrument to God's Will, by ensuring that the necessary
-                resources are made available to the right people at the right
-                time.
-              </p>
-            </div>
+          <h2>Mission</h2>
+          <div className="full-paragraph">
+            <p>
+              Our mission is to support Christian parishes and institutions in
+              accepting offerings and other related payments. We also support
+              fund-raising initiatives using the power of digital marketing.
+            </p>
           </div>
-        <h2>Our Purpose</h2>
-            <div className="full-paragraph">
-              <p>
-                <ul>
-                  <li>
-                    Supporting Christian parishes and institutions in accepting
-                    offerings and other related payments, digitally.
-                  </li>
-                  <li>
-                    Supporting the fund-raising initiatives using the power of
-                    digital marketing.
-                  </li>
-                </ul>
-              </p>
-            </div>
+        </div>
+        <div>
+          <h2>Vision</h2>
+          <div className="full-paragraph">
+            <p>
+              Be an instrument to God's Will, by ensuring that the necessary
+              resources are made available to the right people at the right
+              time.
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>Values</h2>
+          <div className="full-paragraph">
+            <p>
+              <ul>
+                <li>We lead with optimism</li>
+                <li>We have faith in God</li>
+                <li>We serve and let others serve for the humankind</li>
+              </ul>
+            </p>
+          </div>
+        </div>
       </div>
       <div className="main-container-about">
         <div className="team">
