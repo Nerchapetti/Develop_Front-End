@@ -35,7 +35,7 @@ const Patron = () => {
         .catch((err) => {
           console.log(err);
         });
-    }, []);
+    }, [id]);
 
     const handleClick = (e) => {
     

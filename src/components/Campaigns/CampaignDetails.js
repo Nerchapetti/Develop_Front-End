@@ -57,7 +57,7 @@ const CampaignDetails = () => {
         seterror(err)
         console.log(err);
       });
-  }, []);
+  }, [id]);
 
   if (error) {
     return <div className="error">Oops!! something went wrong</div>;
