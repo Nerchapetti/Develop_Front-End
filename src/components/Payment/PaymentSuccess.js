@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const PaymentSuccess = () => {
   return (
-
-      <div className="success">
+    <div className="success">
+      <div className="success-container">
         <div class="page-wrapper">
           <div class="circle-wrapper">
             <div class="success circle"></div>
@@ -64,15 +64,14 @@ const PaymentSuccess = () => {
               </tr>
             </table>
             <div className="button">
-                <Link to="/">
-              <button>
-                done
-              </button>
-                </Link>
+              <Link to="/">
+                <button>Done</button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+    </div>
   );
 };
 

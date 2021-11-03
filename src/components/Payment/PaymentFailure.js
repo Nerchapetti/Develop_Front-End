@@ -1,22 +1,24 @@
-import {  AiOutlineClose } from "react-icons/ai";
-import "./failed.scss"; 
+import { BiErrorCircle } from 'react-icons/bi';
+import "./failed.scss";
 
 const PaymentFailure = () => {
-    return (
-        <div className="failed">
-            <div className="container">
-            <AiOutlineClose className="icon"/>
-            <h1>Payment failed</h1>
-            <p>Something went wrong, Try again 
-            </p>
-            <a href="/">
-                <button>
-                    Go back
-                </button>
-            </a>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="failed">
+      <div className="container">
+        <BiErrorCircle className="icon" />
+        <h1>Payment Failed</h1>
+        <p>
+          <ol>
+            <li>Something went wrong, Try again</li>
+            <li></li>
+          </ol>
+        </p>
+        <a href="/">
+          <button>Go back</button>
+        </a>
+      </div>
+    </div>
+  );
+};
 
-export default PaymentFailure
+export default PaymentFailure;
