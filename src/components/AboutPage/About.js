@@ -13,6 +13,11 @@ import surya from "./teams/surya.jpeg";
 import jebin from "./teams/jebin.jpeg";
 import Sayujya from "./teams/Sayujya.jpeg";
 import sajan from "./teams/sajan.jpeg";
+import hari from "./teams/hari.jpg";
+import varun from "./teams/varun.jpg";
+import jaidan from "./teams/jaidan.jpg";
+import aswin from "./teams/aswin.jpg";
+import yasim from "./teams/yasim.jpg"; 
 import logo from "../../assets/logo.png";
 const About = () => {
   return (
@@ -75,22 +80,10 @@ const About = () => {
           <hr />
           <div className="team-members">
             <TeamMember
-              name="Rahul T"
+              name="Amritha M L"
               about="DevOps-Web"
-              img={rahul}
-              l="rahulmanojcet"
-            />
-            <TeamMember
-              name="Surya V R"
-              about="DevOps-Web"
-              img={surya}
-              l="surya-vr-8a7b501a7"
-            />
-            <TeamMember
-              name="Vaishnav P"
-              about="DevOps-Web"
-              img={vyshnav}
-              l="vrv-vyshnav"
+              img={amritha}
+              l="amritha-ml-9401b014b"
             />
             <TeamMember
               name="Sayujya surjit"
@@ -99,10 +92,44 @@ const About = () => {
               l="sayujya-surjit-49b6061b2"
             />
             <TeamMember
-              name="Amritha M L"
+              name="Harikrishnan V"
               about="DevOps-Web"
-              img={amritha}
-              l="amritha-ml-9401b014b"
+              img={hari}
+              l="harikrishnan-v-5746b8212"
+            />
+            <TeamMember
+              name="Varun Krishna"
+              about="DevOps-Web"
+              img={varun}
+              l="varun-krishna-122534212"
+            />
+            <TeamMember
+              name="Jaidan Sleeba"
+              about="DevOps-Web"
+              img={jaidan}
+              l="jaidan22"
+            />
+            <TeamMember
+              name="Aswin Jayaji"
+              about="DevOps-Web"
+              img={aswin}
+              l="aswin-jayaji"
+            />
+            <TeamMember
+              name="Mohammed Yasim"
+              about="DevOps-Web"
+              img={yasim}
+              l="mohammed-yasim-edakkunnam-2243651a7"
+            />
+          </div>
+          <h1 className="position">Alumni</h1>
+          <hr />
+          <div className="team-members">
+            <TeamMember
+              name="Rahul T"
+              about="DevOps-Web"
+              img={rahul}
+              l="rahulmanojcet"
             />
             <TeamMember
               name="Allen Vengal"
@@ -116,10 +143,18 @@ const About = () => {
               img={sajan}
               l="sajan-joseph-35331110a"
             />
-          </div>
-          <h1 className="position">Alumni</h1>
-          <hr />
-          <div className="team-members">
+            <TeamMember
+              name="Surya V R"
+              about="DevOps-Web"
+              img={surya}
+              l="surya-vr-8a7b501a7"
+            />
+            <TeamMember
+              name="Vaishnav P"
+              about="DevOps-Web"
+              img={vyshnav}
+              l="vrv-vyshnav"
+            />
             <TeamMember
               name="Shameer M R"
               about="DevOps-Web"
